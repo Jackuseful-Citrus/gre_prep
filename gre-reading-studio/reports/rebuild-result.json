@@ -1,0 +1,275 @@
+{
+  "total": 10348,
+  "by_type": [
+    {
+      "type": "RC1",
+      "title": "RC 单选",
+      "count": 3057,
+      "with_answer": 2129,
+      "gradable": 2129,
+      "with_explanation": 568,
+      "unverified": 928,
+      "sources": [
+        "gold40",
+        "gwc290",
+        "reading300",
+        "reading170",
+        "white",
+        "mcgraw",
+        "crown"
+      ]
+    },
+    {
+      "type": "RCMultiple",
+      "title": "RC 多选",
+      "count": 232,
+      "with_answer": 108,
+      "gradable": 108,
+      "with_explanation": 57,
+      "unverified": 124,
+      "sources": [
+        "gold40",
+        "gwc290",
+        "reading300",
+        "white",
+        "crown",
+        "reading170"
+      ]
+    },
+    {
+      "type": "RCSentence",
+      "title": "RC 选句",
+      "count": 33,
+      "with_answer": 18,
+      "gradable": 18,
+      "with_explanation": 10,
+      "unverified": 15,
+      "sources": [
+        "gold40",
+        "gwc290",
+        "white",
+        "reading170",
+        "reading300"
+      ]
+    },
+    {
+      "type": "TC1",
+      "title": "TC 单空",
+      "count": 878,
+      "with_answer": 339,
+      "gradable": 329,
+      "with_explanation": 59,
+      "unverified": 549,
+      "sources": [
+        "verbal-gwc1500",
+        "verbal-gold200",
+        "verbal-crown1300",
+        "verbal-crown4",
+        "verbal-zhang1300",
+        "verbal-mcgraw"
+      ]
+    },
+    {
+      "type": "TC2",
+      "title": "TC 双空",
+      "count": 1416,
+      "with_answer": 810,
+      "gradable": 769,
+      "with_explanation": 473,
+      "unverified": 647,
+      "sources": [
+        "verbal-gwc1500",
+        "verbal-basic24",
+        "verbal-gold200",
+        "verbal-crown1300",
+        "verbal-crown4",
+        "verbal-zhang1300",
+        "verbal-mcgraw"
+      ]
+    },
+    {
+      "type": "TC3",
+      "title": "TC 三空",
+      "count": 773,
+      "with_answer": 291,
+      "gradable": 291,
+      "with_explanation": 32,
+      "unverified": 482,
+      "sources": [
+        "verbal-gwc1500",
+        "verbal-gold200",
+        "verbal-crown1300",
+        "verbal-crown4",
+        "verbal-zhang1300",
+        "verbal-mcgraw"
+      ]
+    },
+    {
+      "type": "TC_LEGACY",
+      "title": "旧版成对选项填空",
+      "count": 13,
+      "with_answer": 13,
+      "gradable": 13,
+      "with_explanation": 13,
+      "unverified": 0,
+      "sources": [
+        "verbal-mcgraw"
+      ]
+    },
+    {
+      "type": "SE",
+      "title": "SE 六选二",
+      "count": 2185,
+      "with_answer": 1131,
+      "gradable": 1071,
+      "with_explanation": 576,
+      "unverified": 1114,
+      "sources": [
+        "verbal-gwc1500",
+        "verbal-basic24",
+        "verbal-gold200",
+        "verbal-crown1300",
+        "verbal-crown4",
+        "verbal-zhang1300"
+      ]
+    },
+    {
+      "type": "QC",
+      "title": "数量比较",
+      "count": 257,
+      "with_answer": 256,
+      "gradable": 256,
+      "with_explanation": 67,
+      "unverified": 1,
+      "sources": [
+        "gwc600",
+        "mcgraw-quant",
+        "guide-quant"
+      ]
+    },
+    {
+      "type": "QuantSingle",
+      "title": "数学单选",
+      "count": 285,
+      "with_answer": 265,
+      "gradable": 265,
+      "with_explanation": 69,
+      "unverified": 20,
+      "sources": [
+        "gwc600",
+        "math360",
+        "mcgraw-quant",
+        "guide-quant"
+      ]
+    },
+    {
+      "type": "QuantMultiple",
+      "title": "数学多选",
+      "count": 88,
+      "with_answer": 61,
+      "gradable": 61,
+      "with_explanation": 0,
+      "unverified": 27,
+      "sources": [
+        "gwc600",
+        "math360"
+      ]
+    },
+    {
+      "type": "NumericEntry",
+      "title": "数值填空",
+      "count": 91,
+      "with_answer": 89,
+      "gradable": 88,
+      "with_explanation": 11,
+      "unverified": 3,
+      "sources": [
+        "gwc600",
+        "mcgraw-quant",
+        "guide-quant"
+      ]
+    },
+    {
+      "type": "DI",
+      "title": "数据解释",
+      "count": 89,
+      "with_answer": 89,
+      "gradable": 89,
+      "with_explanation": 18,
+      "unverified": 0,
+      "sources": [
+        "gwc600",
+        "mcgraw-quant",
+        "guide-quant"
+      ]
+    },
+    {
+      "type": "QuantRecall",
+      "title": "数学回忆自答",
+      "count": 315,
+      "with_answer": 0,
+      "gradable": 0,
+      "with_explanation": 1,
+      "unverified": 315,
+      "sources": [
+        "math360",
+        "guide-quant"
+      ]
+    },
+    {
+      "type": "QuantDrill",
+      "title": "数学知识练习",
+      "count": 108,
+      "with_answer": 0,
+      "gradable": 0,
+      "with_explanation": 108,
+      "unverified": 108,
+      "sources": [
+        "mcgraw-quant"
+      ]
+    },
+    {
+      "type": "Issue",
+      "title": "Issue 写作",
+      "count": 238,
+      "with_answer": 0,
+      "gradable": 0,
+      "with_explanation": 226,
+      "unverified": 238,
+      "sources": [
+        "awa-13",
+        "awa-15",
+        "awa-04",
+        "awa-05",
+        "awa-16",
+        "awa-03",
+        "awa-21",
+        "awa-22",
+        "awa-23"
+      ]
+    },
+    {
+      "type": "Argument",
+      "title": "Argument 写作",
+      "count": 290,
+      "with_answer": 0,
+      "gradable": 0,
+      "with_explanation": 259,
+      "unverified": 290,
+      "sources": [
+        "awa-12",
+        "awa-14",
+        "awa-02",
+        "awa-16",
+        "awa-18",
+        "awa-17",
+        "awa-20",
+        "awa-03",
+        "awa-21",
+        "awa-22"
+      ]
+    }
+  ],
+  "duplicates": 505,
+  "pending": []
+}

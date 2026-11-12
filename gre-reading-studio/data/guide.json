@@ -1,0 +1,514 @@
+{
+  "source": {
+    "id": "guide",
+    "title": "GRE备考胜经 · 阅读方法与样题",
+    "fileName": "gre备考胜经.pdf",
+    "pages": 356,
+    "notes": [
+      "阅读篇112–203页含图片嵌入的练习题。保留原页阅读，不把仅有解析的文本误当完整选择题。"
+    ],
+    "reader": {
+      "url": "sources/guide-reading.pdf",
+      "originalPages": [
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203
+      ],
+      "pageMap": {
+        "112": 1,
+        "113": 2,
+        "114": 3,
+        "115": 4,
+        "116": 5,
+        "117": 6,
+        "118": 7,
+        "119": 8,
+        "120": 9,
+        "121": 10,
+        "122": 11,
+        "123": 12,
+        "124": 13,
+        "125": 14,
+        "126": 15,
+        "127": 16,
+        "128": 17,
+        "129": 18,
+        "130": 19,
+        "131": 20,
+        "132": 21,
+        "133": 22,
+        "134": 23,
+        "135": 24,
+        "136": 25,
+        "137": 26,
+        "138": 27,
+        "139": 28,
+        "140": 29,
+        "141": 30,
+        "142": 31,
+        "143": 32,
+        "144": 33,
+        "145": 34,
+        "146": 35,
+        "147": 36,
+        "148": 37,
+        "149": 38,
+        "150": 39,
+        "151": 40,
+        "152": 41,
+        "153": 42,
+        "154": 43,
+        "155": 44,
+        "156": 45,
+        "157": 46,
+        "158": 47,
+        "159": 48,
+        "160": 49,
+        "161": 50,
+        "162": 51,
+        "163": 52,
+        "164": 53,
+        "165": 54,
+        "166": 55,
+        "167": 56,
+        "168": 57,
+        "169": 58,
+        "170": 59,
+        "171": 60,
+        "172": 61,
+        "173": 62,
+        "174": 63,
+        "175": 64,
+        "176": 65,
+        "177": 66,
+        "178": 67,
+        "179": 68,
+        "180": 69,
+        "181": 70,
+        "182": 71,
+        "183": 72,
+        "184": 73,
+        "185": 74,
+        "186": 75,
+        "187": 76,
+        "188": 77,
+        "189": 78,
+        "190": 79,
+        "191": 80,
+        "192": 81,
+        "193": 82,
+        "194": 83,
+        "195": 84,
+        "196": 85,
+        "197": 86,
+        "198": 87,
+        "199": 88,
+        "200": 89,
+        "201": 90,
+        "202": 91,
+        "203": 92
+      }
+    }
+  },
+  "passages": [],
+  "sourceReading": [
+    {
+      "id": "guide-reader-112",
+      "sourceId": "guide",
+      "title": "句间关系与指代",
+      "pages": [
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140
+      ],
+      "readerPage": 1,
+      "url": "sources/guide-reading.pdf#page=1",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-141",
+      "sourceId": "guide",
+      "title": "句型与词义",
+      "pages": [
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156
+      ],
+      "readerPage": 30,
+      "url": "sources/guide-reading.pdf#page=30",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-157",
+      "sourceId": "guide",
+      "title": "三大高频题型 · 民族国家",
+      "pages": [
+        157,
+        158
+      ],
+      "readerPage": 46,
+      "url": "sources/guide-reading.pdf#page=46",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-159",
+      "sourceId": "guide",
+      "title": "题干理解",
+      "pages": [
+        159,
+        160
+      ],
+      "readerPage": 48,
+      "url": "sources/guide-reading.pdf#page=48",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-161",
+      "sourceId": "guide",
+      "title": "主旨与指代 · Paule Marshall",
+      "pages": [
+        161,
+        162
+      ],
+      "readerPage": 50,
+      "url": "sources/guide-reading.pdf#page=50",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-163",
+      "sourceId": "guide",
+      "title": "错误选项 · Bearden",
+      "pages": [
+        163,
+        164,
+        165,
+        166
+      ],
+      "readerPage": 52,
+      "url": "sources/guide-reading.pdf#page=52",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-167",
+      "sourceId": "guide",
+      "title": "词汇题",
+      "pages": [
+        167,
+        168,
+        169
+      ],
+      "readerPage": 56,
+      "url": "sources/guide-reading.pdf#page=56",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-170",
+      "sourceId": "guide",
+      "title": "作者态度",
+      "pages": [
+        170,
+        171,
+        172
+      ],
+      "readerPage": 59,
+      "url": "sources/guide-reading.pdf#page=59",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-173",
+      "sourceId": "guide",
+      "title": "观点与结构",
+      "pages": [
+        173,
+        174,
+        175,
+        176,
+        177,
+        178
+      ],
+      "readerPage": 62,
+      "url": "sources/guide-reading.pdf#page=62",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-179",
+      "sourceId": "guide",
+      "title": "细节定位",
+      "pages": [
+        179,
+        180
+      ],
+      "readerPage": 68,
+      "url": "sources/guide-reading.pdf#page=68",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-181",
+      "sourceId": "guide",
+      "title": "难度与阅读速度",
+      "pages": [
+        181,
+        182,
+        183,
+        184,
+        185,
+        186
+      ],
+      "readerPage": 70,
+      "url": "sources/guide-reading.pdf#page=70",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-187",
+      "sourceId": "guide",
+      "title": "驳论文主旨",
+      "pages": [
+        187,
+        188
+      ],
+      "readerPage": 76,
+      "url": "sources/guide-reading.pdf#page=76",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-189",
+      "sourceId": "guide",
+      "title": "长文章主旨",
+      "pages": [
+        189,
+        190,
+        191
+      ],
+      "readerPage": 78,
+      "url": "sources/guide-reading.pdf#page=78",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-192",
+      "sourceId": "guide",
+      "title": "加强与假设",
+      "pages": [
+        192,
+        193,
+        194,
+        195
+      ],
+      "readerPage": 81,
+      "url": "sources/guide-reading.pdf#page=81",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-196",
+      "sourceId": "guide",
+      "title": "逻辑与题材",
+      "pages": [
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "readerPage": 85,
+      "url": "sources/guide-reading.pdf#page=85",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    },
+    {
+      "id": "guide-reader-201",
+      "sourceId": "guide",
+      "title": "多重否定",
+      "pages": [
+        201,
+        202,
+        203
+      ],
+      "readerPage": 90,
+      "url": "sources/guide-reading.pdf#page=90",
+      "mode": "source-reading",
+      "notes": [
+        "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
+      ]
+    }
+  ],
+  "coverage": {
+    "readingPages": [
+      112,
+      203
+    ],
+    "fallbackGroups": 16,
+    "structuredQuestions": 0,
+    "reason": "题目主要作为图片嵌入，原始页面方式完整保留。"
+  }
+}

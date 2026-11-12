@@ -1,0 +1,3769 @@
+{
+  "source_count": 23,
+  "source_occurrences": {
+    "awa-12": 175,
+    "awa-13": 149,
+    "awa-14": 175,
+    "awa-15": 149,
+    "awa-02": 5,
+    "awa-07": 2,
+    "awa-08": 1,
+    "awa-09": 1,
+    "awa-10": 1,
+    "awa-06": 20,
+    "awa-04": 20,
+    "awa-05": 4,
+    "awa-16": 82,
+    "awa-18": 10,
+    "awa-17": 2,
+    "awa-20": 81,
+    "awa-03": 320,
+    "awa-21": 40,
+    "awa-22": 21,
+    "awa-23": 5
+  },
+  "unique_questions": 529,
+  "types": {
+    "Argument": 291,
+    "Issue": 238
+  },
+  "with_model_essay": 166,
+  "with_guidance": 389,
+  "status": {
+    "extracted": 507,
+    "incomplete": 19,
+    "needs_review": 3
+  },
+  "duplicates": [
+    {
+      "kept": "awa-12-q001",
+      "merged": "awa-14-q001",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q002",
+      "merged": "awa-14-q002",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q003",
+      "merged": "awa-14-q003",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q004",
+      "merged": "awa-14-q004",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q005",
+      "merged": "awa-14-q005",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q006",
+      "merged": "awa-14-q006",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q007",
+      "merged": "awa-14-q007",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q008",
+      "merged": "awa-14-q008",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q009",
+      "merged": "awa-14-q009",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q010",
+      "merged": "awa-14-q010",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q011",
+      "merged": "awa-14-q011",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q012",
+      "merged": "awa-14-q012",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q013",
+      "merged": "awa-14-q013",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q014",
+      "merged": "awa-14-q014",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q015",
+      "merged": "awa-14-q015",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q016",
+      "merged": "awa-14-q016",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q017",
+      "merged": "awa-14-q017",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q018",
+      "merged": "awa-14-q018",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q019",
+      "merged": "awa-14-q019",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q020",
+      "merged": "awa-14-q020",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q021",
+      "merged": "awa-14-q021",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q022",
+      "merged": "awa-14-q022",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q023",
+      "merged": "awa-14-q023",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q024",
+      "merged": "awa-14-q024",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q025",
+      "merged": "awa-14-q025",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q026",
+      "merged": "awa-14-q026",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q027",
+      "merged": "awa-14-q027",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q028",
+      "merged": "awa-14-q028",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q029",
+      "merged": "awa-14-q029",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q030",
+      "merged": "awa-14-q030",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q031",
+      "merged": "awa-14-q031",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q032",
+      "merged": "awa-14-q032",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q033",
+      "merged": "awa-14-q033",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q034",
+      "merged": "awa-14-q034",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q035",
+      "merged": "awa-14-q035",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q036",
+      "merged": "awa-14-q036",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q037",
+      "merged": "awa-14-q037",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q038",
+      "merged": "awa-14-q038",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q039",
+      "merged": "awa-14-q039",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q040",
+      "merged": "awa-14-q040",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q041",
+      "merged": "awa-14-q041",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q042",
+      "merged": "awa-14-q042",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q043",
+      "merged": "awa-14-q043",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q044",
+      "merged": "awa-14-q044",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q045",
+      "merged": "awa-14-q045",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q046",
+      "merged": "awa-14-q046",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q047",
+      "merged": "awa-14-q047",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q048",
+      "merged": "awa-14-q048",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q049",
+      "merged": "awa-14-q049",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q050",
+      "merged": "awa-14-q050",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q051",
+      "merged": "awa-14-q051",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q052",
+      "merged": "awa-14-q052",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q053",
+      "merged": "awa-14-q053",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q054",
+      "merged": "awa-14-q054",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q055",
+      "merged": "awa-14-q055",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q056",
+      "merged": "awa-14-q056",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q057",
+      "merged": "awa-14-q057",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q058",
+      "merged": "awa-14-q058",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q059",
+      "merged": "awa-14-q059",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q060",
+      "merged": "awa-14-q060",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q061",
+      "merged": "awa-14-q061",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q062",
+      "merged": "awa-14-q062",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q063",
+      "merged": "awa-14-q063",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q064",
+      "merged": "awa-14-q064",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q065",
+      "merged": "awa-14-q065",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q066",
+      "merged": "awa-14-q066",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q067",
+      "merged": "awa-14-q067",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q068",
+      "merged": "awa-14-q068",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q069",
+      "merged": "awa-14-q069",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q070",
+      "merged": "awa-14-q070",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q071",
+      "merged": "awa-14-q071",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q072",
+      "merged": "awa-14-q072",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q073",
+      "merged": "awa-14-q073",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q074",
+      "merged": "awa-14-q074",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q075",
+      "merged": "awa-14-q075",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q076",
+      "merged": "awa-14-q076",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q077",
+      "merged": "awa-14-q077",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q078",
+      "merged": "awa-14-q078",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q079",
+      "merged": "awa-14-q079",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q080",
+      "merged": "awa-14-q080",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q081",
+      "merged": "awa-14-q081",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q082",
+      "merged": "awa-14-q082",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q083",
+      "merged": "awa-14-q083",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q084",
+      "merged": "awa-14-q084",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q085",
+      "merged": "awa-14-q085",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q086",
+      "merged": "awa-14-q086",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q087",
+      "merged": "awa-14-q087",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q088",
+      "merged": "awa-14-q088",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q089",
+      "merged": "awa-14-q089",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q090",
+      "merged": "awa-14-q090",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q091",
+      "merged": "awa-14-q091",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q092",
+      "merged": "awa-14-q092",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q093",
+      "merged": "awa-14-q093",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q094",
+      "merged": "awa-14-q094",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q095",
+      "merged": "awa-14-q095",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q096",
+      "merged": "awa-14-q096",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q097",
+      "merged": "awa-14-q097",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q098",
+      "merged": "awa-14-q098",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q099",
+      "merged": "awa-14-q099",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q100",
+      "merged": "awa-14-q100",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q101",
+      "merged": "awa-14-q101",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q102",
+      "merged": "awa-14-q102",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q103",
+      "merged": "awa-14-q103",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q104",
+      "merged": "awa-14-q105",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q105",
+      "merged": "awa-14-q106",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q106",
+      "merged": "awa-14-q107",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q107",
+      "merged": "awa-14-q108",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q108",
+      "merged": "awa-14-q109",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q109",
+      "merged": "awa-14-q110",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q110",
+      "merged": "awa-14-q111",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q111",
+      "merged": "awa-14-q112",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q112",
+      "merged": "awa-14-q113",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q113",
+      "merged": "awa-14-q114",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q114",
+      "merged": "awa-14-q115",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q115",
+      "merged": "awa-14-q116",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q116",
+      "merged": "awa-14-q117",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q117",
+      "merged": "awa-14-q118",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q118",
+      "merged": "awa-14-q119",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q119",
+      "merged": "awa-14-q120",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q120",
+      "merged": "awa-14-q121",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q121",
+      "merged": "awa-14-q122",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q122",
+      "merged": "awa-14-q123",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q123",
+      "merged": "awa-14-q124",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q124",
+      "merged": "awa-14-q125",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q125",
+      "merged": "awa-14-q126",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q126",
+      "merged": "awa-14-q127",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q127",
+      "merged": "awa-14-q128",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q128",
+      "merged": "awa-14-q129",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q129",
+      "merged": "awa-14-q130",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q130",
+      "merged": "awa-14-q131",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q131",
+      "merged": "awa-14-q132",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q133",
+      "merged": "awa-14-q134",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q134",
+      "merged": "awa-14-q135",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q135",
+      "merged": "awa-14-q136",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q136",
+      "merged": "awa-14-q137",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q137",
+      "merged": "awa-14-q138",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q138",
+      "merged": "awa-14-q139",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q139",
+      "merged": "awa-14-q140",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q140",
+      "merged": "awa-14-q141",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q141",
+      "merged": "awa-14-q142",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q142",
+      "merged": "awa-14-q143",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q143",
+      "merged": "awa-14-q144",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q144",
+      "merged": "awa-14-q145",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q145",
+      "merged": "awa-14-q146",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q146",
+      "merged": "awa-14-q147",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q147",
+      "merged": "awa-14-q148",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q148",
+      "merged": "awa-14-q149",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q149",
+      "merged": "awa-14-q150",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q150",
+      "merged": "awa-14-q151",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q151",
+      "merged": "awa-14-q152",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q152",
+      "merged": "awa-14-q153",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q153",
+      "merged": "awa-14-q154",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q154",
+      "merged": "awa-14-q155",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q155",
+      "merged": "awa-14-q156",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q156",
+      "merged": "awa-14-q157",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q157",
+      "merged": "awa-14-q158",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q158",
+      "merged": "awa-14-q159",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q159",
+      "merged": "awa-14-q160",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q160",
+      "merged": "awa-14-q161",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q161",
+      "merged": "awa-14-q162",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q162",
+      "merged": "awa-14-q163",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q163",
+      "merged": "awa-14-q164",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q164",
+      "merged": "awa-14-q165",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q165",
+      "merged": "awa-14-q166",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q166",
+      "merged": "awa-14-q167",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q167",
+      "merged": "awa-14-q168",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q168",
+      "merged": "awa-14-q169",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q169",
+      "merged": "awa-14-q170",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q170",
+      "merged": "awa-14-q171",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q171",
+      "merged": "awa-14-q172",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q172",
+      "merged": "awa-14-q173",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q173",
+      "merged": "awa-14-q174",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q174",
+      "merged": "awa-14-q175",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q175",
+      "merged": "awa-14-q176",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q001",
+      "merged": "awa-15-q001",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q002",
+      "merged": "awa-15-q002",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q003",
+      "merged": "awa-15-q003",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q004",
+      "merged": "awa-15-q004",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q005",
+      "merged": "awa-15-q005",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q006",
+      "merged": "awa-15-q006",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q007",
+      "merged": "awa-15-q007",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q008",
+      "merged": "awa-15-q008",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q009",
+      "merged": "awa-15-q008-occ2",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q010",
+      "merged": "awa-15-q009",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q011",
+      "merged": "awa-15-q009-occ2",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q012",
+      "merged": "awa-15-q010",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q013",
+      "merged": "awa-15-q011",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q014",
+      "merged": "awa-15-q012",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q015",
+      "merged": "awa-15-q013",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q016",
+      "merged": "awa-15-q014",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q017",
+      "merged": "awa-15-q015",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q018",
+      "merged": "awa-15-q016",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q019",
+      "merged": "awa-15-q017",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q021",
+      "merged": "awa-15-q019",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q022",
+      "merged": "awa-15-q020",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q023",
+      "merged": "awa-15-q021",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q024",
+      "merged": "awa-15-q022",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q025",
+      "merged": "awa-15-q023",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q026",
+      "merged": "awa-15-q024",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q027",
+      "merged": "awa-15-q025",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q028",
+      "merged": "awa-15-q026",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q029",
+      "merged": "awa-15-q027",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q030",
+      "merged": "awa-15-q028",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q031",
+      "merged": "awa-15-q029",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q032",
+      "merged": "awa-15-q030",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q033",
+      "merged": "awa-15-q031",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q034",
+      "merged": "awa-15-q032",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q035",
+      "merged": "awa-15-q033",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q036",
+      "merged": "awa-15-q034",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q037",
+      "merged": "awa-15-q035",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q038",
+      "merged": "awa-15-q036",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q039",
+      "merged": "awa-15-q037",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q040",
+      "merged": "awa-15-q038",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q041",
+      "merged": "awa-15-q039",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q042",
+      "merged": "awa-15-q040",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q043",
+      "merged": "awa-15-q041",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q044",
+      "merged": "awa-15-q042",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q045",
+      "merged": "awa-15-q043",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q046",
+      "merged": "awa-15-q044",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q047",
+      "merged": "awa-15-q045",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q048",
+      "merged": "awa-15-q046",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q049",
+      "merged": "awa-15-q047",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q050",
+      "merged": "awa-15-q048",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q051",
+      "merged": "awa-15-q049",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q052",
+      "merged": "awa-15-q050",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q053",
+      "merged": "awa-15-q051",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q054",
+      "merged": "awa-15-q052",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q055",
+      "merged": "awa-15-q053",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q056",
+      "merged": "awa-15-q054",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q057",
+      "merged": "awa-15-q055",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q058",
+      "merged": "awa-15-q056",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q059",
+      "merged": "awa-15-q057",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q060",
+      "merged": "awa-15-q058",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q061",
+      "merged": "awa-15-q059",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q062",
+      "merged": "awa-15-q060",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q063",
+      "merged": "awa-15-q061",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q064",
+      "merged": "awa-15-q062",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q065",
+      "merged": "awa-15-q063",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q066",
+      "merged": "awa-15-q064",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q067",
+      "merged": "awa-15-q065",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q068",
+      "merged": "awa-15-q066",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q069",
+      "merged": "awa-15-q067",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q070",
+      "merged": "awa-15-q068",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q071",
+      "merged": "awa-15-q069",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q072",
+      "merged": "awa-15-q070",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q073",
+      "merged": "awa-15-q071",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q074",
+      "merged": "awa-15-q072",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q075",
+      "merged": "awa-15-q073",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q076",
+      "merged": "awa-15-q074",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q077",
+      "merged": "awa-15-q075",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q078",
+      "merged": "awa-15-q076",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q079",
+      "merged": "awa-15-q077",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q080",
+      "merged": "awa-15-q078",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q081",
+      "merged": "awa-15-q079",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q082",
+      "merged": "awa-15-q081",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q083",
+      "merged": "awa-15-q082",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q084",
+      "merged": "awa-15-q083",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q085",
+      "merged": "awa-15-q084",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q086",
+      "merged": "awa-15-q085",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q087",
+      "merged": "awa-15-q086",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q088",
+      "merged": "awa-15-q087",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q089",
+      "merged": "awa-15-q088",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q090",
+      "merged": "awa-15-q089",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q091",
+      "merged": "awa-15-q89b",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q092",
+      "merged": "awa-15-q090",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q093",
+      "merged": "awa-15-q091",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q094",
+      "merged": "awa-15-q092",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q095",
+      "merged": "awa-15-q093",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q096",
+      "merged": "awa-15-q094",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q097",
+      "merged": "awa-15-q095",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q098",
+      "merged": "awa-15-q096",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q099",
+      "merged": "awa-15-q097",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q100",
+      "merged": "awa-15-q098",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q101",
+      "merged": "awa-15-q099",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q102",
+      "merged": "awa-15-q100",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q103",
+      "merged": "awa-15-q101",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q104",
+      "merged": "awa-15-q102",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q105",
+      "merged": "awa-15-q103",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q106",
+      "merged": "awa-15-q104",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q107",
+      "merged": "awa-15-q105",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q108",
+      "merged": "awa-15-q106",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q109",
+      "merged": "awa-15-q107",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q110",
+      "merged": "awa-15-q108",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q111",
+      "merged": "awa-15-q109",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q112",
+      "merged": "awa-15-q110",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q113",
+      "merged": "awa-15-q111",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q115",
+      "merged": "awa-15-q113",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q116",
+      "merged": "awa-15-q114",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q117",
+      "merged": "awa-15-q115",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q118",
+      "merged": "awa-15-q116",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q119",
+      "merged": "awa-15-q117",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q120",
+      "merged": "awa-15-q118",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q121",
+      "merged": "awa-15-q119",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q122",
+      "merged": "awa-15-q120",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q123",
+      "merged": "awa-15-q121",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q124",
+      "merged": "awa-15-q122",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q125",
+      "merged": "awa-15-q123",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q126",
+      "merged": "awa-15-q124",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q127",
+      "merged": "awa-15-q125",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q128",
+      "merged": "awa-15-q126",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q129",
+      "merged": "awa-15-q127",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q130",
+      "merged": "awa-15-q128",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q131",
+      "merged": "awa-15-q129",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q132",
+      "merged": "awa-15-q130",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q133",
+      "merged": "awa-15-q132",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q134",
+      "merged": "awa-15-q133",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q135",
+      "merged": "awa-15-q134",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q136",
+      "merged": "awa-15-q135",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q137",
+      "merged": "awa-15-q136",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q138",
+      "merged": "awa-15-q137",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q139",
+      "merged": "awa-15-q138",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q140",
+      "merged": "awa-15-q139",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q141",
+      "merged": "awa-15-q140",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q142",
+      "merged": "awa-15-q141",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q143",
+      "merged": "awa-15-q142",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q144",
+      "merged": "awa-15-q143",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q145",
+      "merged": "awa-15-q144",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q146",
+      "merged": "awa-15-q145",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q147",
+      "merged": "awa-15-q146",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q148",
+      "merged": "awa-15-q147",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q149",
+      "merged": "awa-15-q148",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-02-q176",
+      "merged": "awa-07-q176",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-02-q177",
+      "merged": "awa-07-q177",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-02-q178",
+      "merged": "awa-08-q178",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-02-q179",
+      "merged": "awa-09-q179",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-02-q180",
+      "merged": "awa-10-q180",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q001",
+      "merged": "awa-06-q001",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q007",
+      "merged": "awa-06-q007",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q010",
+      "merged": "awa-06-q010",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q013",
+      "merged": "awa-06-q013",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q015",
+      "merged": "awa-06-q015",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q017",
+      "merged": "awa-06-q017",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q020",
+      "merged": "awa-06-q020",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q022",
+      "merged": "awa-06-q022",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q023",
+      "merged": "awa-06-q023",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q030",
+      "merged": "awa-06-q030",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q034",
+      "merged": "awa-06-q034",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q037",
+      "merged": "awa-06-q037",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q039",
+      "merged": "awa-06-q039",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q043",
+      "merged": "awa-06-q043",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q044",
+      "merged": "awa-06-q044",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q051",
+      "merged": "awa-06-q051",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q072",
+      "merged": "awa-06-q072",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q078",
+      "merged": "awa-06-q078",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q079",
+      "merged": "awa-06-q079",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q125",
+      "merged": "awa-06-q125",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q057",
+      "merged": "awa-18-q001",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q144",
+      "merged": "awa-18-q002",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q014",
+      "merged": "awa-18-q003",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q013",
+      "merged": "awa-18-q004",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q065",
+      "merged": "awa-18-q005",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q032",
+      "merged": "awa-18-q006",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q039",
+      "merged": "awa-18-q007",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q106",
+      "merged": "awa-18-q008",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q125",
+      "merged": "awa-18-q010",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q060",
+      "merged": "awa-20-q001",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q062",
+      "merged": "awa-20-q002",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q046",
+      "merged": "awa-20-q004",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q051",
+      "merged": "awa-20-q013",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q058",
+      "merged": "awa-20-q022",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q059",
+      "merged": "awa-20-q023",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q073",
+      "merged": "awa-20-q024",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q074",
+      "merged": "awa-20-q025",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q078",
+      "merged": "awa-20-q028",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q079",
+      "merged": "awa-20-q029",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q065",
+      "merged": "awa-20-q037",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q047",
+      "merged": "awa-20-q038",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-20-q008",
+      "merged": "awa-20-q043",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q049",
+      "merged": "awa-20-q047",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q067",
+      "merged": "awa-20-q048",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q053",
+      "merged": "awa-20-q051",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q069",
+      "merged": "awa-20-q053",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q055",
+      "merged": "awa-20-q054",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q056",
+      "merged": "awa-20-q055",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q057",
+      "merged": "awa-20-q056",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q071",
+      "merged": "awa-20-q057",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q072",
+      "merged": "awa-20-q061",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q075",
+      "merged": "awa-20-q070",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q076",
+      "merged": "awa-20-q072",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-16-q081",
+      "merged": "awa-20-q078",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q001",
+      "merged": "awa-03-q0a1",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q002",
+      "merged": "awa-03-q0a2",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q003",
+      "merged": "awa-03-q0a3",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q004",
+      "merged": "awa-03-q0a4",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q005",
+      "merged": "awa-03-q0a5",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q006",
+      "merged": "awa-03-q0a6",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q007",
+      "merged": "awa-03-q0a7",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q008",
+      "merged": "awa-03-q0a8",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q009",
+      "merged": "awa-03-q0a9",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q010",
+      "merged": "awa-03-qa10",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q011",
+      "merged": "awa-03-qa11",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q012",
+      "merged": "awa-03-qa12",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q013",
+      "merged": "awa-03-qa13",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q014",
+      "merged": "awa-03-qa14",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q015",
+      "merged": "awa-03-qa15",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q016",
+      "merged": "awa-03-qa16",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q017",
+      "merged": "awa-03-qa17",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q018",
+      "merged": "awa-03-qa18",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q019",
+      "merged": "awa-03-qa19",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q021",
+      "merged": "awa-03-qa21",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q022",
+      "merged": "awa-03-qa22",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q023",
+      "merged": "awa-03-qa23",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q024",
+      "merged": "awa-03-qa24",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q025",
+      "merged": "awa-03-qa25",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q026",
+      "merged": "awa-03-qa26",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q027",
+      "merged": "awa-03-qa27",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q028",
+      "merged": "awa-03-qa28",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q029",
+      "merged": "awa-03-qa29",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q030",
+      "merged": "awa-03-qa30",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q031",
+      "merged": "awa-03-qa31",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q032",
+      "merged": "awa-03-qa32",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q033",
+      "merged": "awa-03-qa33",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q034",
+      "merged": "awa-03-qa34",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q035",
+      "merged": "awa-03-qa35",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q036",
+      "merged": "awa-03-qa36",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q037",
+      "merged": "awa-03-qa37",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q038",
+      "merged": "awa-03-qa38",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q039",
+      "merged": "awa-03-qa39",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q041",
+      "merged": "awa-03-qa41",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q042",
+      "merged": "awa-03-qa42",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q043",
+      "merged": "awa-03-qa43",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q044",
+      "merged": "awa-03-qa44",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q045",
+      "merged": "awa-03-qa45",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q046",
+      "merged": "awa-03-qa46",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q047",
+      "merged": "awa-03-qa47",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q048",
+      "merged": "awa-03-qa48",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q049",
+      "merged": "awa-03-qa49",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q050",
+      "merged": "awa-03-qa50",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q051",
+      "merged": "awa-03-qa51",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q052",
+      "merged": "awa-03-qa52",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q053",
+      "merged": "awa-03-qa53",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q054",
+      "merged": "awa-03-qa54",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q055",
+      "merged": "awa-03-qa55",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q057",
+      "merged": "awa-03-qa57",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q058",
+      "merged": "awa-03-qa58",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q059",
+      "merged": "awa-03-qa59",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q060",
+      "merged": "awa-03-qa60",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q061",
+      "merged": "awa-03-qa61",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q062",
+      "merged": "awa-03-qa62",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q063",
+      "merged": "awa-03-qa63",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q064",
+      "merged": "awa-03-qa64",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q065",
+      "merged": "awa-03-qa65",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q066",
+      "merged": "awa-03-qa66",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q067",
+      "merged": "awa-03-qa67",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q068",
+      "merged": "awa-03-qa68",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q069",
+      "merged": "awa-03-qa69",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q070",
+      "merged": "awa-03-qa70",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q071",
+      "merged": "awa-03-qa71",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q072",
+      "merged": "awa-03-qa72",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q073",
+      "merged": "awa-03-qa73",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q075",
+      "merged": "awa-03-qa75",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q076",
+      "merged": "awa-03-qa76",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q077",
+      "merged": "awa-03-qa77",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q078",
+      "merged": "awa-03-qa78",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q080",
+      "merged": "awa-03-qa80",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q081",
+      "merged": "awa-03-qa81",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q082",
+      "merged": "awa-03-qa82",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q083",
+      "merged": "awa-03-qa83",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q084",
+      "merged": "awa-03-qa84",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q085",
+      "merged": "awa-03-qa85",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q086",
+      "merged": "awa-03-qa86",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q087",
+      "merged": "awa-03-qa87",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q088",
+      "merged": "awa-03-qa88",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q089",
+      "merged": "awa-03-qa89",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q090",
+      "merged": "awa-03-qa90",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q091",
+      "merged": "awa-03-qa91",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q092",
+      "merged": "awa-03-qa92",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q093",
+      "merged": "awa-03-qa93",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q094",
+      "merged": "awa-03-qa94",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q095",
+      "merged": "awa-03-qa95",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q096",
+      "merged": "awa-03-qa96",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q097",
+      "merged": "awa-03-qa97",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q098",
+      "merged": "awa-03-qa98",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q099",
+      "merged": "awa-03-qa99",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q100",
+      "merged": "awa-03-qa100",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q101",
+      "merged": "awa-03-qa101",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q102",
+      "merged": "awa-03-qa102",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q103",
+      "merged": "awa-03-qa103",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q104",
+      "merged": "awa-03-qa104",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q105",
+      "merged": "awa-03-qa105",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q107",
+      "merged": "awa-03-qa106",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q108",
+      "merged": "awa-03-qa107",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q109",
+      "merged": "awa-03-qa108",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q110",
+      "merged": "awa-03-qa109",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q111",
+      "merged": "awa-03-qa110",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q112",
+      "merged": "awa-03-qa111",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q113",
+      "merged": "awa-03-qa112",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q114",
+      "merged": "awa-03-qa113",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q115",
+      "merged": "awa-03-qa114",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q116",
+      "merged": "awa-03-qa115",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q117",
+      "merged": "awa-03-qa116",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q118",
+      "merged": "awa-03-qa117",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q119",
+      "merged": "awa-03-qa118",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q120",
+      "merged": "awa-03-qa119",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q121",
+      "merged": "awa-03-qa120",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q122",
+      "merged": "awa-03-qa121",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q123",
+      "merged": "awa-03-qa122",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q124",
+      "merged": "awa-03-qa123",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q125",
+      "merged": "awa-03-qa124",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q126",
+      "merged": "awa-03-qa125",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q127",
+      "merged": "awa-03-qa126",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q128",
+      "merged": "awa-03-qa127",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q129",
+      "merged": "awa-03-qa128",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q130",
+      "merged": "awa-03-qa129",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q131",
+      "merged": "awa-03-qa130",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-14-q133",
+      "merged": "awa-03-qa131",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q133",
+      "merged": "awa-03-qa132",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q134",
+      "merged": "awa-03-qa133",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q135",
+      "merged": "awa-03-qa134",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q136",
+      "merged": "awa-03-qa135",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q137",
+      "merged": "awa-03-qa136",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q138",
+      "merged": "awa-03-qa137",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q139",
+      "merged": "awa-03-qa138",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q140",
+      "merged": "awa-03-qa139",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q141",
+      "merged": "awa-03-qa140",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q142",
+      "merged": "awa-03-qa141",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q143",
+      "merged": "awa-03-qa142",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q144",
+      "merged": "awa-03-qa143",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q145",
+      "merged": "awa-03-qa144",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q146",
+      "merged": "awa-03-qa145",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q147",
+      "merged": "awa-03-qa146",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q148",
+      "merged": "awa-03-qa147",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q149",
+      "merged": "awa-03-qa148",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q150",
+      "merged": "awa-03-qa149",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q151",
+      "merged": "awa-03-qa150",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q152",
+      "merged": "awa-03-qa151",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q153",
+      "merged": "awa-03-qa152",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q154",
+      "merged": "awa-03-qa153",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q155",
+      "merged": "awa-03-qa154",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q156",
+      "merged": "awa-03-qa155",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q157",
+      "merged": "awa-03-qa156",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q158",
+      "merged": "awa-03-qa157",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q159",
+      "merged": "awa-03-qa158",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q160",
+      "merged": "awa-03-qa159",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q161",
+      "merged": "awa-03-qa160",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q162",
+      "merged": "awa-03-qa161",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q163",
+      "merged": "awa-03-qa162",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q164",
+      "merged": "awa-03-qa163",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q165",
+      "merged": "awa-03-qa164",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q166",
+      "merged": "awa-03-qa165",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q167",
+      "merged": "awa-03-qa166",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q168",
+      "merged": "awa-03-qa167",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q169",
+      "merged": "awa-03-qa168",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q170",
+      "merged": "awa-03-qa169",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q171",
+      "merged": "awa-03-qa170",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q172",
+      "merged": "awa-03-qa171",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q173",
+      "merged": "awa-03-qa172",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q174",
+      "merged": "awa-03-qa173",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q175",
+      "merged": "awa-03-qa174",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q001",
+      "merged": "awa-03-q0i1",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q002",
+      "merged": "awa-03-q0i2",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q003",
+      "merged": "awa-03-q0i3",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q004",
+      "merged": "awa-03-q0i4",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q005",
+      "merged": "awa-03-q0i5",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q006",
+      "merged": "awa-03-q0i6",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q007",
+      "merged": "awa-03-q0i7",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q008",
+      "merged": "awa-03-q0i8",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q009",
+      "merged": "awa-03-q0i9",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q010",
+      "merged": "awa-03-qi10",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q011",
+      "merged": "awa-03-qi11",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q012",
+      "merged": "awa-03-qi12",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q013",
+      "merged": "awa-03-qi13",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q014",
+      "merged": "awa-03-qi14",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q015",
+      "merged": "awa-03-qi15",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q016",
+      "merged": "awa-03-qi16",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q017",
+      "merged": "awa-03-qi17",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q018",
+      "merged": "awa-03-qi18",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q019",
+      "merged": "awa-03-qi19",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-15-q018",
+      "merged": "awa-03-qi20",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q021",
+      "merged": "awa-03-qi21",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q022",
+      "merged": "awa-03-qi22",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q023",
+      "merged": "awa-03-qi23",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q024",
+      "merged": "awa-03-qi24",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q025",
+      "merged": "awa-03-qi25",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q026",
+      "merged": "awa-03-qi26",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q027",
+      "merged": "awa-03-qi27",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q028",
+      "merged": "awa-03-qi28",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q029",
+      "merged": "awa-03-qi29",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q030",
+      "merged": "awa-03-qi30",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q031",
+      "merged": "awa-03-qi31",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q032",
+      "merged": "awa-03-qi32",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q033",
+      "merged": "awa-03-qi33",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q034",
+      "merged": "awa-03-qi34",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q035",
+      "merged": "awa-03-qi35",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q036",
+      "merged": "awa-03-qi36",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q037",
+      "merged": "awa-03-qi37",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q038",
+      "merged": "awa-03-qi38",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q039",
+      "merged": "awa-03-qi39",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q040",
+      "merged": "awa-03-qi40",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q041",
+      "merged": "awa-03-qi41",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q042",
+      "merged": "awa-03-qi42",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q043",
+      "merged": "awa-03-qi43",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q044",
+      "merged": "awa-03-qi44",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q045",
+      "merged": "awa-03-qi45",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q046",
+      "merged": "awa-03-qi46",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q047",
+      "merged": "awa-03-qi47",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q048",
+      "merged": "awa-03-qi48",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q049",
+      "merged": "awa-03-qi49",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q050",
+      "merged": "awa-03-qi50",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q051",
+      "merged": "awa-03-qi51",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q052",
+      "merged": "awa-03-qi52",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q053",
+      "merged": "awa-03-qi53",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q054",
+      "merged": "awa-03-qi54",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q055",
+      "merged": "awa-03-qi55",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q056",
+      "merged": "awa-03-qi56",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q057",
+      "merged": "awa-03-qi57",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q058",
+      "merged": "awa-03-qi58",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q059",
+      "merged": "awa-03-qi59",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q060",
+      "merged": "awa-03-qi60",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q061",
+      "merged": "awa-03-qi61",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q062",
+      "merged": "awa-03-qi62",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q063",
+      "merged": "awa-03-qi63",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q064",
+      "merged": "awa-03-qi64",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q065",
+      "merged": "awa-03-qi65",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q066",
+      "merged": "awa-03-qi66",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q067",
+      "merged": "awa-03-qi67",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q068",
+      "merged": "awa-03-qi68",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q069",
+      "merged": "awa-03-qi69",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q070",
+      "merged": "awa-03-qi70",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q071",
+      "merged": "awa-03-qi71",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q072",
+      "merged": "awa-03-qi72",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q073",
+      "merged": "awa-03-qi73",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q074",
+      "merged": "awa-03-qi74",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q075",
+      "merged": "awa-03-qi75",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q076",
+      "merged": "awa-03-qi76",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q077",
+      "merged": "awa-03-qi77",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q078",
+      "merged": "awa-03-qi78",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q079",
+      "merged": "awa-03-qi79",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q080",
+      "merged": "awa-03-qi80",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q081",
+      "merged": "awa-03-qi81",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q082",
+      "merged": "awa-03-qi82",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q083",
+      "merged": "awa-03-qi83",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q084",
+      "merged": "awa-03-qi84",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q085",
+      "merged": "awa-03-qi85",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q086",
+      "merged": "awa-03-qi86",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q087",
+      "merged": "awa-03-qi87",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q088",
+      "merged": "awa-03-qi88",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q089",
+      "merged": "awa-03-qi89",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q090",
+      "merged": "awa-03-qi90",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q091",
+      "merged": "awa-03-qi91",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q092",
+      "merged": "awa-03-qi92",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q093",
+      "merged": "awa-03-qi93",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q094",
+      "merged": "awa-03-qi94",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q095",
+      "merged": "awa-03-qi95",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q096",
+      "merged": "awa-03-qi96",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q097",
+      "merged": "awa-03-qi97",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q098",
+      "merged": "awa-03-qi98",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q099",
+      "merged": "awa-03-qi99",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q100",
+      "merged": "awa-03-qi100",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q101",
+      "merged": "awa-03-qi101",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q102",
+      "merged": "awa-03-qi102",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q103",
+      "merged": "awa-03-qi103",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q104",
+      "merged": "awa-03-qi104",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q105",
+      "merged": "awa-03-qi105",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q106",
+      "merged": "awa-03-qi106",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q107",
+      "merged": "awa-03-qi107",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q108",
+      "merged": "awa-03-qi108",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q109",
+      "merged": "awa-03-qi109",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q110",
+      "merged": "awa-03-qi110",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q111",
+      "merged": "awa-03-qi111",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q112",
+      "merged": "awa-03-qi112",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q113",
+      "merged": "awa-03-qi113",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q115",
+      "merged": "awa-03-qi115",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q116",
+      "merged": "awa-03-qi116",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q117",
+      "merged": "awa-03-qi117",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q118",
+      "merged": "awa-03-qi118",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q119",
+      "merged": "awa-03-qi119",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q120",
+      "merged": "awa-03-qi120",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q121",
+      "merged": "awa-03-qi121",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q122",
+      "merged": "awa-03-qi122",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q123",
+      "merged": "awa-03-qi123",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q124",
+      "merged": "awa-03-qi124",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q125",
+      "merged": "awa-03-qi125",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q126",
+      "merged": "awa-03-qi126",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q127",
+      "merged": "awa-03-qi127",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q128",
+      "merged": "awa-03-qi128",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q129",
+      "merged": "awa-03-qi129",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q130",
+      "merged": "awa-03-qi130",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q131",
+      "merged": "awa-03-qi131",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q132",
+      "merged": "awa-03-qi132",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q133",
+      "merged": "awa-03-qi133",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q134",
+      "merged": "awa-03-qi134",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q135",
+      "merged": "awa-03-qi135",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q136",
+      "merged": "awa-03-qi136",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q137",
+      "merged": "awa-03-qi137",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q138",
+      "merged": "awa-03-qi138",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q139",
+      "merged": "awa-03-qi139",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q140",
+      "merged": "awa-03-qi140",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q141",
+      "merged": "awa-03-qi141",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q142",
+      "merged": "awa-03-qi142",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q143",
+      "merged": "awa-03-qi143",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q144",
+      "merged": "awa-03-qi144",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q145",
+      "merged": "awa-03-qi145",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q146",
+      "merged": "awa-03-qi146",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q147",
+      "merged": "awa-03-qi147",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q148",
+      "merged": "awa-03-qi148",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q149",
+      "merged": "awa-03-qi149",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q053",
+      "merged": "awa-21-q055",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q009",
+      "merged": "awa-21-q011",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q031",
+      "merged": "awa-21-q033",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q036",
+      "merged": "awa-21-q038",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q063",
+      "merged": "awa-21-q066",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q042",
+      "merged": "awa-21-q044",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q006",
+      "merged": "awa-21-q008",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q064",
+      "merged": "awa-21-q067",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q098",
+      "merged": "awa-21-q104",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q011",
+      "merged": "awa-21-q013",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q119",
+      "merged": "awa-21-q106",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q037",
+      "merged": "awa-21-q039",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q052",
+      "merged": "awa-21-q054",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q059",
+      "merged": "awa-21-q061",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q076",
+      "merged": "awa-21-q081",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q094",
+      "merged": "awa-21-q100",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q125",
+      "merged": "awa-21-q132",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q059",
+      "merged": "awa-21-q062",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q130",
+      "merged": "awa-21-q137",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q039",
+      "merged": "awa-21-q041",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q001",
+      "merged": "awa-21-q001",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q034",
+      "merged": "awa-21-q036",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q078",
+      "merged": "awa-21-q085",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q085",
+      "merged": "awa-21-q092",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q097",
+      "merged": "awa-21-q104-occ2",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q157",
+      "merged": "awa-21-q165",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q167",
+      "merged": "awa-21-q176",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q077",
+      "merged": "awa-21-q084",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q142",
+      "merged": "awa-21-q150",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q033",
+      "merged": "awa-21-q035",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q070",
+      "merged": "awa-21-q076",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-12-q087",
+      "merged": "awa-21-q094",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-22-qp28-t1",
+      "merged": "awa-22-qp295-t1",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-22-qp28-t2",
+      "merged": "awa-22-qp295-t2",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q006",
+      "merged": "awa-23-qp213",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q055",
+      "merged": "awa-23-qp248",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    },
+    {
+      "kept": "awa-13-q053",
+      "merged": "awa-23-qp253",
+      "rule": "exact_prompt_and_instructions_ignore_whitespace_typographic_quotes"
+    }
+  ],
+  "boundary_audit": [
+    {
+      "source_id": "awa-14",
+      "action": "跨页延续合并",
+      "reason": "原103引导句与104正文为同一题，104误编号原文保留",
+      "pages": [
+        42,
+        43
+      ]
+    },
+    {
+      "source_id": "awa-15",
+      "action": "跨页延续合并",
+      "reason": "原资料将 Reason 或 Write a response 行误标题号，原文保留",
+      "page": 19
+    },
+    {
+      "source_id": "awa-15",
+      "action": "跨页延续合并",
+      "reason": "原资料将 Reason 或 Write a response 行误标题号，原文保留",
+      "page": 30
+    },
+    {
+      "source_id": "awa-15",
+      "action": "恢复无编号题目边界",
+      "page": 21,
+      "reason": "原页独立题干及完整指令，没有编号；分离自前一道题，未补写内容。"
+    }
+  ],
+  "exclusions": [
+    {
+      "source_id": "awa-03",
+      "number": "a56",
+      "pages": [
+        102,
+        103,
+        104,
+        105
+      ],
+      "reason": "英文题干含字体乱码或误拼接的中文内容，保留原页而不放入可练题目。"
+    },
+    {
+      "source_id": "awa-03",
+      "number": "a74",
+      "pages": [
+        138,
+        139
+      ],
+      "reason": "英文题干含字体乱码或误拼接的中文内容，保留原页而不放入可练题目。"
+    },
+    {
+      "source_id": "awa-03",
+      "number": "a79",
+      "pages": [
+        146,
+        147
+      ],
+      "reason": "英文题干含字体乱码或误拼接的中文内容，保留原页而不放入可练题目。"
+    }
+  ]
+}

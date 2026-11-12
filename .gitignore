@@ -1,0 +1,42 @@
+# Credentials and local configuration
+/1.txt
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.local/
+.openai/
+
+# Personal learning history and exports
+/学习进度备份/
+/exports/
+user-data/
+
+# Dependencies and interpreter caches
+node_modules/
+__pycache__/
+*.py[cod]
+.tools/
+/gre800-cards/scripts/vendor/
+
+# Historical bundles and intermediate extraction workspace
+*.zip
+*.rar
+*.tar
+*.tar.gz
+/gre-upgrade-work/
+
+# Generated reports containing machine-specific paths
+/portability-tests/relocated-browser-report.json
+/gre-reading-studio/gre_library_inventory.json
+/gre-reading-studio/gre_library_inventory.xlsx
+/gre-reading-studio/reports/gre_library_inventory.json
+/gre-reading-studio/reports/gre_delivery_report.json
+/gre-reading-studio/data/platform/library-inventory-baseline.json
+/gre-reading-studio/tests/*-qa-report.json
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini

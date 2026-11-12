@@ -1,0 +1,1813 @@
+{
+  "auditVersion": 1,
+  "source": "《GRE800词 》.pdf",
+  "scope": "仅审查现有800词、815考法；未联网替换释义。疑点为待核验提示，不代表已经查证错误。",
+  "policy": "仅采用 definitions.synonyms 中有来源考法的直接关系；不推断对称、传递或绝对等价。库外词只展示原文。",
+  "originalHashes": {
+    "dist/words.js": "ae85d473d72002db3c9ffcec8e1ac95869d859a81daf09002bf78b3c79c511a4",
+    "dist/words.json": "4794da1a3b5e64e1e92eb7c3fc9cc566b28ee1c2ac672eb0039c038e440c9469",
+    "scripts/raw-entries.json": "c7e25dddb89fb7f6fc93e5e7d17015c2116d955f6b1216dce582c5aabf0ef433",
+    "scripts/pdf-extracted.txt": "eee4cc8d9b16891c917f1df696f5b323ed406ce201e906b67950696b2e8b068b"
+  },
+  "stats": {
+    "words": 800,
+    "senses": 815,
+    "synonymSenses": 684,
+    "rawTokens": 1806,
+    "internalRelations": 226,
+    "usableRelations": 197,
+    "externalRelations": 1545,
+    "excludedRelations": 64,
+    "usableSenses": 168,
+    "oddSenses": 3,
+    "flags": 67
+  },
+  "questionCounts": {
+    "syn-word": 197,
+    "syn-cn": 197,
+    "syn-odd": 3
+  },
+  "oddQuestionSources": [
+    {
+      "wordId": "559",
+      "senseIndex": 0,
+      "word": "bland",
+      "relatedIds": [
+        "568",
+        "375",
+        "60"
+      ]
+    },
+    {
+      "wordId": "568",
+      "senseIndex": 0,
+      "word": "vapid",
+      "relatedIds": [
+        "375",
+        "60",
+        "559"
+      ]
+    },
+    {
+      "wordId": "725",
+      "senseIndex": 0,
+      "word": "dense",
+      "relatedIds": [
+        "113",
+        "129",
+        "690"
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "wordId": "29",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原文 artfice 的拼写疑似有遗漏；保留原文，待核验。",
+      "raw": "artfice",
+      "token": "artfice",
+      "blockTraining": false
+    },
+    {
+      "wordId": "28",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "resolve 与本考法 adj. 的词性对应关系待核验。",
+      "raw": "resolve",
+      "token": "resolve",
+      "blockTraining": false
+    },
+    {
+      "wordId": "40",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "excoriate 与本考法“控告，起诉”的适用语境待核验。",
+      "raw": "excoriate",
+      "token": "excoriate",
+      "blockTraining": false
+    },
+    {
+      "wordId": "64",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "daunting 与“耸人听闻的”的语义对应关系待核验。",
+      "raw": "daunting",
+      "token": "daunting",
+      "blockTraining": false
+    },
+    {
+      "wordId": "87",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原文明确标注 adj.，与本考法 v. 不同，不作为同词性匹配。",
+      "raw": "false (adj.)",
+      "token": "false (adj.)",
+      "blockTraining": false
+    },
+    {
+      "wordId": "88",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "impromptu 与本考法 v. 的词性对应关系待核验。",
+      "raw": "impromptu",
+      "token": "impromptu",
+      "blockTraining": false
+    },
+    {
+      "wordId": "88",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "offhand 与本考法 v. 的词性对应关系待核验。",
+      "raw": "offhand",
+      "token": "offhand",
+      "blockTraining": false
+    },
+    {
+      "wordId": "96",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "overdue 与本考法“过度的”的语义对应关系待核验。",
+      "raw": "overdue",
+      "token": "overdue",
+      "blockTraining": false
+    },
+    {
+      "wordId": "177",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "enigma riddle 疑似遗漏分隔符；不自动拆成两个关系。",
+      "raw": "enigma riddle",
+      "token": "enigma riddle",
+      "blockTraining": false
+    },
+    {
+      "wordId": "203",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "近义词栏混有名词词性和中文注释；不自动改写或抽取。",
+      "raw": "profit-monger n. 唯利是图的人",
+      "token": "profit-monger n. 唯利是图的人",
+      "blockTraining": false
+    },
+    {
+      "wordId": "250",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "flattery 与本考法 adj. 的词性对应关系待核验。",
+      "raw": "flattery",
+      "token": "flattery",
+      "blockTraining": false
+    },
+    {
+      "wordId": "285",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "ambient 与本考法 n. 的词性对应关系待核验。",
+      "raw": "ambient",
+      "token": "ambient",
+      "blockTraining": false
+    },
+    {
+      "wordId": "381",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "wrap 的拼写或语义对应关系疑似有问题；不自动改成其他单词。",
+      "raw": "wrap",
+      "token": "wrap",
+      "blockTraining": false
+    },
+    {
+      "wordId": "428",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "innovate 与本考法 adj. 的词性对应关系待核验。",
+      "raw": "innovate",
+      "token": "innovate",
+      "blockTraining": false
+    },
+    {
+      "wordId": "474",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "fraught 与本考法 v. 的词性对应关系待核验。",
+      "raw": "fraught",
+      "token": "fraught",
+      "blockTraining": false
+    },
+    {
+      "wordId": "565",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "compelled 与本考法“不情愿的”的语义对应关系待核验。",
+      "raw": "compelled",
+      "token": "compelled",
+      "blockTraining": false
+    },
+    {
+      "wordId": "683",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "cronyism 与本考法 adj. 的词性对应关系待核验。",
+      "raw": "cronyism",
+      "token": "cronyism",
+      "blockTraining": false
+    },
+    {
+      "wordId": "771",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "predication 与“喜欢，倾向”的对应关系或拼写待核验；不猜测替换。",
+      "raw": "predication",
+      "token": "predication",
+      "blockTraining": false
+    },
+    {
+      "wordId": "82",
+      "senseIndex": 0,
+      "field": "meaning",
+      "message": "“反人类的喷子”为原表口语化释义，语气和适用范围待核验。",
+      "raw": "反人类的喷子",
+      "token": null,
+      "blockTraining": true
+    },
+    {
+      "wordId": "252",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "原文词性 n. 与释义、例句的用法疑似不一致；保留原文，待核验。",
+      "raw": "n.",
+      "token": null,
+      "blockTraining": true
+    },
+    {
+      "wordId": "275",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "原文词性 v. 与释义、例句的用法疑似不一致；保留原文，待核验。",
+      "raw": "v.",
+      "token": null,
+      "blockTraining": true
+    },
+    {
+      "wordId": "390",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "原文词性 adj. 与英文释义 to instruct 疑似不一致；待核验。",
+      "raw": "adj.",
+      "token": null,
+      "blockTraining": true
+    },
+    {
+      "wordId": "493",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "原文词性 n. 与释义、例句的用法疑似不一致；待核验。",
+      "raw": "n.",
+      "token": null,
+      "blockTraining": true
+    },
+    {
+      "wordId": "635",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "原文词性 n. 与释义、例句的用法疑似不一致；待核验。",
+      "raw": "n.",
+      "token": null,
+      "blockTraining": true
+    },
+    {
+      "wordId": "691",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "原文词性 adj. 与例句被动用法疑似不一致；待核验。",
+      "raw": "adj.",
+      "token": null,
+      "blockTraining": true
+    },
+    {
+      "wordId": "113",
+      "senseIndex": 1,
+      "field": "source",
+      "message": "提取记录：PDF 考法 2 未写词性，现有词库沿用考法 1 的 adj.；未重新修改数据。",
+      "raw": "adj.",
+      "token": null,
+      "blockTraining": false
+    },
+    {
+      "wordId": "264",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "提取记录：PDF 将近义词标签写作“进：”，现有词库归入 synonyms；原始文本保留。",
+      "raw": "n.",
+      "token": null,
+      "blockTraining": false
+    },
+    {
+      "wordId": "700",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "提取记录：PDF 将双语短语标为“近：”，现有词库归入 example；原始文本保留。",
+      "raw": "n.",
+      "token": null,
+      "blockTraining": false
+    },
+    {
+      "wordId": "458",
+      "senseIndex": 0,
+      "field": "example",
+      "message": "原始提取中未收录例句；保留缺失状态，不生成替代例句。",
+      "raw": "n.",
+      "token": null,
+      "blockTraining": false
+    },
+    {
+      "wordId": "500",
+      "senseIndex": 0,
+      "field": "example",
+      "message": "例句中文止于“矛盾修饰”，疑似截断；保留原文，待核验。",
+      "raw": "the phrase “agreeable melancholy” is an oxymoron “令人愉悦的忧伤”是一个矛盾修饰",
+      "token": null,
+      "blockTraining": false
+    },
+    {
+      "wordId": "272",
+      "senseIndex": 0,
+      "field": "example",
+      "message": "例句中的 hagiographic portray 疑似词形或排版问题；保留原文，待核验。",
+      "raw": "hagiographic portray received from the press 媒体谄媚的描述",
+      "token": null,
+      "blockTraining": false
+    },
+    {
+      "wordId": "86",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "字体映射记录：现有提取将 ᧿/ᨀ 归一为 描/提（全表 9 处）；原始文本仍保留。",
+      "raw": "例： soft-pedal bad news 对坏消息轻᧿淡写"
+    },
+    {
+      "wordId": "272",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "字体映射记录：现有提取将 ᧿/ᨀ 归一为 描/提（全表 9 处）；原始文本仍保留。",
+      "raw": "例： hagiographic portray received from the press 媒体谄媚的᧿述"
+    },
+    {
+      "wordId": "297",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "字体映射记录：现有提取将 ᧿/ᨀ 归一为 描/提（全表 9 处）；原始文本仍保留。",
+      "raw": "例： a violin virtuoso 资深小ᨀ琴艺术家"
+    },
+    {
+      "wordId": "378",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "字体映射记录：现有提取将 ᧿/ᨀ 归一为 描/提（全表 9 处）；原始文本仍保留。",
+      "raw": "例： a nebulous description of the topic 对于主题的模糊᧿述"
+    },
+    {
+      "wordId": "630",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "字体映射记录：现有提取将 ᧿/ᨀ 归一为 描/提（全表 9 处）；原始文本仍保留。",
+      "raw": "例： veto the bill 否决ᨀ案"
+    },
+    {
+      "wordId": "631",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "字体映射记录：现有提取将 ᧿/ᨀ 归一为 描/提（全表 9 处）；原始文本仍保留。",
+      "raw": "例： demur at the suggestion 反对ᨀ议"
+    },
+    {
+      "wordId": "653",
+      "senseIndex": 0,
+      "field": "source",
+      "message": "字体映射记录：现有提取将 ᧿/ᨀ 归一为 描/提（全表 9 处）；原始文本仍保留。",
+      "raw": "【考法】v. ᧿写，᧿绘；例：他精心᧿述了该国规划"
+    },
+    {
+      "wordId": "62",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 somnolent，但库内该词考法“无聊的，催眠的”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "somnolent",
+      "token": "somnolent"
+    },
+    {
+      "wordId": "66",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 noxious，但库内该词考法“产生强烈厌恶的”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "noxious",
+      "token": "noxious"
+    },
+    {
+      "wordId": "118",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 abound，但库内该词考法“大量存在，充满”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "abound",
+      "token": "abound"
+    },
+    {
+      "wordId": "238",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 grandiose，但库内该词考法“浮夸的，华而不实的”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "grandiose",
+      "token": "grandiose"
+    },
+    {
+      "wordId": "321",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 commencement，但库内该词考法“开始”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "commencement",
+      "token": "commencement"
+    },
+    {
+      "wordId": "379",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 exacting，但库内该词考法“严格的，苛求的”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "exacting",
+      "token": "exacting"
+    },
+    {
+      "wordId": "385",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 capricious，但库内该词考法“善变的”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "capricious",
+      "token": "capricious"
+    },
+    {
+      "wordId": "474",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 proliferate，但库内该词考法“快速增加”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "proliferate",
+      "token": "proliferate"
+    },
+    {
+      "wordId": "511",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 impenetrable，但库内该词考法“难懂的”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "impenetrable",
+      "token": "impenetrable"
+    },
+    {
+      "wordId": "512",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 vulgar，但库内该词考法“粗俗的，无教养的”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "vulgar",
+      "token": "vulgar"
+    },
+    {
+      "wordId": "516",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 errant，但库内该词考法“居无定所的”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "errant",
+      "token": "errant"
+    },
+    {
+      "wordId": "576",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 phlegmatic，但库内该词考法“冷漠的”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "phlegmatic",
+      "token": "phlegmatic"
+    },
+    {
+      "wordId": "644",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 tenuous，但库内该词考法“脆弱的，站不住脚的”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "tenuous",
+      "token": "tenuous"
+    },
+    {
+      "wordId": "711",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 countenance，但库内该词考法“赞同”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "countenance",
+      "token": "countenance"
+    },
+    {
+      "wordId": "738",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 alacrity，但库内该词考法“欣然乐意”与本考法对应范围待核验；暂不用于关联训练。",
+      "raw": "alacrity",
+      "token": "alacrity"
+    },
+    {
+      "wordId": "56",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 deify，但库内其考法词性与 v. 不匹配；暂不用于关联训练，待核验。",
+      "raw": "deify",
+      "token": "deify"
+    },
+    {
+      "wordId": "79",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 deify，但库内其考法词性与 v. 不匹配；暂不用于关联训练，待核验。",
+      "raw": "deify",
+      "token": "deify"
+    },
+    {
+      "wordId": "279",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 champion，但库内其考法词性与 n. 不匹配；暂不用于关联训练，待核验。",
+      "raw": "champion",
+      "token": "champion"
+    },
+    {
+      "wordId": "299",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 avant-garde，但库内其考法词性与 n. 不匹配；暂不用于关联训练，待核验。",
+      "raw": "avant-garde",
+      "token": "avant-garde"
+    },
+    {
+      "wordId": "309",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 profligate，但库内其考法词性与 n. 不匹配；暂不用于关联训练，待核验。",
+      "raw": "profligate",
+      "token": "profligate"
+    },
+    {
+      "wordId": "488",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 license，但库内其考法词性与 v. 不匹配；暂不用于关联训练，待核验。",
+      "raw": "license",
+      "token": "license"
+    },
+    {
+      "wordId": "513",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 profligate，但库内其考法词性与 v. 不匹配；暂不用于关联训练，待核验。",
+      "raw": "profligate",
+      "token": "profligate"
+    },
+    {
+      "wordId": "543",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 apocryphal，但库内其考法词性与 adj. 不匹配；暂不用于关联训练，待核验。",
+      "raw": "apocryphal",
+      "token": "apocryphal"
+    },
+    {
+      "wordId": "545",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "近义词栏以分隔符结尾，疑似遗漏内容；不补造词项。",
+      "raw": "catastrophe, cataclysm, apocalypse,"
+    },
+    {
+      "wordId": "635",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 spurious，但库内其考法词性与 n. 不匹配；暂不用于关联训练，待核验。",
+      "raw": "spurious",
+      "token": "spurious"
+    },
+    {
+      "wordId": "635",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 counterfeit，但库内其考法词性与 n. 不匹配；暂不用于关联训练，待核验。",
+      "raw": "counterfeit",
+      "token": "counterfeit"
+    },
+    {
+      "wordId": "691",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 venerate，但库内其考法词性与 adj. 不匹配；暂不用于关联训练，待核验。",
+      "raw": "venerate",
+      "token": "venerate"
+    },
+    {
+      "wordId": "715",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "近义词 tedious 在本考法重复出现；原文照录，训练不重复计入。",
+      "raw": "dreary, jejune, monotonous, tedious, tedious",
+      "token": "tedious"
+    },
+    {
+      "wordId": "779",
+      "senseIndex": 0,
+      "field": "synonyms",
+      "message": "原表列有 makeshift，但库内其考法词性与 n. 不匹配；暂不用于关联训练，待核验。",
+      "raw": "makeshift",
+      "token": "makeshift"
+    }
+  ],
+  "excludedRelations": [
+    {
+      "key": "28:0:1",
+      "wordId": "28",
+      "senseIndex": 0,
+      "token": "resolve",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "28",
+        "senseIndex": 0,
+        "page": 7,
+        "field": "synonyms",
+        "raw": "pertinacious, resolve, steadfast"
+      }
+    },
+    {
+      "key": "29:0:1",
+      "wordId": "29",
+      "senseIndex": 0,
+      "token": "artfice",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "29",
+        "senseIndex": 0,
+        "page": 7,
+        "field": "synonyms",
+        "raw": "chicanery, artfice"
+      }
+    },
+    {
+      "key": "40:0:0",
+      "wordId": "40",
+      "senseIndex": 0,
+      "token": "excoriate",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "40",
+        "senseIndex": 0,
+        "page": 8,
+        "field": "synonyms",
+        "raw": "excoriate, incriminate"
+      }
+    },
+    {
+      "key": "56:0:1",
+      "wordId": "56",
+      "senseIndex": 0,
+      "token": "deify",
+      "targetId": "691",
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "part-of-speech",
+      "source": {
+        "wordId": "56",
+        "senseIndex": 0,
+        "page": 10,
+        "field": "synonyms",
+        "raw": "revere, deify"
+      }
+    },
+    {
+      "key": "62:0:1",
+      "wordId": "62",
+      "senseIndex": 0,
+      "token": "somnolent",
+      "targetId": "195",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "62",
+        "senseIndex": 0,
+        "page": 10,
+        "field": "synonyms",
+        "raw": "inert, somnolent, indolent"
+      }
+    },
+    {
+      "key": "64:0:1",
+      "wordId": "64",
+      "senseIndex": 0,
+      "token": "daunting",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "64",
+        "senseIndex": 0,
+        "page": 11,
+        "field": "synonyms",
+        "raw": "lurid, daunting"
+      }
+    },
+    {
+      "key": "66:0:2",
+      "wordId": "66",
+      "senseIndex": 0,
+      "token": "noxious",
+      "targetId": "741",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "66",
+        "senseIndex": 0,
+        "page": 11,
+        "field": "synonyms",
+        "raw": "deleterious, detrimental, noxious"
+      }
+    },
+    {
+      "key": "79:0:2",
+      "wordId": "79",
+      "senseIndex": 0,
+      "token": "deify",
+      "targetId": "691",
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "part-of-speech",
+      "source": {
+        "wordId": "79",
+        "senseIndex": 0,
+        "page": 12,
+        "field": "synonyms",
+        "raw": "aggrandize, canonize, deify, eulogize"
+      }
+    },
+    {
+      "key": "82:0:0",
+      "wordId": "82",
+      "senseIndex": 0,
+      "token": "misanthrope",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "82",
+        "senseIndex": 0,
+        "page": 12,
+        "field": "synonyms",
+        "raw": "misanthrope, naysayer"
+      }
+    },
+    {
+      "key": "82:0:1",
+      "wordId": "82",
+      "senseIndex": 0,
+      "token": "naysayer",
+      "targetId": "762",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "82",
+        "senseIndex": 0,
+        "page": 12,
+        "field": "synonyms",
+        "raw": "misanthrope, naysayer"
+      }
+    },
+    {
+      "key": "87:0:1",
+      "wordId": "87",
+      "senseIndex": 0,
+      "token": "false (adj.)",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "87",
+        "senseIndex": 0,
+        "page": 13,
+        "field": "synonyms",
+        "raw": "affect, false (adj.)"
+      }
+    },
+    {
+      "key": "88:0:1",
+      "wordId": "88",
+      "senseIndex": 0,
+      "token": "impromptu",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "88",
+        "senseIndex": 0,
+        "page": 13,
+        "field": "synonyms",
+        "raw": "ad-lib, impromptu, offhand"
+      }
+    },
+    {
+      "key": "88:0:2",
+      "wordId": "88",
+      "senseIndex": 0,
+      "token": "offhand",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "88",
+        "senseIndex": 0,
+        "page": 13,
+        "field": "synonyms",
+        "raw": "ad-lib, impromptu, offhand"
+      }
+    },
+    {
+      "key": "96:0:2",
+      "wordId": "96",
+      "senseIndex": 0,
+      "token": "overdue",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "96",
+        "senseIndex": 0,
+        "page": 14,
+        "field": "synonyms",
+        "raw": "unconscionable, excessive, overdue"
+      }
+    },
+    {
+      "key": "118:0:0",
+      "wordId": "118",
+      "senseIndex": 0,
+      "token": "abound",
+      "targetId": "474",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "118",
+        "senseIndex": 0,
+        "page": 16,
+        "field": "synonyms",
+        "raw": "abound"
+      }
+    },
+    {
+      "key": "177:0:0",
+      "wordId": "177",
+      "senseIndex": 0,
+      "token": "enigma riddle",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "177",
+        "senseIndex": 0,
+        "page": 21,
+        "field": "synonyms",
+        "raw": "enigma riddle"
+      }
+    },
+    {
+      "key": "203:0:0",
+      "wordId": "203",
+      "senseIndex": 0,
+      "token": "profit-monger n. 唯利是图的人",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "203",
+        "senseIndex": 0,
+        "page": 25,
+        "field": "synonyms",
+        "raw": "profit-monger n. 唯利是图的人"
+      }
+    },
+    {
+      "key": "238:0:1",
+      "wordId": "238",
+      "senseIndex": 0,
+      "token": "grandiose",
+      "targetId": "33",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "238",
+        "senseIndex": 0,
+        "page": 28,
+        "field": "synonyms",
+        "raw": "august, grandiose, monumental"
+      }
+    },
+    {
+      "key": "250:0:0",
+      "wordId": "250",
+      "senseIndex": 0,
+      "token": "flattery",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "250",
+        "senseIndex": 0,
+        "page": 29,
+        "field": "synonyms",
+        "raw": "flattery, adulatory, obsequious"
+      }
+    },
+    {
+      "key": "252:0:0",
+      "wordId": "252",
+      "senseIndex": 0,
+      "token": "distinctive",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "252",
+        "senseIndex": 0,
+        "page": 29,
+        "field": "synonyms",
+        "raw": "distinctive, atypical, iconoclastic"
+      }
+    },
+    {
+      "key": "252:0:1",
+      "wordId": "252",
+      "senseIndex": 0,
+      "token": "atypical",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "252",
+        "senseIndex": 0,
+        "page": 29,
+        "field": "synonyms",
+        "raw": "distinctive, atypical, iconoclastic"
+      }
+    },
+    {
+      "key": "252:0:2",
+      "wordId": "252",
+      "senseIndex": 0,
+      "token": "iconoclastic",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "252",
+        "senseIndex": 0,
+        "page": 29,
+        "field": "synonyms",
+        "raw": "distinctive, atypical, iconoclastic"
+      }
+    },
+    {
+      "key": "275:0:0",
+      "wordId": "275",
+      "senseIndex": 0,
+      "token": "comparable",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "275",
+        "senseIndex": 0,
+        "page": 32,
+        "field": "synonyms",
+        "raw": "comparable, parallel"
+      }
+    },
+    {
+      "key": "275:0:1",
+      "wordId": "275",
+      "senseIndex": 0,
+      "token": "parallel",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "275",
+        "senseIndex": 0,
+        "page": 32,
+        "field": "synonyms",
+        "raw": "comparable, parallel"
+      }
+    },
+    {
+      "key": "279:0:1",
+      "wordId": "279",
+      "senseIndex": 0,
+      "token": "champion",
+      "targetId": "707",
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "part-of-speech",
+      "source": {
+        "wordId": "279",
+        "senseIndex": 0,
+        "page": 32,
+        "field": "synonyms",
+        "raw": "advocate, champion, espouser, proponent"
+      }
+    },
+    {
+      "key": "285:0:0",
+      "wordId": "285",
+      "senseIndex": 0,
+      "token": "ambient",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "285",
+        "senseIndex": 0,
+        "page": 33,
+        "field": "synonyms",
+        "raw": "ambient, context, setting"
+      }
+    },
+    {
+      "key": "299:0:0",
+      "wordId": "299",
+      "senseIndex": 0,
+      "token": "avant-garde",
+      "targetId": "749",
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "part-of-speech",
+      "source": {
+        "wordId": "299",
+        "senseIndex": 0,
+        "page": 34,
+        "field": "synonyms",
+        "raw": "avant-garde, forerunner, pioneer"
+      }
+    },
+    {
+      "key": "309:0:0",
+      "wordId": "309",
+      "senseIndex": 0,
+      "token": "profligate",
+      "targetId": "246",
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "part-of-speech",
+      "source": {
+        "wordId": "309",
+        "senseIndex": 0,
+        "page": 36,
+        "field": "synonyms",
+        "raw": "profligate, spendthrift, squanderer"
+      }
+    },
+    {
+      "key": "321:0:0",
+      "wordId": "321",
+      "senseIndex": 0,
+      "token": "commencement",
+      "targetId": "800",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "321",
+        "senseIndex": 0,
+        "page": 37,
+        "field": "synonyms",
+        "raw": "commencement, onset, turning point"
+      }
+    },
+    {
+      "key": "379:0:4",
+      "wordId": "379",
+      "senseIndex": 0,
+      "token": "exacting",
+      "targetId": "593",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "379",
+        "senseIndex": 0,
+        "page": 43,
+        "field": "synonyms",
+        "raw": "arduous, grueling, laborious, demanding, exacting"
+      }
+    },
+    {
+      "key": "381:0:2",
+      "wordId": "381",
+      "senseIndex": 0,
+      "token": "wrap",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "381",
+        "senseIndex": 0,
+        "page": 43,
+        "field": "synonyms",
+        "raw": "wrench, twist, wrap, misinterpret, misconstrue"
+      }
+    },
+    {
+      "key": "385:0:1",
+      "wordId": "385",
+      "senseIndex": 0,
+      "token": "capricious",
+      "targetId": "11",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "385",
+        "senseIndex": 0,
+        "page": 43,
+        "field": "synonyms",
+        "raw": "debonair, capricious"
+      }
+    },
+    {
+      "key": "390:0:0",
+      "wordId": "390",
+      "senseIndex": 0,
+      "token": "educate",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "390",
+        "senseIndex": 0,
+        "page": 44,
+        "field": "synonyms",
+        "raw": "educate, teach, instruct"
+      }
+    },
+    {
+      "key": "390:0:1",
+      "wordId": "390",
+      "senseIndex": 0,
+      "token": "teach",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "390",
+        "senseIndex": 0,
+        "page": 44,
+        "field": "synonyms",
+        "raw": "educate, teach, instruct"
+      }
+    },
+    {
+      "key": "390:0:2",
+      "wordId": "390",
+      "senseIndex": 0,
+      "token": "instruct",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "390",
+        "senseIndex": 0,
+        "page": 44,
+        "field": "synonyms",
+        "raw": "educate, teach, instruct"
+      }
+    },
+    {
+      "key": "428:0:3",
+      "wordId": "428",
+      "senseIndex": 0,
+      "token": "innovate",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "428",
+        "senseIndex": 0,
+        "page": 49,
+        "field": "synonyms",
+        "raw": "groundbreaking, pioneering, original, innovate"
+      }
+    },
+    {
+      "key": "474:0:2",
+      "wordId": "474",
+      "senseIndex": 0,
+      "token": "fraught",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "474",
+        "senseIndex": 0,
+        "page": 53,
+        "field": "synonyms",
+        "raw": "swarm, teem, fraught, proliferate"
+      }
+    },
+    {
+      "key": "474:0:3",
+      "wordId": "474",
+      "senseIndex": 0,
+      "token": "proliferate",
+      "targetId": "118",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "474",
+        "senseIndex": 0,
+        "page": 53,
+        "field": "synonyms",
+        "raw": "swarm, teem, fraught, proliferate"
+      }
+    },
+    {
+      "key": "488:0:3",
+      "wordId": "488",
+      "senseIndex": 0,
+      "token": "license",
+      "targetId": "714",
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "part-of-speech",
+      "source": {
+        "wordId": "488",
+        "senseIndex": 0,
+        "page": 54,
+        "field": "synonyms",
+        "raw": "accredit, authorize, endorse, license"
+      }
+    },
+    {
+      "key": "493:0:0",
+      "wordId": "493",
+      "senseIndex": 0,
+      "token": "phenomenal",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "493",
+        "senseIndex": 0,
+        "page": 55,
+        "field": "synonyms",
+        "raw": "phenomenal, preternatural"
+      }
+    },
+    {
+      "key": "493:0:1",
+      "wordId": "493",
+      "senseIndex": 0,
+      "token": "preternatural",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "493",
+        "senseIndex": 0,
+        "page": 55,
+        "field": "synonyms",
+        "raw": "phenomenal, preternatural"
+      }
+    },
+    {
+      "key": "511:0:1",
+      "wordId": "511",
+      "senseIndex": 0,
+      "token": "impenetrable",
+      "targetId": "131",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "511",
+        "senseIndex": 0,
+        "page": 57,
+        "field": "synonyms",
+        "raw": "impassable, impenetrable, impermeable"
+      }
+    },
+    {
+      "key": "512:0:3",
+      "wordId": "512",
+      "senseIndex": 0,
+      "token": "vulgar",
+      "targetId": "674",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "512",
+        "senseIndex": 0,
+        "page": 58,
+        "field": "synonyms",
+        "raw": "humble, inferior, lowly, vulgar"
+      }
+    },
+    {
+      "key": "513:0:2",
+      "wordId": "513",
+      "senseIndex": 0,
+      "token": "profligate",
+      "targetId": "246",
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "part-of-speech",
+      "source": {
+        "wordId": "513",
+        "senseIndex": 0,
+        "page": 58,
+        "field": "synonyms",
+        "raw": "dissipate, lavish, profligate"
+      }
+    },
+    {
+      "key": "516:0:0",
+      "wordId": "516",
+      "senseIndex": 0,
+      "token": "errant",
+      "targetId": "519",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "516",
+        "senseIndex": 0,
+        "page": 58,
+        "field": "synonyms",
+        "raw": "errant, intractable, rebellious, recalcitrant, refractory, unruly"
+      }
+    },
+    {
+      "key": "543:0:0",
+      "wordId": "543",
+      "senseIndex": 0,
+      "token": "apocryphal",
+      "targetId": "635",
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "part-of-speech",
+      "source": {
+        "wordId": "543",
+        "senseIndex": 0,
+        "page": 60,
+        "field": "synonyms",
+        "raw": "apocryphal, bogus, counterfeit, forged, phony, specious"
+      }
+    },
+    {
+      "key": "565:0:2",
+      "wordId": "565",
+      "senseIndex": 0,
+      "token": "compelled",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "565",
+        "senseIndex": 0,
+        "page": 62,
+        "field": "synonyms",
+        "raw": "disinclined, reluctant, compelled"
+      }
+    },
+    {
+      "key": "576:0:2",
+      "wordId": "576",
+      "senseIndex": 0,
+      "token": "phlegmatic",
+      "targetId": "529",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "576",
+        "senseIndex": 0,
+        "page": 64,
+        "field": "synonyms",
+        "raw": "forbearing, tolerant, phlegmatic, stolid"
+      }
+    },
+    {
+      "key": "635:0:0",
+      "wordId": "635",
+      "senseIndex": 0,
+      "token": "spurious",
+      "targetId": "543",
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "part-of-speech",
+      "source": {
+        "wordId": "635",
+        "senseIndex": 0,
+        "page": 71,
+        "field": "synonyms",
+        "raw": "spurious, unauthentic, bogus, feigned, counterfeit"
+      }
+    },
+    {
+      "key": "635:0:1",
+      "wordId": "635",
+      "senseIndex": 0,
+      "token": "unauthentic",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "635",
+        "senseIndex": 0,
+        "page": 71,
+        "field": "synonyms",
+        "raw": "spurious, unauthentic, bogus, feigned, counterfeit"
+      }
+    },
+    {
+      "key": "635:0:2",
+      "wordId": "635",
+      "senseIndex": 0,
+      "token": "bogus",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "635",
+        "senseIndex": 0,
+        "page": 71,
+        "field": "synonyms",
+        "raw": "spurious, unauthentic, bogus, feigned, counterfeit"
+      }
+    },
+    {
+      "key": "635:0:3",
+      "wordId": "635",
+      "senseIndex": 0,
+      "token": "feigned",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "635",
+        "senseIndex": 0,
+        "page": 71,
+        "field": "synonyms",
+        "raw": "spurious, unauthentic, bogus, feigned, counterfeit"
+      }
+    },
+    {
+      "key": "635:0:4",
+      "wordId": "635",
+      "senseIndex": 0,
+      "token": "counterfeit",
+      "targetId": "176",
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "part-of-speech",
+      "source": {
+        "wordId": "635",
+        "senseIndex": 0,
+        "page": 71,
+        "field": "synonyms",
+        "raw": "spurious, unauthentic, bogus, feigned, counterfeit"
+      }
+    },
+    {
+      "key": "644:0:2",
+      "wordId": "644",
+      "senseIndex": 0,
+      "token": "tenuous",
+      "targetId": "164",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "644",
+        "senseIndex": 0,
+        "page": 72,
+        "field": "synonyms",
+        "raw": "diaphanous, ethereal, tenuous"
+      }
+    },
+    {
+      "key": "683:0:0",
+      "wordId": "683",
+      "senseIndex": 0,
+      "token": "cronyism",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "683",
+        "senseIndex": 0,
+        "page": 75,
+        "field": "synonyms",
+        "raw": "cronyism"
+      }
+    },
+    {
+      "key": "691:0:0",
+      "wordId": "691",
+      "senseIndex": 0,
+      "token": "dignify",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "691",
+        "senseIndex": 0,
+        "page": 76,
+        "field": "synonyms",
+        "raw": "dignify, canonize, venerate"
+      }
+    },
+    {
+      "key": "691:0:1",
+      "wordId": "691",
+      "senseIndex": 0,
+      "token": "canonize",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "691",
+        "senseIndex": 0,
+        "page": 76,
+        "field": "synonyms",
+        "raw": "dignify, canonize, venerate"
+      }
+    },
+    {
+      "key": "691:0:2",
+      "wordId": "691",
+      "senseIndex": 0,
+      "token": "venerate",
+      "targetId": "56",
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "part-of-speech",
+      "source": {
+        "wordId": "691",
+        "senseIndex": 0,
+        "page": 76,
+        "field": "synonyms",
+        "raw": "dignify, canonize, venerate"
+      }
+    },
+    {
+      "key": "711:0:2",
+      "wordId": "711",
+      "senseIndex": 0,
+      "token": "countenance",
+      "targetId": "172",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "711",
+        "senseIndex": 0,
+        "page": 80,
+        "field": "synonyms",
+        "raw": "abide, brook, countenance, endure"
+      }
+    },
+    {
+      "key": "715:0:4",
+      "wordId": "715",
+      "senseIndex": 0,
+      "token": "tedious",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "duplicate",
+      "source": {
+        "wordId": "715",
+        "senseIndex": 0,
+        "page": 80,
+        "field": "synonyms",
+        "raw": "dreary, jejune, monotonous, tedious, tedious"
+      }
+    },
+    {
+      "key": "738:0:0",
+      "wordId": "738",
+      "senseIndex": 0,
+      "token": "alacrity",
+      "targetId": "149",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "738",
+        "senseIndex": 0,
+        "page": 82,
+        "field": "synonyms",
+        "raw": "alacrity, swiftness, expedition"
+      }
+    },
+    {
+      "key": "762:0:0",
+      "wordId": "762",
+      "senseIndex": 0,
+      "token": "cynic",
+      "targetId": "82",
+      "targetSenseIndices": [
+        0
+      ],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "762",
+        "senseIndex": 0,
+        "page": 84,
+        "field": "synonyms",
+        "raw": "cynic, misanthrope, pessimist"
+      }
+    },
+    {
+      "key": "771:0:2",
+      "wordId": "771",
+      "senseIndex": 0,
+      "token": "predication",
+      "targetId": null,
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "source-annotation",
+      "source": {
+        "wordId": "771",
+        "senseIndex": 0,
+        "page": 85,
+        "field": "synonyms",
+        "raw": "bent, penchant, predication, proclivity"
+      }
+    },
+    {
+      "key": "779:0:0",
+      "wordId": "779",
+      "senseIndex": 0,
+      "token": "makeshift",
+      "targetId": "626",
+      "targetSenseIndices": [],
+      "status": "excluded",
+      "reason": "part-of-speech",
+      "source": {
+        "wordId": "779",
+        "senseIndex": 0,
+        "page": 86,
+        "field": "synonyms",
+        "raw": "makeshift"
+      }
+    }
+  ],
+  "extractionHistory": {
+    "source": "《GRE800词 》.pdf",
+    "source_sha256": "bd256202e346a0eaeca30b1db6ab34616967302421ff728b5e5051d9dcf03aec",
+    "pdf_pages": 90,
+    "vocabulary_pdf_pages": [
+      5,
+      88
+    ],
+    "entry_count": 800,
+    "sense_count": 815,
+    "group_counts": {
+      "1": 100,
+      "2": 100,
+      "3": 100,
+      "4": 100,
+      "5": 100,
+      "6": 100,
+      "7": 100,
+      "8": 100
+    },
+    "missing_ids": [],
+    "duplicate_words": [],
+    "font_mapping_repairs": [
+      {
+        "from": "᧿",
+        "to": "描",
+        "occurrences": 6
+      },
+      {
+        "from": "ᨀ",
+        "to": "提",
+        "occurrences": 3
+      }
+    ],
+    "source_normalizations": [
+      {
+        "id": 113,
+        "detail": "Second sense omits the part of speech; inherit adj. from first sense."
+      },
+      {
+        "id": 264,
+        "detail": "Treat source synonym label 进： as 近：."
+      },
+      {
+        "id": 700,
+        "detail": "Treat the bilingual phrase labeled 近： as an example."
+      }
+    ],
+    "multiple_sense_ids": [
+      4,
+      55,
+      68,
+      113,
+      121,
+      191,
+      242,
+      377,
+      541,
+      575,
+      589,
+      605,
+      652,
+      763,
+      771
+    ]
+  }
+}

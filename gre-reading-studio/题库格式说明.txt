@@ -1,0 +1,41 @@
+统一题库JSON：schema_version 2
+
+顶层包含schema_version、questions、sources、materials。网页“资料与数据”支持导入/导出此格式。
+
+每题至少包含：
+question_id（稳定唯一字符串）、source_id、source_file、source_page（物理页码数组，从1开始）、source_section、category（Verbal/Quant/AWA）、question_type、difficulty（easy/medium/hard/unknown）、question_content、options、correct_answer、explanation、answer_status、tags。
+raw_text、notes、source_refs保留原文、疑点和不同来源。
+改变题干或选项的新版题目应使用新的ID。
+
+支持题型：
+RC1 / RCMultiple / RCSentence
+TC1 / TC2 / TC3 / SE / TC_LEGACY
+QC / QuantSingle / QuantMultiple / NumericEntry / DI
+QuantRecall / QuantDrill
+Issue / Argument / WritingExercise
+
+TC2/TC3必须提供blank_groups，例如：
+[{"id":"b1","options":[{"id":"A","text":"原选项"},{"id":"B","text":"原选项"}]},{"id":"b2","options":[{"id":"C","text":"原选项"},{"id":"D","text":"原选项"}]}]
+选项ID全题唯一；correct_answer如["B","C"]，每空恰好一个原答案。每组按原资料实际选项数量保存，不能拆成多题。
+SE有六个原选项；可评分时correct_answer必须含两个不同ID。
+
+RC：material_id关联完整文章，question_order保留原顺序。
+materials支持text、paragraphs、highlights、title、length、word_count、translation。
+QC：quantities:{a:"原Quantity A",b:"原Quantity B"}，不能安全转写时保留原图。
+NumericEntry：correct_answer为原数值字符串数组，如["3/5"]；numeric_format记录unit、precision和仅原资料明确给出的tolerance。无可靠原答案使用null。
+DI：material_id关联共用图表，response_type为single/multiple/numeric。
+images:[{src:"question-images/quant/example.png",caption:"原页说明",role:"question"}]。
+explanation_images用于原解析图，在提交后展示。
+QuantRecall/QuantDrill可使用response_type:"open"，不参与选择题判分。
+AWA的instructions、model_essay、guidance保留原写作要求、范文、指导，correct_answer为null。
+
+sources示例：
+[{id:"source-id",title:"原书名",source_file:"原路径",url:"sources/source.pdf",pages:100,notes:[]}]
+PDF节选用reader.pageMap将原物理页码映射到节选页码，并保留reader.originalPages。
+answer_source和explanation_source使用{source_id,pages:[原页码]}。
+原答案不一致时保留answer_candidates并标needs_review，不能覆盖冲突证据。
+
+answer_status：verified / extracted / needs_review / incomplete。
+只有内容与原答案完整核验的客观题可标verified。乱码、缺图、截断题要明确标记，不能补造。
+图像和PDF仅用本地相对路径；不允许http(s)、脚本地址或上级目录。
+导入JSON前，把配套文件放到dist/sources或dist/question-images对应位置。

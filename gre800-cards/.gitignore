@@ -1,0 +1,9 @@
+.tools/
+node_modules/
+__pycache__/
+*.pyc
+*.tar
+*.tar.gz
+*.zip
+.DS_Store
+.local/

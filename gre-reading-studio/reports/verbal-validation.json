@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "questions": 5763,
+  "source_count": 14,
+  "errors": [],
+  "checks": [
+    "unique question IDs",
+    "unique option IDs",
+    "physical PDF page range",
+    "original text retained",
+    "SE six options/two exact source answers",
+    "TC one answer per actual blank group",
+    "legacy paired choices one selection",
+    "source-key provenance",
+    "source PDF exists",
+    "no page-header contamination in English options"
+  ]
+}

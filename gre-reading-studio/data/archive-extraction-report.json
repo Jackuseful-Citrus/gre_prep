@@ -1,0 +1,26 @@
+[
+  {
+    "archive": "GRE\\GRE备考资料.rar",
+    "member": "GRE备考资料/阅读+逻辑/GRE白皮书/GRE阅读170篇精讲精析.pdf",
+    "destination": "data\\archive-sources\\reading170-explained.pdf",
+    "size": 11616389
+  },
+  {
+    "archive": "GRE\\GRE备考资料.rar",
+    "member": "GRE备考资料/阅读+逻辑/GRE白皮书/GRE阅读170篇精讲精析（配套习题）/GRE真题阅读170篇+逻辑80题.pdf",
+    "destination": "data\\archive-sources\\reading170-exercises.pdf",
+    "size": 2052899
+  },
+  {
+    "archive": "GRE\\GRE备考资料.rar",
+    "member": "GRE备考资料/阅读+逻辑/GRE白皮书/GRE阅读170篇精讲精析（配套习题）/文章及题型难度汇总表格.xlsx",
+    "destination": "data\\archive-sources\\difficulty.xlsx",
+    "size": 26707
+  },
+  {
+    "archive": "GRE\\GRE备考资料.rar",
+    "member": "GRE备考资料/阅读+逻辑/GRE阅读机经300篇【微信公众号：张巍老师GRE】.pdf",
+    "destination": "data\\archive-sources\\reading300.pdf",
+    "size": 1851940
+  }
+]

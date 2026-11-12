@@ -1,0 +1,14 @@
+scripts/vendor/
+node_modules/
+__pycache__/
+*.pyc
+*.tar.gz
+data/*-raw.txt
+data/*-raw-pages.json
+data/archive-reading.pdf
+data/archive-sources/
+data/raw/
+data/mixed-raw/
+data/probe-*.json
+.local/
+user-data/

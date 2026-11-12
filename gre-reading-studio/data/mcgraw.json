@@ -1,0 +1,2036 @@
+{
+  "source": {
+    "id": "mcgraw",
+    "title": "McGraw-Hill's GRE · 阅读精选（2010）",
+    "fileName": "GRE/McGraw-Hill's GRE, 2010 Edition.pdf",
+    "pages": 477,
+    "notes": [
+      "仅提取阅读理解，未收入填空、类比、反义、数学或写作题。",
+      "删除页眉与行号；仅合并PDF自动换行，未改写题干、选项或答案。"
+    ],
+    "reader": {
+      "url": "sources/mcgraw-reading.pdf",
+      "originalPages": [
+        30,
+        31,
+        57,
+        58,
+        59,
+        60,
+        61,
+        76,
+        77,
+        193,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        309,
+        310,
+        311,
+        312,
+        313,
+        329,
+        330,
+        353,
+        354,
+        355,
+        356,
+        357,
+        373,
+        374,
+        399,
+        400,
+        401,
+        402,
+        403,
+        418,
+        419
+      ],
+      "pageMap": {
+        "30": 1,
+        "31": 2,
+        "57": 3,
+        "58": 4,
+        "59": 5,
+        "60": 6,
+        "61": 7,
+        "76": 8,
+        "77": 9,
+        "193": 10,
+        "201": 11,
+        "202": 12,
+        "203": 13,
+        "204": 14,
+        "205": 15,
+        "206": 16,
+        "309": 17,
+        "310": 18,
+        "311": 19,
+        "312": 20,
+        "313": 21,
+        "329": 22,
+        "330": 23,
+        "353": 24,
+        "354": 25,
+        "355": 26,
+        "356": 27,
+        "357": 28,
+        "373": 29,
+        "374": 30,
+        "399": 31,
+        "400": 32,
+        "401": 33,
+        "402": 34,
+        "403": 35,
+        "418": 36,
+        "419": 37
+      }
+    }
+  },
+  "passages": [
+    {
+      "id": "mcgraw-p001",
+      "sourceId": "mcgraw",
+      "number": 1,
+      "title": "人与犬的文化关系",
+      "section": "诊断练习",
+      "text": "When I was preparing for my two-week vacation in southern Africa, I realized that the continent would be like nothing I had ever seen. I wanted to explore the urban streets as well as the savannah; it’s always been my goal to have experiences on vacation that most other tourists fail to find. When my plans were finalized, I left for Africa. The cultural differences were stunning, and made for plenty of laughter and confusion, but always ended up bringing smiles to our faces. What’s funny now, though, more than ever, is how ridiculous I must have seemed to the people of one village when I played with their dog. Apparently, the role of dogs in America is nothing like it is in the third world. When I walk the streets of my hometown now, I often find myself staring at all of the dogs and dog owners on the sidewalk. The way I see it, the American dog lives for the thrill: a hug, a scratch behind the ears, a new chew toy, another chance to fight against the leash it knows is only six feet long. Dog owners love to believe their animal is smart, while people who’ve never owned a dog tend to believe the opposite. With a little training, the dogs don’t bark, bite, or use the sofa as a toilet, but they do provide years of unconditional affection and loyalty, plus the occasional lame-brained escapade at which human onlookers can laugh. I am convinced African dogs could clobber their American counterparts. The relationship between a typical African and his dog is one of tangible mutualism. I say tangible because the African sees himself as the dominant creature not to be bothered by the dog, but nevertheless responsible for providing for it. Hence, no attempts at behavioral training are ever made on African dogs. Instead, the African seizes power with a chunk of scrap meat and a bowl of water. The dog soon learns to quit yapping and biting at the hand that feeds him. Never does the African speak to the animal. I’m not even sure such dogs get names. Their behavior becomes interestingly balanced, however, much to the surprise of the compassionate American dog lover.",
+      "paragraphs": [
+        "When I was preparing for my two-week vacation in southern Africa, I realized that the continent would be like nothing I had ever seen. I wanted to explore the urban streets as well as the savannah; it’s always been my goal to have experiences on vacation that most other tourists fail to find. When my plans were finalized, I left for Africa. The cultural differences were stunning, and made for plenty of laughter and confusion, but always ended up bringing smiles to our faces. What’s funny now, though, more than ever, is how ridiculous I must have seemed to the people of one village when I played with their dog. Apparently, the role of dogs in America is nothing like it is in the third world. When I walk the streets of my hometown now, I often find myself staring at all of the dogs and dog owners on the sidewalk. The way I see it, the American dog lives for the thrill: a hug, a scratch behind the ears, a new chew toy, another chance to fight against the leash it knows is only six feet long. Dog owners love to believe their animal is smart, while people who’ve never owned a dog tend to believe the opposite. With a little training, the dogs don’t bark, bite, or use the sofa as a toilet, but they do provide years of unconditional affection and loyalty, plus the occasional lame-brained escapade at which human onlookers can laugh. I am convinced African dogs could clobber their American counterparts. The relationship between a typical African and his dog is one of tangible mutualism. I say tangible because the African sees himself as the dominant creature not to be bothered by the dog, but nevertheless responsible for providing for it. Hence, no attempts at behavioral training are ever made on African dogs. Instead, the African seizes power with a chunk of scrap meat and a bowl of water. The dog soon learns to quit yapping and biting at the hand that feeds him. Never does the African speak to the animal. I’m not even sure such dogs get names. Their behavior becomes interestingly balanced, however, much to the surprise of the compassionate American dog lover."
+      ],
+      "pages": [
+        57,
+        58
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p001-q17",
+          "number": 17,
+          "stem": "The author of the passage is primarily concerned with presenting",
+          "options": [
+            {
+              "id": "A",
+              "text": "a description of cultural differences"
+            },
+            {
+              "id": "B",
+              "text": "an overview of animal behavior"
+            },
+            {
+              "id": "C",
+              "text": "a history of international tourism"
+            },
+            {
+              "id": "D",
+              "text": "evidence to refute a global theory"
+            },
+            {
+              "id": "E",
+              "text": "an account of animal cruelty"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "A"
+          ],
+          "explanation": "The main focus of the passage is on the differences between American dogs and dog owners, and African dogs and dog owners. According to the passage, the author thought that the cultural differences between him and the African people “were stunning,” and then he goes on to describe one particular difference. This best supports answer choice A. The other answer choices are either too broad, or do not effectively describe the main point of the passage.",
+          "pages": [
+            58
+          ],
+          "answerPages": [
+            76
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p001-q18",
+          "number": 18,
+          "stem": "According to information provided by the passage, which of the following traits would the author most likely ascribe to African dog owners?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Affectionate"
+            },
+            {
+              "id": "B",
+              "text": "Abusive"
+            },
+            {
+              "id": "C",
+              "text": "Pragmatic"
+            },
+            {
+              "id": "D",
+              "text": "Deceitful"
+            },
+            {
+              "id": "E",
+              "text": "Antagonistic"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "C"
+          ],
+          "explanation": "The author states, “The relationship between a typical African and his dog is one of tangible mutualism. I say tangible because the African sees himself as the dominant creature not to be bothered by the dog, but nevertheless responsible for providing for it.” There is nothing in the passage to suggest that African dog owners are either affectionate or abusive to their animals; rather, African dog owners are quite pragmatic, or practical, in their approach to interacting with their dogs. Likewise, the passage does not indicate that African dog owners are deceitful or antagonistic.",
+          "pages": [
+            58
+          ],
+          "answerPages": [
+            76
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "\nWhen I was preparing for my two-week vacation in southern Africa, I \nrealized that the continent would be like nothing I had ever seen. I wanted to \nexplore the urban streets as well as the savannah; it’s always been my goal to \nhave experiences on vacation that most other tourists fail to find. When my plans \nwere finalized, I left for Africa. The cultural differences were stunning, and made \nfor plenty of laughter and confusion, but always ended up bringing smiles to our \nfaces. What’s funny now, though, more than ever, is how ridiculous I must have \nseemed to the people of one village when I played with their dog. Apparently, the \nrole of dogs in America is nothing like it is in the third world.\nWhen I walk the streets of my hometown now, I often find myself staring at \nall of the dogs and dog owners on the sidewalk. The way I see it, the American \ndog lives for the thrill: a hug, a scratch behind the ears, a new chew toy, another \nchance to fight against the leash it knows is only six feet long. Dog owners love \nto believe their animal is smart, while people who’ve never owned a dog tend to \nbelieve the opposite. With a little training, the dogs don’t bark, bite, or use the \nsofa as a toilet, but they do provide years of unconditional affection and loyalty, \nplus the occasional lame-brained escapade at which human onlookers can laugh.\nI am convinced African dogs could clobber their American counterparts. The \nrelationship between a typical African and his dog is one of tangible mutualism. \nI say tangible because the African sees himself as the dominant creature not to \nbe bothered by the dog, but nevertheless responsible for providing for it. Hence, \nno attempts at behavioral training are ever made on African dogs. Instead, the \nAfrican seizes power with a chunk of scrap meat and a bowl of water. The dog \nsoon learns to quit yapping and biting at the hand that feeds him. Never does \nthe African speak to the animal. I’m not even sure such dogs get names. Their \nbehavior becomes interestingly balanced, however, much to the surprise of the \ncompassionate American dog lover. \n17. The author of the passage is primarily concerned with presenting\n (A) a description of cultural differences\n (B) an overview of animal behavior\n (C) a history of international tourism\n (D) evidence to refute a global theory\n (E) an account of animal cruelty\n18. According to information provided by the passage, which of the following \ntraits would the author most likely ascribe to African dog owners?\n (A) Affectionate\n (B) Abusive\n (C) Pragmatic\n (D) Deceitful\n (E) Antagonistic\n"
+    },
+    {
+      "id": "mcgraw-p002",
+      "sourceId": "mcgraw",
+      "number": 2,
+      "title": "熊的觅食行为",
+      "section": "诊断练习",
+      "text": "Over the years there have been countless fans of the classic Hanna-Barbera cartoon character Yogi Bear. The cartoon series enjoyed by young and old alike revolved mostly around the misadventures of this loveable bear and his sidekick Boo-Boo as they attempted to snag “pic-a-nic” baskets in the made-up land of Jellystone Park. It’s not often that people think about where the ideas for these cartoon characters came from, which brings up an interesting point: Do bears actually search for food left in picnic baskets and unattended campsites? Anyone who has watched an episode of the classic cartoon can see that the bears’ behavior goes far beyond the limits of what is natural. The thing that must be explored, then, is which of those humorous antics were imagined by the writers at Hanna-Barbera, and which were actually based on a bear’s normal behaviors. Remarkably enough, bears have been known to seek out food from some unlikely sources, including picnic baskets, to supplement their usual diet of berries, insects, and fish. Bears work throughout the summer and fall to build up fat stores to have energy enough to last them through their winter hibernations. Related to this is their need to replenish their depleted reserves when they wake up in the spring. Food is generally scarce in the early spring and consequently the bears will gladly indulge in any foods that are high in proteins or fats. This is the main reason for any incidents involving bears after they enter campsites in search of food. Although this behavior may seem strange, it is merely the result of nature equipping the bears with a variety of traits that allow them to remain well fed in increasingly human-populated habitats. Specifically, the American black bear, Ursus americanus, has color vision, which most other animals lack. Black bears have been observed by scientists using this unique enhancement to distinguish between varying food items at close range. On top of this, bears have an acute sense of smell and can use their especially sensitive lips to locate food. These sensory talents contribute to the bears’ remarkably high intelligence and curiosity, giving them the ability to open closed containers if they believe food is inside. Their exploratory and navigational skills are also worthy of note—most bears will maintain vast territories to be sure they can obtain food from a variety of sources. Bears may even vary their sleep cycles in areas where there is a large degree of human activity, either feasting on road-side garbage during the day or scouring campsites for leftovers at night.",
+      "paragraphs": [
+        "Over the years there have been countless fans of the classic Hanna-Barbera cartoon character Yogi Bear. The cartoon series enjoyed by young and old alike revolved mostly around the misadventures of this loveable bear and his sidekick Boo-Boo as they attempted to snag “pic-a-nic” baskets in the made-up land of Jellystone Park. It’s not often that people think about where the ideas for these cartoon characters came from, which brings up an interesting point: Do bears actually search for food left in picnic baskets and unattended campsites? Anyone who has watched an episode of the classic cartoon can see that the bears’ behavior goes far beyond the limits of what is natural. The thing that must be explored, then, is which of those humorous antics were imagined by the writers at Hanna-Barbera, and which were actually based on a bear’s normal behaviors. Remarkably enough, bears have been known to seek out food from some unlikely sources, including picnic baskets, to supplement their usual diet of berries, insects, and fish. Bears work throughout the summer and fall to build up fat stores to have energy enough to last them through their winter hibernations. Related to this is their need to replenish their depleted reserves when they wake up in the spring. Food is generally scarce in the early spring and consequently the bears will gladly indulge in any foods that are high in proteins or fats. This is the main reason for any incidents involving bears after they enter campsites in search of food. Although this behavior may seem strange, it is merely the result of nature equipping the bears with a variety of traits that allow them to remain well fed in increasingly human-populated habitats. Specifically, the American black bear, Ursus americanus, has color vision, which most other animals lack. Black bears have been observed by scientists using this unique enhancement to distinguish between varying food items at close range. On top of this, bears have an acute sense of smell and can use their especially sensitive lips to locate food. These sensory talents contribute to the bears’ remarkably high intelligence and curiosity, giving them the ability to open closed containers if they believe food is inside. Their exploratory and navigational skills are also worthy of note—most bears will maintain vast territories to be sure they can obtain food from a variety of sources. Bears may even vary their sleep cycles in areas where there is a large degree of human activity, either feasting on road-side garbage during the day or scouring campsites for leftovers at night."
+      ],
+      "pages": [
+        59,
+        60
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p002-q21",
+          "number": 21,
+          "stem": "The primary purpose of the passage is to",
+          "options": [
+            {
+              "id": "A",
+              "text": "offer a comparison between television programming and real-world events"
+            },
+            {
+              "id": "B",
+              "text": "describe the conditions under which a bear will enter human habitats"
+            },
+            {
+              "id": "C",
+              "text": "explain the different means by which bears secure nutritious food"
+            },
+            {
+              "id": "D",
+              "text": "discuss new evidence concerning the difficulty of controlling bears"
+            },
+            {
+              "id": "E",
+              "text": "resolve a controversy surrounding the foraging behavior of bears"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "B"
+          ],
+          "explanation": "The passage focuses primarily on describing some unusual eating habits of bears, including seeking food from campsites. According to the passage, “Food is generally scarce in the early spring and consequently the bears will gladly indulge in any foods that are high in proteins or fats. This is the main reason for any incidents involving bears after they enter campsites in search of food.” This best supports answer choice B. The other answer choices are either too broad, or do not effectively describe the main point of the passage.",
+          "pages": [
+            60
+          ],
+          "answerPages": [
+            77
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p002-q22",
+          "number": 22,
+          "stem": "The author mentions all of the following as potential food sources for bears EXCEPT:",
+          "options": [
+            {
+              "id": "A",
+              "text": "berries"
+            },
+            {
+              "id": "B",
+              "text": "general stores"
+            },
+            {
+              "id": "C",
+              "text": "insects"
+            },
+            {
+              "id": "D",
+              "text": "fish"
+            },
+            {
+              "id": "E",
+              "text": "picnic baskets"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "B"
+          ],
+          "explanation": "The passage states that “. . . bears have been known to seek out food from some unlikely sources, including picnic baskets, to supplement their usual diet of berries, insects, and fish.” The passage mentions that bears need to build up their “fat stores,” but the passage does not mention “general stores” as a food source for bears.",
+          "pages": [
+            60
+          ],
+          "answerPages": [
+            77
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p002-q23",
+          "number": 23,
+          "stem": "It can be inferred from the passage that which of the following is true of bears?",
+          "options": [
+            {
+              "id": "A",
+              "text": "They are particularly resourceful."
+            },
+            {
+              "id": "B",
+              "text": "They must enter human habitats in order to survive."
+            },
+            {
+              "id": "C",
+              "text": "They cannot tolerate human food."
+            },
+            {
+              "id": "D",
+              "text": "They eat voraciously throughout the winter."
+            },
+            {
+              "id": "E",
+              "text": "They have only one method of obtaining food."
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "A"
+          ],
+          "explanation": "According to the passage, bears often engage in seemingly unbearlike behavior when it comes to securing food: entering campsites and searching through picnic baskets. This suggests that bears are particularly resourceful when it comes to making sure that they have enough to eat. The other answer choices are not supported by the passage.",
+          "pages": [
+            60
+          ],
+          "answerPages": [
+            77
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p002-q24",
+          "number": 24,
+          "stem": "The author includes a discussion of the American black bear, Ursus americanus, most likely in order to",
+          "options": [
+            {
+              "id": "A",
+              "text": "provide additional support for the unique feeding habits of bears"
+            },
+            {
+              "id": "B",
+              "text": "discount the theory regarding a bear’s ability to remain well fed"
+            },
+            {
+              "id": "C",
+              "text": "evaluate the dispute between advocates of differing theories regarding bear behavior"
+            },
+            {
+              "id": "D",
+              "text": "challenge recent research on the way in which bears secure food"
+            },
+            {
+              "id": "E",
+              "text": "suggest further investigation of human interaction with bears"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "A"
+          ],
+          "explanation": "The passage points out a unique characteristic of the American black bear: It has color vision, and can, as a result, easily “distinguish between varying food items at close range.” This detail was most likely provided to offer additional support for the unique feeding habits of bears. The other answer choices are not supported by the passage.",
+          "pages": [
+            60
+          ],
+          "answerPages": [
+            77
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "\nOver the years there have been countless fans of the classic Hanna-Barbera \ncartoon character Yogi Bear. The cartoon series enjoyed by young and old \nalike revolved mostly around the misadventures of this loveable bear and his \nsidekick Boo-Boo as they attempted to snag “pic-a-nic” baskets in the made-up \nland of Jellystone Park. It’s not often that people think about where the ideas for \nthese cartoon characters came from, which brings up an interesting point: Do \nbears actually search for food left in picnic baskets and unattended campsites? \nAnyone who has watched an episode of the classic cartoon can see that the bears’ \nbehavior goes far beyond the limits of what is natural. The thing that must be \nexplored, then, is which of those humorous antics were imagined by the writers \nat Hanna-Barbera, and which were actually based on a bear’s normal behaviors.\nRemarkably enough, bears have been known to seek out food from some \nunlikely sources, including picnic baskets, to supplement their usual diet of berries, \ninsects, and fish. Bears work throughout the summer and fall to build up fat stores \nto have energy enough to last them through their winter hibernations. Related to \nthis is their need to replenish their depleted reserves when they wake up in the \nspring. Food is generally scarce in the early spring and consequently the bears will \ngladly indulge in any foods that are high in proteins or fats. This is the main reason \nfor any incidents involving bears after they enter campsites in search of food.\nAlthough this behavior may seem strange, it is merely the result of nature \nequipping the bears with a variety of traits that allow them to remain well fed in \nincreasingly human-populated habitats. Specifically, the American black bear, \nUrsus americanus, has color vision, which most other animals lack. Black bears \nhave been observed by scientists using this unique enhancement to distinguish \nbetween varying food items at close range. On top of this, bears have an acute \nsense of smell and can use their especially sensitive lips to locate food. These \nsensory talents contribute to the bears’ remarkably high intelligence and curiosity, \ngiving them the ability to open closed containers if they believe food is inside. \nTheir exploratory and navigational skills are also worthy of note—most bears will \nmaintain vast territories to be sure they can obtain food from a variety of sources. \nBears may even vary their sleep cycles in areas where there is a large degree of \nhuman activity, either feasting on road-side garbage during the day or scouring \ncampsites for leftovers at night.\n21. The primary purpose of the passage is to\n (A) offer a comparison between television programming and real-world\n events\n (B) describe the conditions under which a bear will enter human \n habitats\n (C) explain the different means by which bears secure nutritious food \n (D) discuss new evidence concerning the difficulty of controlling bears\n (E) resolve a controversy surrounding the foraging behavior of bears\n22. The author mentions all of the following as potential food sources for \nbears EXCEPT:\n (A) berries\n (B) general stores\n (C) insects\n (D) fish\n (E) picnic baskets\n23. It can be inferred from the passage that which of the following is true\nof bears?\n (A) They are particularly resourceful.\n (B) They must enter human habitats in order to survive.\n (C) They cannot tolerate human food.\n (D) They eat voraciously throughout the winter.\n (E) They have only one method of obtaining food.\n24. The author includes a discussion of the American black bear, Ursus \namericanus, most likely in order to\n (A) provide additional support for the unique feeding habits of bears\n (B) discount the theory regarding a bear’s ability to remain well fed\n (C) evaluate the dispute between advocates of differing theories\n regarding bear behavior\n (D) challenge recent research on the way in which bears secure food\n (E) suggest further investigation of human interaction with bears\n"
+    },
+    {
+      "id": "mcgraw-p003",
+      "sourceId": "mcgraw",
+      "number": 3,
+      "title": "载人航天与机器人",
+      "section": "诊断练习",
+      "text": "Sending a robot into space to gather information is certainly a viable option, but should be regarded only as that—an option. Even the most technologically advanced robots cannot and should not replace manned missions to outer space. Certainly it is cheaper and less dangerous to launch a computer probe that can gather reams of data, but often the information obtained by a machine serves only to produce more questions than it answers. Therefore, the space program should allow manned missions to follow up on those initial information- gathering robotic ventures. While manned missions are more costly than are unmanned missions, they are also more successful. Robots and astronauts use much of the same equipment in space, but a human is much more capable of calibrating those instruments correctly and placing them in appropriate and useful positions. A computer is often neither as sensitive nor as accurate as a human in managing the same terrain or environmental circumstances. Robots are also not as equipped as humans to solve problems as they arise, and robots often collect data that is not helpful or even desired. A human, on the other hand, can make instant decisions about what to explore further and what to ignore. While technological advances have allowed us to make incredible strides in space exploration, they still cannot match the power of the human brain. This “supercomputer” is necessary in order to maintain a space program that can truly advance to the next level.",
+      "paragraphs": [
+        "Sending a robot into space to gather information is certainly a viable option, but should be regarded only as that—an option. Even the most technologically advanced robots cannot and should not replace manned missions to outer space. Certainly it is cheaper and less dangerous to launch a computer probe that can gather reams of data, but often the information obtained by a machine serves only to produce more questions than it answers. Therefore, the space program should allow manned missions to follow up on those initial information- gathering robotic ventures. While manned missions are more costly than are unmanned missions, they are also more successful. Robots and astronauts use much of the same equipment in space, but a human is much more capable of calibrating those instruments correctly and placing them in appropriate and useful positions. A computer is often neither as sensitive nor as accurate as a human in managing the same terrain or environmental circumstances. Robots are also not as equipped as humans to solve problems as they arise, and robots often collect data that is not helpful or even desired. A human, on the other hand, can make instant decisions about what to explore further and what to ignore. While technological advances have allowed us to make incredible strides in space exploration, they still cannot match the power of the human brain. This “supercomputer” is necessary in order to maintain a space program that can truly advance to the next level."
+      ],
+      "pages": [
+        61
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p003-q25",
+          "number": 25,
+          "stem": "The passage supplies information to answer which of the following questions?",
+          "options": [
+            {
+              "id": "A",
+              "text": "What is the cost of launching a computer probe into space?"
+            },
+            {
+              "id": "B",
+              "text": "What type of information can safely be ignored when exploring outer space?"
+            },
+            {
+              "id": "C",
+              "text": "How much information can a computer probe gather in outer space?"
+            },
+            {
+              "id": "D",
+              "text": "What is the next level in space exploration?"
+            },
+            {
+              "id": "E",
+              "text": "Are unmanned space missions more economical than manned space missions?"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "E"
+          ],
+          "explanation": "The passage states that “Certainly it is cheaper and less dangerous to launch a computer probe . . . ,” which answers the question posed in answer choice E. There is not enough information in the passage to answer any of the other questions.",
+          "pages": [
+            61
+          ],
+          "answerPages": [
+            77
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p003-q26",
+          "number": 26,
+          "stem": "According to the passage, all of the following are advantages of humans over robots EXCEPT:",
+          "options": [
+            {
+              "id": "A",
+              "text": "humans can more accurately manage the data collected"
+            },
+            {
+              "id": "B",
+              "text": "humans can apply critical thinking skills to new situations"
+            },
+            {
+              "id": "C",
+              "text": "humans can typically stay in outer space for longer periods of time"
+            },
+            {
+              "id": "D",
+              "text": "humans are more sensitive to environmental changes"
+            },
+            {
+              "id": "E",
+              "text": "humans are better at preparing instrumentation for use in space"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "C"
+          ],
+          "explanation": "There is nothing in the passage to suggest that humans can stay in outer space for longer periods of time than can robots. All of the other answer choices are mentioned specifically in the passage as advantages that humans have over robots.",
+          "pages": [
+            61
+          ],
+          "answerPages": [
+            77
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "\nSending a robot into space to gather information is certainly a viable option, \nbut should be regarded only as that—an option. Even the most technologically \nadvanced robots cannot and should not replace manned missions to outer space.\nCertainly it is cheaper and less dangerous to launch a computer probe \nthat can gather reams of data, but often the information obtained by a machine \nserves only to produce more questions than it answers. Therefore, the space \nprogram should allow manned missions to follow up on those initial information-\ngathering robotic ventures. \nWhile manned missions are more costly than are unmanned missions, they \nare also more successful. Robots and astronauts use much of the same equipment \nin space, but a human is much more capable of calibrating those instruments \ncorrectly and placing them in appropriate and useful positions. A computer is \noften neither as sensitive nor as accurate as a human in managing the same terrain \nor environmental circumstances. Robots are also not as equipped as humans to \nsolve problems as they arise, and robots often collect data that is not helpful or \neven desired. A human, on the other hand, can make instant decisions about what \nto explore further and what to ignore. \nWhile technological advances have allowed us to make incredible strides \nin space exploration, they still cannot match the power of the human brain. This \n“supercomputer” is necessary in order to maintain a space program that can truly \nadvance to the next level.\n25. The passage supplies information to answer which of the following \nquestions?\n (A) What is the cost of launching a computer probe into space?\n (B) What type of information can safely be ignored when exploring\n outer space?\n (C) How much information can a computer probe gather in outer space?\n (D) What is the next level in space exploration?\n (E) Are unmanned space missions more economical than manned space  \n missions? \n26. According to the passage, all of the following are advantages of humans \nover robots EXCEPT:\n (A) humans can more accurately manage the data collected\n (B) humans can apply critical thinking skills to new situations\n (C) humans can typically stay in outer space for longer periods of time\n (D) humans are more sensitive to environmental changes\n (E) humans are better at preparing instrumentation for use in space\n"
+    },
+    {
+      "id": "mcgraw-p004",
+      "sourceId": "mcgraw",
+      "number": 4,
+      "title": "林肯纪念堂",
+      "section": "模拟测验 1",
+      "text": "The Lincoln Memorial, located on the National Mall in Washington, D.C., is one of the most profound symbols of American democracy in the world. Dedicated in 1922, it won the prestigious Gold Medal of the American Institute of Architects for its architect, Henry Bacon. The physical presence of the memorial is awe- inspiring. There are a total of 36 Doric columns around the building, each representing one of the 36 states of the union at the time of Lincoln’s death in 1865. Stones from various states were used in the construction of the memorial. The names of the 48 states in the Union at the time of the memorial’s completion are carved on the outside walls. The north wall of the Lincoln Memorial boasts the sixteenth president’s second inaugural address, while on the south wall, the Gettysburg Address is proudly carved. Above the statue of Abraham Lincoln are these words: “In this Temple, as in the hearts of the people for whom he saved the Union, the memory of Abraham Lincoln is enshrined forever.”",
+      "paragraphs": [
+        "The Lincoln Memorial, located on the National Mall in Washington, D.C., is one of the most profound symbols of American democracy in the world. Dedicated in 1922, it won the prestigious Gold Medal of the American Institute of Architects for its architect, Henry Bacon. The physical presence of the memorial is awe- inspiring. There are a total of 36 Doric columns around the building, each representing one of the 36 states of the union at the time of Lincoln’s death in 1865. Stones from various states were used in the construction of the memorial. The names of the 48 states in the Union at the time of the memorial’s completion are carved on the outside walls. The north wall of the Lincoln Memorial boasts the sixteenth president’s second inaugural address, while on the south wall, the Gettysburg Address is proudly carved. Above the statue of Abraham Lincoln are these words: “In this Temple, as in the hearts of the people for whom he saved the Union, the memory of Abraham Lincoln is enshrined forever.”"
+      ],
+      "pages": [
+        309
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p004-q17",
+          "number": 17,
+          "stem": "The word boasts (line 9) most nearly means",
+          "options": [
+            {
+              "id": "A",
+              "text": "to possess"
+            },
+            {
+              "id": "B",
+              "text": "to construct"
+            },
+            {
+              "id": "C",
+              "text": "to brag"
+            },
+            {
+              "id": "D",
+              "text": "to dedicate"
+            },
+            {
+              "id": "E",
+              "text": "to inaugurate"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "A"
+          ],
+          "explanation": "As it is used in the passage, the word boasts means “possesses.” The north wall of the Lincoln Memorial “possesses” Lincoln’s inaugural address; the words are carved into the wall. Each of the remaining answer choices are either alternate meanings of the word boasts or are other words stated in the passage that do not mean boasts.",
+          "pages": [
+            309
+          ],
+          "answerPages": [
+            329
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p004-q18",
+          "number": 18,
+          "stem": "The passage suggests that the author would be most likely to agree with which of the following statements?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The Lincoln Memorial was constructed at a time when little was known about architecture."
+            },
+            {
+              "id": "B",
+              "text": "The true meaning of the Lincoln Memorial is obscured by its architecture."
+            },
+            {
+              "id": "C",
+              "text": "Most people who visit the Lincoln Memorial are unaware of its importance."
+            },
+            {
+              "id": "D",
+              "text": "Since the completion of the Lincoln Memorial, few other memorials have been built that match its quality."
+            },
+            {
+              "id": "E",
+              "text": "The size and significance of the Lincoln Memorial are equally impressive."
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "E"
+          ],
+          "explanation": "The passage states, “The physical presence of the memorial is awe inspiring,” and also uses phrases such as “proudly carved” and “profound symbols” to reflect the meaning behind the monument. This best supports answer choice E. None of the other answer choices is supported by the passage.",
+          "pages": [
+            309
+          ],
+          "answerPages": [
+            329
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "\nThe Lincoln Memorial, located on the National Mall in Washington, D.C., is one \nof the most profound symbols of American democracy in the world. Dedicated in \n1922, it won the prestigious Gold Medal of the American Institute of Architects \nfor its architect, Henry Bacon. The physical presence of the memorial is awe-\ninspiring. There are a total of 36 Doric columns around the building, each \nrepresenting one of the 36 states of the union at the time of Lincoln’s death in \n1865. Stones from various states were used in the construction of the memorial. \nThe names of the 48 states in the Union at the time of the memorial’s completion \nare carved on the outside walls. The north wall of the Lincoln Memorial boasts \nthe sixteenth president’s second inaugural address, while on the south wall, the \nGettysburg Address is proudly carved. Above the statue of Abraham Lincoln are \nthese words: “In this Temple, as in the hearts of the people for whom he saved the \nUnion, the memory of Abraham Lincoln is enshrined forever.”\n17. The word boasts (line 9) most nearly means\n (A) to possess\n (B) to construct\n (C) to brag\n (D) to dedicate\n (E) to inaugurate\n18. The passage suggests that the author would be most likely to agree with \nwhich of the following statements?\n (A)  The Lincoln Memorial was constructed at a time when little was \nknown about architecture.\n (B)  The true meaning of the Lincoln Memorial is obscured by its \narchitecture.\n (C)  Most people who visit the Lincoln Memorial are unaware of its \nimportance.\n (D)  Since the completion of the Lincoln Memorial, few other memorials \nhave been built that match its quality.\n (E)  The size and significance of the Lincoln Memorial are equally \nimpressive.\n"
+    },
+    {
+      "id": "mcgraw-p005",
+      "sourceId": "mcgraw",
+      "number": 5,
+      "title": "对计算机技术的依赖",
+      "section": "模拟测验 1",
+      "text": "Human reliance on information technology today is quickly becoming global. The technological developments in the areas of computing, networking, and software engineering have aided the transitions from paper to paperless transactions, and text and data media to multimedia. Today, speed, efficiency, and accuracy in the exchange of information have become primary tools for increasing productivity and innovation. Activities as diverse as health care, education, and manufacturing have come to depend on the generation, storage, and transmission of electronic information. Computers are not only used extensively to perform the industrial and economic functions of society but are also used to provide many services upon which human life depends. Medical treatment, air traffic control, and national security are a few examples. Even a small glitch in the operation of these systems can put human lives in danger. Computers are also used to store confidential data of a political, social, economic, or personal nature. This fairly recent and progressive dependence on computer technology signals a real danger for the human race. Current computer systems offer new opportunities for lawbreaking and the potential to commit traditional types of crimes in nontraditional ways. For example, the threat of identity theft is magnified by our reliance on computers to assist us in everyday activities such as shopping and paying bills. Identity theft refers to all types of crime in which someone wrongfully obtains and uses another person’s personal data by way of fraud or deception, typically for economic gain. By making personal and credit information available on the Internet, people open themselves up to the possibility of a criminal obtaining this information and using it for nefarious purposes. This is but one instance of the negative impact that overreliance on computer technology can have on society. As humans continue to make technological advances, so too do they rely more heavily upon those innovations. This is a dangerous progression that must be tempered with common sense and self-restraint. We cannot allow computer technology to control too many aspects of our lives, lest we become victims of our own ingenuity.",
+      "paragraphs": [
+        "Human reliance on information technology today is quickly becoming global. The technological developments in the areas of computing, networking, and software engineering have aided the transitions from paper to paperless transactions, and text and data media to multimedia. Today, speed, efficiency, and accuracy in the exchange of information have become primary tools for increasing productivity and innovation. Activities as diverse as health care, education, and manufacturing have come to depend on the generation, storage, and transmission of electronic information. Computers are not only used extensively to perform the industrial and economic functions of society but are also used to provide many services upon which human life depends. Medical treatment, air traffic control, and national security are a few examples. Even a small glitch in the operation of these systems can put human lives in danger. Computers are also used to store confidential data of a political, social, economic, or personal nature. This fairly recent and progressive dependence on computer technology signals a real danger for the human race. Current computer systems offer new opportunities for lawbreaking and the potential to commit traditional types of crimes in nontraditional ways. For example, the threat of identity theft is magnified by our reliance on computers to assist us in everyday activities such as shopping and paying bills. Identity theft refers to all types of crime in which someone wrongfully obtains and uses another person’s personal data by way of fraud or deception, typically for economic gain. By making personal and credit information available on the Internet, people open themselves up to the possibility of a criminal obtaining this information and using it for nefarious purposes. This is but one instance of the negative impact that overreliance on computer technology can have on society. As humans continue to make technological advances, so too do they rely more heavily upon those innovations. This is a dangerous progression that must be tempered with common sense and self-restraint. We cannot allow computer technology to control too many aspects of our lives, lest we become victims of our own ingenuity."
+      ],
+      "pages": [
+        310,
+        311,
+        312
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p005-q21",
+          "number": 21,
+          "stem": "The primary purpose of the passage is to",
+          "options": [
+            {
+              "id": "A",
+              "text": "challenge a commonly held belief regarding identity fraud"
+            },
+            {
+              "id": "B",
+              "text": "discuss some potentially devastating effects of our dependence on computers"
+            },
+            {
+              "id": "C",
+              "text": "suggest ways in which the human race can reduce its dependence on technology"
+            },
+            {
+              "id": "D",
+              "text": "evaluate the pros and cons of computer technology"
+            },
+            {
+              "id": "E",
+              "text": "defend a controversial perspective on the transmission of electronic data"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "B"
+          ],
+          "explanation": "The passage describes several potentially devastating effects of overreliance on computers. The general tone of the passage is one of warning. Although the passage indicates that we should look for ways to reduce our dependence on technology, the passage does not offer any suggestions, so answer choice C is incorrect. Likewise, the other answer choices are not supported by the passage.",
+          "pages": [
+            311
+          ],
+          "answerPages": [
+            330
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p005-q22",
+          "number": 22,
+          "stem": "The author most likely uses the phrase “a small glitch” (line 11) in order to",
+          "options": [
+            {
+              "id": "A",
+              "text": "acknowledge the fact that human reliance on computer technology is completely safe"
+            },
+            {
+              "id": "B",
+              "text": "emphasize the idea that it is dangerous for humans to rely so heavily on computer technology"
+            },
+            {
+              "id": "C",
+              "text": "cast doubt on the accuracy of any personal data collected on the Internet by criminals"
+            },
+            {
+              "id": "D",
+              "text": "criticize human technological advances in the areas of education, medicine, and national security"
+            },
+            {
+              "id": "E",
+              "text": "disprove the theory that computer technology is unnecessary for human advancement"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "B"
+          ],
+          "explanation": "The author states, “Even a small glitch in the operation of these systems can put human lives in danger.” This statement indicates the potential danger of overreliance on computer technology, especially regarding services that are essential to survival. Answer choices A, C, D, and E are not supported by the passage.",
+          "pages": [
+            311
+          ],
+          "answerPages": [
+            330
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p005-q23",
+          "number": 23,
+          "stem": "The passage suggests that the author would be most likely to agree with which of the following statements?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Human dependence on computer technology has never been known to advance the species."
+            },
+            {
+              "id": "B",
+              "text": "Human dependence on computer technology should never be allowed under any circumstances."
+            },
+            {
+              "id": "C",
+              "text": "Human dependence on computer technology is a key component in the advancement of the species."
+            },
+            {
+              "id": "D",
+              "text": "Human dependence on computer technology cannot be accurately measured."
+            },
+            {
+              "id": "E",
+              "text": "Human dependence on computer technology can sometimes have a negative impact on society."
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "E"
+          ],
+          "explanation": "The main idea of the passage is that, although computer technology has contributed to the advancement of the human race, our dependence on this technology can be dangerous. Statements and phrases such as “. . . dependence on computer technology signals a real danger for the human race,” and “. . . dangerous progression . . .” best support answer choice E.",
+          "pages": [
+            312
+          ],
+          "answerPages": [
+            330
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p005-q24",
+          "number": 24,
+          "stem": "Each of the following is mentioned in the passage as a potential danger resulting from greater reliance on computer technology EXCEPT: I. The transmission of electronic data II. Increased opportunity for criminal activity III. A drastic reduction in national security",
+          "options": [
+            {
+              "id": "A",
+              "text": "I only"
+            },
+            {
+              "id": "B",
+              "text": "I and II only"
+            },
+            {
+              "id": "C",
+              "text": "I and III only"
+            },
+            {
+              "id": "D",
+              "text": "II and III only"
+            },
+            {
+              "id": "E",
+              "text": "I, II, and III"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "A"
+          ],
+          "explanation": "The passage indicates that the transmission of electronic data is one way in which humans are taking advantage of computer technology, but the passage does not necessarily suggest that this is a danger. However, the passage explicitly states that both increased opportunity for criminal activity (identity theft) and a reduction in national security are potential dangers.",
+          "pages": [
+            312
+          ],
+          "answerPages": [
+            330
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "\nHuman reliance on information technology today is quickly becoming global. The \ntechnological developments in the areas of computing, networking, and software \nengineering have aided the transitions from paper to paperless transactions, and \ntext and data media to multimedia. Today, speed, efficiency, and accuracy in the \nexchange of information have become primary tools for increasing productivity \nand innovation. Activities as diverse as health care, education, and manufacturing \nhave come to depend on the generation, storage, and transmission of electronic \ninformation. Computers are not only used extensively to perform the industrial and \neconomic functions of society but are also used to provide many services upon which \nhuman life depends. Medical treatment, air traffic control, and national security are \na few examples. Even a small glitch in the operation of these systems can put human \nlives in danger. Computers are also used to store confidential data of a political, \nsocial, economic, or personal nature. This fairly recent and progressive dependence \non computer technology signals a real danger for the human race.\nCurrent computer systems offer new opportunities for lawbreaking and \nthe potential to commit traditional types of crimes in nontraditional ways. For \nexample, the threat of identity theft is magnified by our reliance on computers to \nassist us in everyday activities such as shopping and paying bills. Identity theft \nrefers to all types of crime in which someone wrongfully obtains and uses another \nperson’s personal data by way of fraud or deception, typically for economic gain. \nBy making personal and credit information available on the Internet, people open \nthemselves up to the possibility of a criminal obtaining this information and \nusing it for nefarious purposes. This is but one instance of the negative impact \nthat overreliance on computer technology can have on society.\nAs humans continue to make technological advances, so too do they rely \nmore heavily upon those innovations. This is a dangerous progression that must \nbe tempered with common sense and self-restraint. We cannot allow computer \ntechnology to control too many aspects of our lives, lest we become victims of our \nown ingenuity.\n21. The primary purpose of the passage is to\n (A) challenge a commonly held belief regarding identity fraud\n (B)  discuss some potentially devastating effects of our dependence on \ncomputers \n (C)  suggest ways in which the human race can reduce its dependence on \ntechnology\n (D) evaluate the pros and cons of computer technology\n (E)  defend a controversial perspective on the transmission of electronic \ndata\n22. The author most likely uses the phrase “a small glitch” (line 11) in order \nto \n (A)  acknowledge the fact that human reliance on computer technology is \ncompletely safe\n (B)  emphasize the idea that it is dangerous for humans to rely so heavily \non computer technology\n (C)  cast doubt on the accuracy of any personal data collected on the \nInternet by criminals\n (D)  criticize human technological advances in the areas of education, \nmedicine, and national security\n (E)  disprove the theory that computer technology is unnecessary for \nhuman advancement\n23. The passage suggests that the author would be most likely to agree with \nwhich of the following statements? \n (A)  Human dependence on computer technology has never been known \nto advance the species.\n (B)  Human dependence on computer technology should never be \nallowed under any circumstances.\n (C)  Human dependence on computer technology is a key component in \nthe advancement of the species.\n (D)  Human dependence on computer technology cannot be accurately \nmeasured.\n (E)  Human dependence on computer technology can sometimes have a \nnegative impact on society.\n24. Each of the following is mentioned in the passage as a potential danger \nresulting from greater reliance on computer technology EXCEPT:\n I. The transmission of electronic data\n II. Increased opportunity for criminal activity\n III. A drastic reduction in national security\n (A) I only\n (B) I and II only\n (C) I and III only\n (D) II and III only\n (E) I, II, and III\n"
+    },
+    {
+      "id": "mcgraw-p006",
+      "sourceId": "mcgraw",
+      "number": 6,
+      "title": "国家的自我认识",
+      "section": "模拟测验 1",
+      "text": "This passage is adapted from The American Republic: Constitution, Tendencies, and Destiny by O. A. Brownson, © 1866. The ancients summed up the whole of human wisdom in the maxim “Know Thyself,” and certainly there is for an individual no more important and no more difficult knowledge, than knowledge of himself. Nations are only individuals on a larger scale. They have a life, an individuality, a reason, a conscience, and instincts of their own, and have the same general laws of development and growth, and, perhaps, of decay, as the individual man. Equally important, and no less difficult than for the individual, is it for a nation to know itself, understand its own existence, its own powers and faculties, rights and duties, constitution, instincts, tendencies, and destiny. A nation has a spiritual as well as a material existence, a moral as well as a physical existence, and is subjected to internal as well as external conditions of health and virtue, greatness and grandeur, which it must in some measure understand and observe, or become lethargic and infirm, stunted in its growth, and end in premature decay and death. Among nations, no one has more need of full knowledge of itself than the United States, and no one has, to this point, had less. It has hardly had a distinct consciousness of its own national existence, and has lived the naive life of the child, with no severe trial, till the recent civil war, to throw it back on itself and compel it to reflect on its own constitution, its own separate existence, individuality, tendencies, and end. The defection of the slaveholding States, and the fearful struggle that has followed for national unity and integrity, have brought the United States at once to a distinct recognition of itself, and forced it to pass from thoughtless, careless, heedless, reckless adolescence to grave and reflecting manhood. The nation has been suddenly compelled to study itself, and from now on must act from reflection, understanding, science, and statesmanship, not from instinct, impulse, passion, or caprice, knowing well what it does, and why it does it. The change that four years of civil war have wrought in the nation is great, and is sure to give it the seriousness, the gravity, and the dignity it has so far lacked.",
+      "paragraphs": [
+        "This passage is adapted from The American Republic: Constitution, Tendencies, and Destiny by O. A. Brownson, © 1866. The ancients summed up the whole of human wisdom in the maxim “Know Thyself,” and certainly there is for an individual no more important and no more difficult knowledge, than knowledge of himself. Nations are only individuals on a larger scale. They have a life, an individuality, a reason, a conscience, and instincts of their own, and have the same general laws of development and growth, and, perhaps, of decay, as the individual man. Equally important, and no less difficult than for the individual, is it for a nation to know itself, understand its own existence, its own powers and faculties, rights and duties, constitution, instincts, tendencies, and destiny. A nation has a spiritual as well as a material existence, a moral as well as a physical existence, and is subjected to internal as well as external conditions of health and virtue, greatness and grandeur, which it must in some measure understand and observe, or become lethargic and infirm, stunted in its growth, and end in premature decay and death. Among nations, no one has more need of full knowledge of itself than the United States, and no one has, to this point, had less. It has hardly had a distinct consciousness of its own national existence, and has lived the naive life of the child, with no severe trial, till the recent civil war, to throw it back on itself and compel it to reflect on its own constitution, its own separate existence, individuality, tendencies, and end. The defection of the slaveholding States, and the fearful struggle that has followed for national unity and integrity, have brought the United States at once to a distinct recognition of itself, and forced it to pass from thoughtless, careless, heedless, reckless adolescence to grave and reflecting manhood. The nation has been suddenly compelled to study itself, and from now on must act from reflection, understanding, science, and statesmanship, not from instinct, impulse, passion, or caprice, knowing well what it does, and why it does it. The change that four years of civil war have wrought in the nation is great, and is sure to give it the seriousness, the gravity, and the dignity it has so far lacked."
+      ],
+      "pages": [
+        312,
+        313
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p006-q25",
+          "number": 25,
+          "stem": "Which of the following statements best summarizes the main point of the first paragraph?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Understanding one’s own strengths and weaknesses is a difficult yet important task, not only for individuals, but for nations as a whole."
+            },
+            {
+              "id": "B",
+              "text": "The spirituality of individuals should be dictated by the nation’s government."
+            },
+            {
+              "id": "C",
+              "text": "The comparing of a nation to a person is inaccurate and leads only to confusion and misrepresentation."
+            },
+            {
+              "id": "D",
+              "text": "The United States was founded upon a principle of law that originated from the ancient world."
+            },
+            {
+              "id": "E",
+              "text": "A nation’s moral existence is governed by external conditions only."
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "A"
+          ],
+          "explanation": "The first paragraph states, in response to the introduction of the maxim of “Know Thyself,” “there is for an individual no more important and no more difficult knowledge, than knowledge of himself. Nations are only individuals on a larger scale.” The paragraph goes on to say that a nation’s failure to understand its existence will lead to its ultimate undoing. This best supports answer choice A.",
+          "pages": [
+            313
+          ],
+          "answerPages": [
+            330
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p006-q26",
+          "number": 26,
+          "stem": "The author’s argument is developed primarily by the use of",
+          "options": [
+            {
+              "id": "A",
+              "text": "an example of one nation’s success"
+            },
+            {
+              "id": "B",
+              "text": "an analogy between man and nation"
+            },
+            {
+              "id": "C",
+              "text": "a critique of the United States Constitution"
+            },
+            {
+              "id": "D",
+              "text": "a warning against civil war"
+            },
+            {
+              "id": "E",
+              "text": "a personal account of self-realization"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "B"
+          ],
+          "explanation": "The passage states, “Nations are only individuals on a larger scale,” which is a direct comparison of nations to man. The other answer choices are not supported by the passage.",
+          "pages": [
+            313
+          ],
+          "answerPages": [
+            330
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "\nThis passage is adapted from The American Republic: Constitution, Tendencies, \nand Destiny by O. A. Brownson, © 1866.\nThe ancients summed up the whole of human wisdom in the maxim “Know Thyself,” \nand certainly there is for an individual no more important and no more difficult \nknowledge, than knowledge of himself. Nations are only individuals on a larger scale. \nThey have a life, an individuality, a reason, a conscience, and instincts of their own, \nand have the same general laws of development and growth, and, perhaps, of decay, as \nthe individual man. Equally important, and no less difficult than for the individual, is it \nfor a nation to know itself, understand its own existence, its own powers and faculties, \nrights and duties, constitution, instincts, tendencies, and destiny. A nation has a \nspiritual as well as a material existence, a moral as well as a physical existence, and is \nsubjected to internal as well as external conditions of health and virtue, greatness and \ngrandeur, which it must in some measure understand and observe, or become lethargic \nand infirm, stunted in its growth, and end in premature decay and death.\nAmong nations, no one has more need of full knowledge of itself than the \nUnited States, and no one has, to this point, had less. It has hardly had a distinct \nconsciousness of its own national existence, and has lived the naive life of the \nchild, with no severe trial, till the recent civil war, to throw it back on itself \nand compel it to reflect on its own constitution, its own separate existence, \nindividuality, tendencies, and end. The defection of the slaveholding States, \nand the fearful struggle that has followed for national unity and integrity, have \nbrought the United States at once to a distinct recognition of itself, and forced it \nto pass from thoughtless, careless, heedless, reckless adolescence to grave and \nreflecting manhood. The nation has been suddenly compelled to study itself, and \nfrom now on must act from reflection, understanding, science, and statesmanship, \nnot from instinct, impulse, passion, or caprice, knowing well what it does, and \nwhy it does it. The change that four years of civil war have wrought in the nation \nis great, and is sure to give it the seriousness, the gravity, and the dignity it has so \nfar lacked. \n25. Which of the following statements best summarizes the main point of the \nfirst paragraph?\n (A)  Understanding one’s own strengths and weaknesses is a difficult yet \nimportant task, not only for individuals, but for nations as a whole.\n (B)  The spirituality of individuals should be dictated by the nation’s \ngovernment.\n (C)  The comparing of a nation to a person is inaccurate and leads only to \nconfusion and misrepresentation.\n (D)  The United States was founded upon a principle of law that \noriginated from the ancient world.\n (E) A nation’s moral existence is governed by external conditions only.\n26. The author’s argument is developed primarily by the use of \n (A) an example of one nation’s success\n (B) an analogy between man and nation\n (C) a critique of the United States Constitution\n (D) a warning against civil war\n (E) a personal account of self-realization\n"
+    },
+    {
+      "id": "mcgraw-p007",
+      "sourceId": "mcgraw",
+      "number": 7,
+      "title": "中国城市与自行车",
+      "section": "模拟测验 2",
+      "text": "Around the world, the bicycle is a favorite method of transportation, especially in China. With its large urban population, China ranks first in the world in bicycle production and use. In fact, China is responsible for half of the world’s bike ownership, with 10 million bicycles found in Beijing alone. This amounts to about one bicycle for every two residents, and makes cycling the most popular form of transportation in the capital. However, as economic prosperity has increased, individual car ownership has also risen. This shift has contributed to already serious problems with urban pollution and traffic congestion. As a result, the government has encouraged even more bicycle use. Bike lanes have been added to city streets, and more bicycle parking lots have been created throughout Beijing. Still, critics point out that cars are much more convenient for many daily activities in a large city. Only time will tell if government measures will ensure that bicycles remain the favorite method of transportation.",
+      "paragraphs": [
+        "Around the world, the bicycle is a favorite method of transportation, especially in China. With its large urban population, China ranks first in the world in bicycle production and use. In fact, China is responsible for half of the world’s bike ownership, with 10 million bicycles found in Beijing alone. This amounts to about one bicycle for every two residents, and makes cycling the most popular form of transportation in the capital. However, as economic prosperity has increased, individual car ownership has also risen. This shift has contributed to already serious problems with urban pollution and traffic congestion. As a result, the government has encouraged even more bicycle use. Bike lanes have been added to city streets, and more bicycle parking lots have been created throughout Beijing. Still, critics point out that cars are much more convenient for many daily activities in a large city. Only time will tell if government measures will ensure that bicycles remain the favorite method of transportation."
+      ],
+      "pages": [
+        353
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p007-q17",
+          "number": 17,
+          "stem": "The author of the passage is primarily concerned with",
+          "options": [
+            {
+              "id": "A",
+              "text": "promoting the use of bicycles in urban areas"
+            },
+            {
+              "id": "B",
+              "text": "documenting the rise of car ownership in modern China"
+            },
+            {
+              "id": "C",
+              "text": "illustrating the importance of bike lanes in promoting bicycle usage"
+            },
+            {
+              "id": "D",
+              "text": "describing the various sources of air pollution in modern China"
+            },
+            {
+              "id": "E",
+              "text": "describing the importance of bicycles for transportation in urban China"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "E"
+          ],
+          "explanation": "Answer choices B, D, and C are all mentioned in the passage, but only as details supporting the main idea, which is the importance of bicycle use for transportation in urban China. Answer choice A is insufficiently specific because it doesn’t mention China. Also, the author describes only a situation; she does not promote, or advocate, any particular program.",
+          "pages": [
+            353
+          ],
+          "answerPages": [
+            373
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p007-q18",
+          "number": 18,
+          "stem": "The author implies that car ownership in China is on the rise because",
+          "options": [
+            {
+              "id": "A",
+              "text": "bicycles are seen as old-fashioned"
+            },
+            {
+              "id": "B",
+              "text": "Beijing air pollution makes cycling too difficult"
+            },
+            {
+              "id": "C",
+              "text": "there are now more wealthy Chinese able to purchase cars"
+            },
+            {
+              "id": "D",
+              "text": "bicycles are easier to maneuver on busy streets"
+            },
+            {
+              "id": "E",
+              "text": "government measures to increase bicycle use have been largely unsuccessful"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "C"
+          ],
+          "explanation": "The author addresses rising car ownership at the beginning of the second paragraph. Increased economic prosperity implies there is more money available and, consequently, more wealthy Chinese to purchase automobiles. Answer choices A and E are not addressed by the passage. Answer choice D is contradicted by the passage. While answer choice B is a plausible assumption, there is not enough evidence in the passage for it to be a credited answer.",
+          "pages": [
+            353
+          ],
+          "answerPages": [
+            373
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "\nAround the world, the bicycle is a favorite method of transportation, especially \nin China. With its large urban population, China ranks first in the world in \nbicycle production and use. In fact, China is responsible for half of the world’s \nbike ownership, with 10 million bicycles found in Beijing alone. This amounts \nto about one bicycle for every two residents, and makes cycling the most popular \nform of transportation in the capital.\nHowever, as economic prosperity has increased, individual car ownership \nhas also risen. This shift has contributed to already serious problems with urban \npollution and traffic congestion. As a result, the government has encouraged even \nmore bicycle use. Bike lanes have been added to city streets, and more bicycle \nparking lots have been created throughout Beijing. Still, critics point out that cars \nare much more convenient for many daily activities in a large city. Only time will \ntell if government measures will ensure that bicycles remain the favorite method \nof transportation.\n17. The author of the passage is primarily concerned with\n (A) promoting the use of bicycles in urban areas\n (B) documenting the rise of car ownership in modern China\n (C) illustrating the importance of bike lanes in promoting bicycle usage\n (D) describing the various sources of air pollution in modern China\n (E)  describing the importance of bicycles for transportation in urban \nChina \n18. The author implies that car ownership in China is on the rise because\n (A) bicycles are seen as old-fashioned\n (B) Beijing air pollution makes cycling too difficult\n (C) there are now more wealthy Chinese able to purchase cars\n (D) bicycles are easier to maneuver on busy streets\n (E)  government measures to increase bicycle use have been largely \nunsuccessful\n"
+    },
+    {
+      "id": "mcgraw-p008",
+      "sourceId": "mcgraw",
+      "number": 8,
+      "title": "睡眠的生理作用",
+      "section": "模拟测验 2",
+      "text": "All mammals require sleep; it is an essential part of life. For giraffes, two hours a day is enough. For bats, that number is closer to twenty. The average adult human needs between seven and nine hours of sleep every day. Despite these differences, mammals all have one thing in common: If they do not get enough sleep, they can suffer serious mental and physical consequences. The most extensive sleep research has been conducted on people. Through these studies, scientists have identified two broad categories of sleep, which can be further divided into five stages with distinct physiological functions. Taken together, they form a complete sleep cycle. The first four stages are marked by a lack of rapid eye movement (REM). Therefore, they are referred to as non-REM sleep. While people are engaged in non-REM sleep, several things are occurring. Researchers have discovered that during this early sleep, the human body releases a series of hormones responsible for the proper functioning of certain body systems. Disrupted sleep can cause these hormones to fall out of balance. The results can contribute to disorders such as diabetes, depression, infertility, or even cancer. Lack of sleep, especially in stages 3 and 4, can literally stunt the growth of children and may increase rates of obesity in adults. Stage 5 sleep is defined by the occurrence of rapid eye movement, otherwise known as dreaming. Note that, while REM sleep is the final stage in a sleep cycle, a complete cycle generally lasts only about 95 minutes. A person will experience four to six cycles in one sleep session, with REM sleep taking up a larger portion of the cycle as the night continues. Scientists have advanced several theories about why humans need REM sleep. One view is that dreaming aids in memory consolidation. Under this theory, during REM sleep the brain not only strengthens memory of important actions or events, but it weakens memory of unimportant things. Another view is that dreaming is necessary for proper central nervous system development. Yet another theory suggests that REM sleep involves the repair of monoamine receptors. The theories are not necessarily exclusive; in fact, they all reach the conclusion that REM sleep deprivation can result in death.",
+      "paragraphs": [
+        "All mammals require sleep; it is an essential part of life. For giraffes, two hours a day is enough. For bats, that number is closer to twenty. The average adult human needs between seven and nine hours of sleep every day. Despite these differences, mammals all have one thing in common: If they do not get enough sleep, they can suffer serious mental and physical consequences. The most extensive sleep research has been conducted on people. Through these studies, scientists have identified two broad categories of sleep, which can be further divided into five stages with distinct physiological functions. Taken together, they form a complete sleep cycle. The first four stages are marked by a lack of rapid eye movement (REM). Therefore, they are referred to as non-REM sleep. While people are engaged in non-REM sleep, several things are occurring. Researchers have discovered that during this early sleep, the human body releases a series of hormones responsible for the proper functioning of certain body systems. Disrupted sleep can cause these hormones to fall out of balance. The results can contribute to disorders such as diabetes, depression, infertility, or even cancer. Lack of sleep, especially in stages 3 and 4, can literally stunt the growth of children and may increase rates of obesity in adults. Stage 5 sleep is defined by the occurrence of rapid eye movement, otherwise known as dreaming. Note that, while REM sleep is the final stage in a sleep cycle, a complete cycle generally lasts only about 95 minutes. A person will experience four to six cycles in one sleep session, with REM sleep taking up a larger portion of the cycle as the night continues. Scientists have advanced several theories about why humans need REM sleep. One view is that dreaming aids in memory consolidation. Under this theory, during REM sleep the brain not only strengthens memory of important actions or events, but it weakens memory of unimportant things. Another view is that dreaming is necessary for proper central nervous system development. Yet another theory suggests that REM sleep involves the repair of monoamine receptors. The theories are not necessarily exclusive; in fact, they all reach the conclusion that REM sleep deprivation can result in death."
+      ],
+      "pages": [
+        354,
+        355,
+        356
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p008-q21",
+          "number": 21,
+          "stem": "The author of the passage is primarily concerned with",
+          "options": [
+            {
+              "id": "A",
+              "text": "promoting mammalian sleep research"
+            },
+            {
+              "id": "B",
+              "text": "documenting the importance of non-REM sleep in hormone regulation"
+            },
+            {
+              "id": "C",
+              "text": "describing the role of sleep in human behavior and development"
+            },
+            {
+              "id": "D",
+              "text": "arguing that humans need more sleep to function optimally"
+            },
+            {
+              "id": "E",
+              "text": "illustrating the importance of REM sleep to brain function"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "C"
+          ],
+          "explanation": "This is a main idea question, so the correct answer choice must reflect the theme of the entire passage. Answer choices B and E are too narrow. The tone of the passage is descriptive and neutral, so words like promoting and arguing are too strong. Therefore, answer choices A and D are incorrect.",
+          "pages": [
+            355
+          ],
+          "answerPages": [
+            373
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p008-q22",
+          "number": 22,
+          "stem": "The author implies that disrupted sleep can cause disorders such as diabetes (line 15) because",
+          "options": [
+            {
+              "id": "A",
+              "text": "diabetes is linked to obesity"
+            },
+            {
+              "id": "B",
+              "text": "sufficient sleep is not crucial to good health"
+            },
+            {
+              "id": "C",
+              "text": "diabetes is a serious physical consequence of poor sleep"
+            },
+            {
+              "id": "D",
+              "text": "the disorders are probably a result of unbalanced hormone production"
+            },
+            {
+              "id": "E",
+              "text": "non-REM sleep is more important than REM sleep"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "D"
+          ],
+          "explanation": "This is an implication question, so the correct answer will be strongly supported by the information in the passage. Answer choice D makes explicit the implied link between hormone production and disorders such as diabetes. While obesity and diabetes have been linked, the connection is not made in this passage, so answer choice A is incorrect. Answer choice B is contradicted by the passage. Answer choice C simply restates the question; it does not address the reasons why. Answer choice E is outside the scope of the passage.",
+          "pages": [
+            355
+          ],
+          "answerPages": [
+            373,
+            374
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p008-q23",
+          "number": 23,
+          "stem": "The passage suggests that the author would be most likely to agree with which of the following statements?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A typical person needs more than six sleep cycles to maintain optimal health."
+            },
+            {
+              "id": "B",
+              "text": "REM sleep is more important than non-REM sleep."
+            },
+            {
+              "id": "C",
+              "text": "A typical person experiences more REM sleep at the end of the night."
+            },
+            {
+              "id": "D",
+              "text": "Lack of sleep can stunt the growth of adults."
+            },
+            {
+              "id": "E",
+              "text": "The majority of sleep disorders occur in children."
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "C"
+          ],
+          "explanation": "Answer choice C is found near the start of the third paragraph. Answer choice A contradicts the passage, and answer choices B and E are outside the scope of the passage.",
+          "pages": [
+            355
+          ],
+          "answerPages": [
+            374
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p008-q24",
+          "number": 24,
+          "stem": "The author’s argument is developed primarily by the use of",
+          "options": [
+            {
+              "id": "A",
+              "text": "an attack on poorly constructed sleep research studies"
+            },
+            {
+              "id": "B",
+              "text": "a critique of recent scientific studies on REM-sleep"
+            },
+            {
+              "id": "C",
+              "text": "a warning against getting too little sleep"
+            },
+            {
+              "id": "D",
+              "text": "an analogy between human and non-human sleep processes"
+            },
+            {
+              "id": "E",
+              "text": "an overview of specific processes that may occur during different stages of sleep in humans"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "E"
+          ],
+          "explanation": "Tone is essential to answering this question; the correct answer choice must have a neutral tone. Answer choices A and B are not neutral; in addition, they are incorrect because specific studies are not mentioned in the passage. While the passage does warn against getting too little sleep, this is not how the argument is developed. Therefore, answer choice C is incorrect. Answer choice D is incorrect because the author does not develop an opinion about non-human sleep. Only answer choice E correctly captures the tone and scope of the passage.",
+          "pages": [
+            356
+          ],
+          "answerPages": [
+            374
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "\nAll mammals require sleep; it is an essential part of life. For giraffes, two hours a \nday is enough. For bats, that number is closer to twenty. The average adult human \nneeds between seven and nine hours of sleep every day. Despite these differences, \nmammals all have one thing in common: If they do not get enough sleep, they can \nsuffer serious mental and physical consequences. \nThe most extensive sleep research has been conducted on people. Through \nthese studies, scientists have identified two broad categories of sleep, which can \nbe further divided into five stages with distinct physiological functions. Taken \ntogether, they form a complete sleep cycle. The first four stages are marked by a \nlack of rapid eye movement (REM). Therefore, they are referred to as non-REM \nsleep. While people are engaged in non-REM sleep, several things are occurring. \nResearchers have discovered that during this early sleep, the human body \nreleases a series of hormones responsible for the proper functioning of certain \nbody systems. Disrupted sleep can cause these hormones to fall out of balance. \nThe results can contribute to disorders such as diabetes, depression, infertility, \nor even cancer. Lack of sleep, especially in stages 3 and 4, can literally stunt the \ngrowth of children and may increase rates of obesity in adults. \nStage 5 sleep is defined by the occurrence of rapid eye movement, otherwise \nknown as dreaming. Note that, while REM sleep is the final stage in a sleep cycle, \na complete cycle generally lasts only about 95 minutes. A person will experience \nfour to six cycles in one sleep session, with REM sleep taking up a larger portion \nof the cycle as the night continues. Scientists have advanced several theories \nabout why humans need REM sleep. One view is that dreaming aids in memory \nconsolidation. Under this theory, during REM sleep the brain not only strengthens \nmemory of important actions or events, but it weakens memory of unimportant \nthings. Another view is that dreaming is necessary for proper central nervous \nsystem development. Yet another theory suggests that REM sleep involves the \nrepair of monoamine receptors. The theories are not necessarily exclusive; in fact, \nthey all reach the conclusion that REM sleep deprivation can result in death.\n21. The author of the passage is primarily concerned with\n (A) promoting mammalian sleep research\n (B)  documenting the importance of non-REM sleep in hormone \nregulation\n (C) describing the role of sleep in human behavior and development\n (D) arguing that humans need more sleep to function optimally\n (E) illustrating the importance of REM sleep to brain function\n22. The author implies that disrupted sleep can cause disorders such as \ndiabetes (line 15) because\n (A) diabetes is linked to obesity\n (B) sufficient sleep is not crucial to good health\n (C) diabetes is a serious physical consequence of poor sleep\n (D)  the disorders are probably a result of unbalanced hormone  \nproduction\n (E) non-REM sleep is more important than REM sleep\n23. The passage suggests that the author would be most likely to agree with \nwhich of the following statements?\n (A)  A typical person needs more than six sleep cycles to maintain \noptimal health.\n (B) REM sleep is more important than non-REM sleep.\n (C)  A typical person experiences more REM sleep at the end of the \nnight.\n (D) Lack of sleep can stunt the growth of adults.\n (E) The majority of sleep disorders occur in children.\n24. The author’s argument is developed primarily by the use of\n (A) an attack on poorly constructed sleep research studies\n (B) a critique of recent scientific studies on REM-sleep\n (C) a warning against getting too little sleep  \n (D) an analogy between human and non-human sleep processes\n (E)  an overview of specific processes that may occur during different \nstages of sleep in humans\n"
+    },
+    {
+      "id": "mcgraw-p009",
+      "sourceId": "mcgraw",
+      "number": 9,
+      "title": "淡水豚的声学追踪",
+      "section": "模拟测验 2",
+      "text": "While forensic scientists commonly rely on fingerprints to help identify a person, it is not possible to use the same kind of technology with other species of mammals. Recently, however, a group of researchers from Tokyo developed a device that allows them to identify individuals of the endangered Ganges River dolphin species. This underwater acoustic device measures the clicking sounds produced by the creatures and helps with identification and tracking, since each sound is as completely unique as a fingerprint. Ganges River dolphins are rare in that, unlike the majority of their counterparts, they live in rivers and lakes rather than oceans. The species is blind and uses clicks to send out sonar pulses for guidance and to find food. In the past few decades, their numbers have decreased by 50 percent, because of fishing net entanglement, human predation, pollution, construction, or a combination of these factors. With this new acoustic technology, scientists hope to get a better idea of how many of these dolphins still exist, as well as their migration patterns and feeding habits. In turn, this information may help scientists protect and conserve this unique species.",
+      "paragraphs": [
+        "While forensic scientists commonly rely on fingerprints to help identify a person, it is not possible to use the same kind of technology with other species of mammals. Recently, however, a group of researchers from Tokyo developed a device that allows them to identify individuals of the endangered Ganges River dolphin species. This underwater acoustic device measures the clicking sounds produced by the creatures and helps with identification and tracking, since each sound is as completely unique as a fingerprint. Ganges River dolphins are rare in that, unlike the majority of their counterparts, they live in rivers and lakes rather than oceans. The species is blind and uses clicks to send out sonar pulses for guidance and to find food. In the past few decades, their numbers have decreased by 50 percent, because of fishing net entanglement, human predation, pollution, construction, or a combination of these factors. With this new acoustic technology, scientists hope to get a better idea of how many of these dolphins still exist, as well as their migration patterns and feeding habits. In turn, this information may help scientists protect and conserve this unique species."
+      ],
+      "pages": [
+        356,
+        357
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p009-q25",
+          "number": 25,
+          "stem": "The author mentions that the Ganges River dolphin species is blind and uses clicks to send out sonar pulses for guidance and to find food (lines 9–10) most probably in order to",
+          "options": [
+            {
+              "id": "A",
+              "text": "support the claim that an underwater acoustic device is helpful in identifying and tracking the Ganges River dolphin"
+            },
+            {
+              "id": "B",
+              "text": "suggest that, because of this blindness, the Ganges River dolphin survives only in rivers and lakes"
+            },
+            {
+              "id": "C",
+              "text": "challenge the claim that the species’ decline in numbers is due to fishing net entanglement, human predation, pollution, or construction"
+            },
+            {
+              "id": "D",
+              "text": "refute the claim that the Ganges River dolphin can in fact be identified and tracked by underwater acoustic devices"
+            },
+            {
+              "id": "E",
+              "text": "lend credibility to the claim that the Ganges River dolphin is a rare species"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "A"
+          ],
+          "explanation": "The author indicates that the dolphins rely on sonar pulses to “see” and to find food. This implies that the sonar is necessary and used regularly by all river dolphins. Therefore, it can be logically inferred that a device that tracks these pulses could be useful in identifying and tracking the dolphins themselves. Answer choices C and D are contradicted by the passage. Answer choices B and E are not supported by the passage.",
+          "pages": [
+            356
+          ],
+          "answerPages": [
+            374
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p009-q26",
+          "number": 26,
+          "stem": "The passage supplies information for answering which of the following questions?",
+          "options": [
+            {
+              "id": "A",
+              "text": "How do the remaining Ganges River dolphins still exist?"
+            },
+            {
+              "id": "B",
+              "text": "What is the primary use of the new underwater acoustic technology?"
+            },
+            {
+              "id": "C",
+              "text": "Why do Ganges River dolphins make their homes in rivers and lakes?"
+            },
+            {
+              "id": "D",
+              "text": "How does the underwater acoustic technology work?"
+            },
+            {
+              "id": "E",
+              "text": "Can the new underwater acoustic technology be used in identifying and tracking other species of dolphins?"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "B"
+          ],
+          "explanation": "At the end of the first paragraph, the author states that the underwater acoustic device measures the clicking sounds produced by dolphins and helps with identification and tracking. This best supports answer choice B. The other choices either are not addressed by the passage or are beyond its scope.",
+          "pages": [
+            357
+          ],
+          "answerPages": [
+            374
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "\nWhile forensic scientists commonly rely on fingerprints to help identify a \nperson, it is not possible to use the same kind of technology with other species \nof mammals. Recently, however, a group of researchers from Tokyo developed a \ndevice that allows them to identify individuals of the endangered Ganges River \ndolphin species. This underwater acoustic device measures the clicking sounds \nproduced by the creatures and helps with identification and tracking, since each \nsound is as completely unique as a fingerprint. \nGanges River dolphins are rare in that, unlike the majority of their \ncounterparts, they live in rivers and lakes rather than oceans. The species is blind \nand uses clicks to send out sonar pulses for guidance and to find food. In the past \nfew decades, their numbers have decreased by 50 percent, because of fishing net \nentanglement, human predation, pollution, construction, or a combination of \nthese factors. With this new acoustic technology, scientists hope to get a better \nidea of how many of these dolphins still exist, as well as their migration patterns \nand feeding habits. In turn, this information may help scientists protect and \nconserve this unique species.  \n25. The author mentions that the Ganges River dolphin species is blind and \nuses clicks to send out sonar pulses for guidance and to find food (lines \n9–10) most probably in order to\n (A)  support the claim that an underwater acoustic device is helpful in \nidentifying and tracking the Ganges River dolphin\n (B)  suggest that, because of this blindness, the Ganges River dolphin \nsurvives only in rivers and lakes\n (C)  challenge the claim that the species’ decline in numbers is due \nto fishing net entanglement, human predation, pollution, or \nconstruction \n (D)  refute the claim that the Ganges River dolphin can in fact be \nidentified and tracked by underwater acoustic devices\n (E)  lend credibility to the claim that the Ganges River dolphin is a rare \nspecies\n26. The passage supplies information for answering which of the following \nquestions?\n (A) How do the remaining Ganges River dolphins still exist?\n (B) What is the primary use of the new underwater acoustic technology?\n (C) Why do Ganges River dolphins make their homes in rivers and lakes?\n (D) How does the underwater acoustic technology work?\n (E)  Can the new underwater acoustic technology be used in identifying \nand tracking other species of dolphins?\n"
+    },
+    {
+      "id": "mcgraw-p010",
+      "sourceId": "mcgraw",
+      "number": 10,
+      "title": "极光与磁暴",
+      "section": "模拟测验 3",
+      "text": "The polar lights known as auroras are produced when charged subatomic particles, such as protons and electrons flowing from the sun through Earth’s magnetosphere, collide with atoms and molecules in Earth’s upper atmosphere. For reasons not entirely understood, magnetic storms, called substorms, occasionally occur where the flow of particles greatly increases and the interplanetary magnetic field becomes much stronger. These substorms are frequently visible on Earth because they increase the intensity of the polar lights. Recently, five identical probes were blasted into orbit in a $200 million U.S. project known as the THEMIS mission. Scientists hope the probes will be able to investigate a number of mysteries about the nature of the substorm instabilities, including when and where substorms begin, how the individual components of the substorm interact, and how substorms power the auroras. The mission’s secondary objectives involve understanding and predicting variations in the flux of electrons in Earth’s outer radiation belt. These electrons pose a hazard to the safety of both astronauts and spacecraft. Understanding substorm instabilities would thus improve success rates of future space missions.",
+      "paragraphs": [
+        "The polar lights known as auroras are produced when charged subatomic particles, such as protons and electrons flowing from the sun through Earth’s magnetosphere, collide with atoms and molecules in Earth’s upper atmosphere. For reasons not entirely understood, magnetic storms, called substorms, occasionally occur where the flow of particles greatly increases and the interplanetary magnetic field becomes much stronger. These substorms are frequently visible on Earth because they increase the intensity of the polar lights. Recently, five identical probes were blasted into orbit in a $200 million U.S. project known as the THEMIS mission. Scientists hope the probes will be able to investigate a number of mysteries about the nature of the substorm instabilities, including when and where substorms begin, how the individual components of the substorm interact, and how substorms power the auroras. The mission’s secondary objectives involve understanding and predicting variations in the flux of electrons in Earth’s outer radiation belt. These electrons pose a hazard to the safety of both astronauts and spacecraft. Understanding substorm instabilities would thus improve success rates of future space missions."
+      ],
+      "pages": [
+        399
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p010-q17",
+          "number": 17,
+          "stem": "The main purpose of the passage is to",
+          "options": [
+            {
+              "id": "A",
+              "text": "explain why it is important to invest in space research"
+            },
+            {
+              "id": "B",
+              "text": "explain how magnetic substorms interfere with satellite communications"
+            },
+            {
+              "id": "C",
+              "text": "define magnetic substorms and identify a recent scientific experiment to study them"
+            },
+            {
+              "id": "D",
+              "text": "compare two alternative approaches to the study of magnetic substorms"
+            },
+            {
+              "id": "E",
+              "text": "demonstrate that unmanned probes are the best way to conduct research in space"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "C"
+          ],
+          "explanation": "The passage contains a very general description of magnetic substorms and a scientific mission to learn more about them. While the topics in answer choices A and B are discussed, they are details mentioned only in passing. There is no mention of two alternative approaches to the study of substorms (answer choice D) and the author makes no argument about the best way to conduct research in space (answer choice E).",
+          "pages": [
+            399
+          ],
+          "answerPages": [
+            418
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p010-q18",
+          "number": 18,
+          "stem": "According to the passage, all of the following are objectives of the THEMIS mission EXCEPT:",
+          "options": [
+            {
+              "id": "A",
+              "text": "predicting variations in the flux of electrons in Earth’s outer radiation belt"
+            },
+            {
+              "id": "B",
+              "text": "understanding how individual components of the substorm interact"
+            },
+            {
+              "id": "C",
+              "text": "guaranteeing the success rates of future space missions"
+            },
+            {
+              "id": "D",
+              "text": "investigating when and where substorms begin"
+            },
+            {
+              "id": "E",
+              "text": "understanding how substorms power the auroras"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "C"
+          ],
+          "explanation": "This is an EXCEPT question, so your goal is to identify the one answer choice that does NOT appear in the passage. While improving the success rates of future space missions may be an outcome of the THEMIS mission, it is a possible consequence of an objective, not an objective itself. The passage does not indicate that the success rate is guaranteed. All of the other choices are listed as goals of the mission.",
+          "pages": [
+            399
+          ],
+          "answerPages": [
+            418
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "\nThe polar lights known as auroras are produced when charged subatomic \nparticles, such as protons and electrons flowing from the sun through Earth’s \nmagnetosphere, collide with atoms and molecules in Earth’s upper atmosphere. \nFor reasons not entirely understood, magnetic storms, called substorms, \noccasionally occur where the flow of particles greatly increases and the \ninterplanetary magnetic field becomes much stronger. These substorms are \nfrequently visible on Earth because they increase the intensity of the polar lights.\nRecently, five identical probes were blasted into orbit in a $200 million U.S. \nproject known as the THEMIS mission. Scientists hope the probes will be able to \ninvestigate a number of mysteries about the nature of the substorm instabilities, \nincluding when and where substorms begin, how the individual components \nof the substorm interact, and how substorms power the auroras. The mission’s \nsecondary objectives involve understanding and predicting variations in the flux \nof electrons in Earth’s outer radiation belt. These electrons pose a hazard to the \nsafety of both astronauts and spacecraft. Understanding substorm instabilities \nwould thus improve success rates of future space missions.  \n17. The main purpose of the passage is to\n (A) explain why it is important to invest in space research\n (B)  explain how magnetic substorms interfere with satellite \ncommunications\n (C)  define magnetic substorms and identify a recent scientific \nexperiment to study them\n (D)  compare two alternative approaches to the study of magnetic \nsubstorms\n (E)  demonstrate that unmanned probes are the best way to conduct \nresearch in space\n18. According to the passage, all of the following are objectives of the \nTHEMIS mission EXCEPT:\n (A)  predicting variations in the flux of electrons in Earth’s outer \nradiation belt\n (B) understanding how individual components of the substorm interact\n (C) guaranteeing the success rates of future space missions\n (D) investigating when and where substorms begin\n (E) understanding how substorms power the auroras\n"
+    },
+    {
+      "id": "mcgraw-p011",
+      "sourceId": "mcgraw",
+      "number": 11,
+      "title": "安提基特拉机械",
+      "section": "模拟测验 3",
+      "text": "Despite the ubiquity of computer technology, most people are unaware that computers exist in two mutually exclusive, distinct categories: analog and digital. We are most familiar with digital computers, such as laptops. On the one hand, digital computers process information using a binary number system that allows them to calculate numbers in an accurate and exact manner. Analog computers, on the other hand, do not calculate per se; they measure and respond to a continuously changing input. Simple analog computers, called astrolabes, were first developed by the Greeks to solve problems in astronomy. The devices proved very popular and soon spread throughout the Roman world. By the 10th century, Muslim scholars had developed the astrolabe into a sophisticated mechanical device capable of calculating solutions to problems not only in astronomy, but also in astrology, navigation, surveying, and timekeeping. Modern scientific opinion was that the ancient Greeks had been technologically unable to produce a similarly sophisticated computer, until a discovery was made just over a century ago. In 1900, divers discovered the wreck of a merchant ship, possibly dating back to 150 BCE, off the coast of the Greek island Antikythera. In the wreckage, they found the remains of a complex device apparently a thousand years ahead of its time. Made of metal, this device, known as the Antikythera mechanism, is approximately the size of a shoebox. At the time of its discovery, it was in terrible shape, having been underwater for so long. Its pieces had merged into a broken mass and experts could discern only that it had something to do with astronomy. Thanks to a combination of advanced imaging methods and X-ray computer tomography, however, scientists have since discovered much more. Originally, the mechanism had at least 30 bronze gears with as many as 225 hand-cut triangular teeth. It had three main dials, one on the front and two on the back, respectively marking the astronomical divisions of the Egyptian calendar, the Metonic cycle, and the Saros cycle. Each dial had subdials for greater specificity. For example, the front dial contained a smaller dial that could be adjusted to account for leap years. There were also hands and gearing to account for the movements of the planets. While the workings of the device are now fairly well understood, researchers are still puzzled by the reason it was made. Some postulate that it, like later astrolabes, was used to create astrological charts, or to set feast days, or even to adjust the lunar and solar calendars. Others have thought it was a curiosity made solely for display. The device’s relatively small size and the inclusion of a 3,000 character “user’s manual” suggest that the mechanism was created to be portable and functional, but scientists are no closer to knowing for sure and can only wonder at the purpose of its superb design.",
+      "paragraphs": [
+        "Despite the ubiquity of computer technology, most people are unaware that computers exist in two mutually exclusive, distinct categories: analog and digital. We are most familiar with digital computers, such as laptops. On the one hand, digital computers process information using a binary number system that allows them to calculate numbers in an accurate and exact manner. Analog computers, on the other hand, do not calculate per se; they measure and respond to a continuously changing input. Simple analog computers, called astrolabes, were first developed by the Greeks to solve problems in astronomy. The devices proved very popular and soon spread throughout the Roman world. By the 10th century, Muslim scholars had developed the astrolabe into a sophisticated mechanical device capable of calculating solutions to problems not only in astronomy, but also in astrology, navigation, surveying, and timekeeping. Modern scientific opinion was that the ancient Greeks had been technologically unable to produce a similarly sophisticated computer, until a discovery was made just over a century ago. In 1900, divers discovered the wreck of a merchant ship, possibly dating back to 150 BCE, off the coast of the Greek island Antikythera. In the wreckage, they found the remains of a complex device apparently a thousand years ahead of its time. Made of metal, this device, known as the Antikythera mechanism, is approximately the size of a shoebox. At the time of its discovery, it was in terrible shape, having been underwater for so long. Its pieces had merged into a broken mass and experts could discern only that it had something to do with astronomy. Thanks to a combination of advanced imaging methods and X-ray computer tomography, however, scientists have since discovered much more. Originally, the mechanism had at least 30 bronze gears with as many as 225 hand-cut triangular teeth. It had three main dials, one on the front and two on the back, respectively marking the astronomical divisions of the Egyptian calendar, the Metonic cycle, and the Saros cycle. Each dial had subdials for greater specificity. For example, the front dial contained a smaller dial that could be adjusted to account for leap years. There were also hands and gearing to account for the movements of the planets. While the workings of the device are now fairly well understood, researchers are still puzzled by the reason it was made. Some postulate that it, like later astrolabes, was used to create astrological charts, or to set feast days, or even to adjust the lunar and solar calendars. Others have thought it was a curiosity made solely for display. The device’s relatively small size and the inclusion of a 3,000 character “user’s manual” suggest that the mechanism was created to be portable and functional, but scientists are no closer to knowing for sure and can only wonder at the purpose of its superb design."
+      ],
+      "pages": [
+        400,
+        401,
+        402
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p011-q21",
+          "number": 21,
+          "stem": "Which of the following would weaken the author’s argument that the Antikythera mechanism was a thousand years ahead of its time?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Items discovered on the Antikythera shipwreck were found to date back to 500 BCE."
+            },
+            {
+              "id": "B",
+              "text": "Similarly complex astrolabes were recently found at a series of archeological sites dating between 100 and 500 CE."
+            },
+            {
+              "id": "C",
+              "text": "Complex machines involving pulleys and ropes were found at archeological sites on the Greek island of Antikythera."
+            },
+            {
+              "id": "D",
+              "text": "At the time of the Antikythera shipwreck, the island of Rhodes was famous for its collection of scientific devices."
+            },
+            {
+              "id": "E",
+              "text": "Ancient Romans were famous for their acquisitions of Greek art and architecture."
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "B"
+          ],
+          "explanation": "If similar mechanisms were found that were separated from the Antikythera mechanism by only a few centuries, then the device would not be a thousand years ahead of its time. Therefore, answer choice B is best. The other choices are either outside the scope of the question or are irrelevant.",
+          "pages": [
+            401
+          ],
+          "answerPages": [
+            419
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p011-q22",
+          "number": 22,
+          "stem": "The author mentions that the front dial of the Antikythera mechanism contained a smaller, adjustable dial (line 30) most probably in order to",
+          "options": [
+            {
+              "id": "A",
+              "text": "illustrate the complexity of the mechanism"
+            },
+            {
+              "id": "B",
+              "text": "describe exactly how the mechanism worked"
+            },
+            {
+              "id": "C",
+              "text": "emphasize the importance of leap years in the study of astronomy"
+            },
+            {
+              "id": "D",
+              "text": "argue that the mechanism was used only for very specific tasks"
+            },
+            {
+              "id": "E",
+              "text": "allow readers to imagine what the device looked like"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "A"
+          ],
+          "explanation": "The passage states that the dials had subdials for greater specificity. That, along with the increasing level of detail in the passage, indicates that answer choice A is the best answer. The passage does not talk about the importance of leap years in astronomy, nor does it describe exactly how the mechanism worked; therefore, answer choices B and C are incorrect. Answer choices D and E are implicitly contradicted by the passage.",
+          "pages": [
+            401
+          ],
+          "answerPages": [
+            419
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p011-q23",
+          "number": 23,
+          "stem": "The passage’s statement that, by the 10th century, Muslim scholars had developed the astrolabe into a sophisticated mechanical device would justify which of the following conclusions?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Muslim scholars were unaware of other scientific measuring devices."
+            },
+            {
+              "id": "B",
+              "text": "Muslim scholars developed a kind of technology that had never been known before."
+            },
+            {
+              "id": "C",
+              "text": "There was no need for sophisticated mechanical devices such as the astrolabe before the 10th century."
+            },
+            {
+              "id": "D",
+              "text": "The astrolabe’s sophistication allowed for more exploration of the physical world."
+            },
+            {
+              "id": "E",
+              "text": "Muslim scholars had a need to solve complex problems in astronomy, navigation, surveying, and timekeeping."
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "E"
+          ],
+          "explanation": "This is a strengthen question; therefore, the correct answer will make the statement more likely to be true. Answer choice E explains why (if vaguely) Muslim scholars would bother to make a complex mechanism that performs those certain tasks. We don’t have enough information to know if answer choices A and D are true. Answer choices B and C are contradicted by the passage.",
+          "pages": [
+            402
+          ],
+          "answerPages": [
+            419
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p011-q24",
+          "number": 24,
+          "stem": "The passage supplies information for answering which of the following questions?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Where was the mechanism made?"
+            },
+            {
+              "id": "B",
+              "text": "What was the primary purpose of the Antikythera mechanism?"
+            },
+            {
+              "id": "C",
+              "text": "How did ancient scientists know how to use the Antikythera mechanism?"
+            },
+            {
+              "id": "D",
+              "text": "Precisely how many gears did the mechanism have?"
+            },
+            {
+              "id": "E",
+              "text": "What is the purpose of computer tomography?"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "C"
+          ],
+          "explanation": "The last paragraph mentions a 3,000-character “user’s manual” that would allow contemporary scientists to use the mechanism. This best supports answer choice C. The passage does not say where the mechanism was made or what tomography does, so choices A and E are incorrect. The passage states that the primary purpose of the device and its exact physical description are still unknown, so eliminate answer choices B and D.",
+          "pages": [
+            402
+          ],
+          "answerPages": [
+            419
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "\nDespite the ubiquity of computer technology, most people are unaware that \ncomputers exist in two mutually exclusive, distinct categories: analog and digital. \nWe are most familiar with digital computers, such as laptops. On the one hand, \ndigital computers process information using a binary number system that allows \nthem to calculate numbers in an accurate and exact manner. Analog computers, \non the other hand, do not calculate per se; they measure and respond to a \ncontinuously changing input. \nSimple analog computers, called astrolabes, were first developed by the \nGreeks to solve problems in astronomy. The devices proved very popular and \nsoon spread throughout the Roman world. By the 10th century, Muslim scholars \nhad developed the astrolabe into a sophisticated mechanical device capable of \ncalculating solutions to problems not only in astronomy, but also in astrology, \nnavigation, surveying, and timekeeping.\nModern scientific opinion was that the ancient Greeks had been \ntechnologically unable to produce a similarly sophisticated computer, until a \ndiscovery was made just over a century ago. In 1900, divers discovered the wreck \nof a merchant ship, possibly dating back to 150 BCE, off the coast of the Greek \nisland Antikythera. In the wreckage, they found the remains of a complex device \napparently a thousand years ahead of its time. \nMade of metal, this device, known as the Antikythera mechanism, is \napproximately the size of a shoebox. At the time of its discovery, it was in terrible \nshape, having been underwater for so long. Its pieces had merged into a broken \nmass and experts could discern only that it had something to do with astronomy. \nThanks to a combination of advanced imaging methods and X-ray computer \ntomography, however, scientists have since discovered much more. \nOriginally, the mechanism had at least 30 bronze gears with as many as 225 \nhand-cut triangular teeth. It had three main dials, one on the front and two on the \nback, respectively marking the astronomical divisions of the Egyptian calendar, \nthe Metonic cycle, and the Saros cycle. Each dial had subdials for greater \nspecificity. For example, the front dial contained a smaller dial that could be \nadjusted to account for leap years. There were also hands and gearing to account \nfor the movements of the planets.\nWhile the workings of the device are now fairly well understood, researchers \nare still puzzled by the reason it was made. Some postulate that it, like later \nastrolabes, was used to create astrological charts, or to set feast days, or even to \nadjust the lunar and solar calendars. Others have thought it was a curiosity made \nsolely for display. The device’s relatively small size and the inclusion of a 3,000 \ncharacter “user’s manual” suggest that the mechanism was created to be portable \nand functional, but scientists are no closer to knowing for sure and can only \nwonder at the purpose of its superb design.\n21. Which of the following would weaken the author’s argument that the \nAntikythera mechanism was a thousand years ahead of its time?\n (A)  Items discovered on the Antikythera shipwreck were found to date \nback to 500 BCE.\n (B)  Similarly complex astrolabes were recently found at a series of \narcheological sites dating between 100 and 500 CE. \n (C)  Complex machines involving pulleys and ropes were found at \narcheological sites on the Greek island of Antikythera.\n (D)  At the time of the Antikythera shipwreck, the island of Rhodes was \nfamous for its collection of scientific devices.\n (E)  Ancient Romans were famous for their acquisitions of Greek art and \narchitecture.\n22. The author mentions that the front dial of the Antikythera mechanism \ncontained a smaller, adjustable dial (line 30) most probably in order to\n (A) illustrate the complexity of the mechanism  \n (B) describe exactly how the mechanism worked\n (C) emphasize the importance of leap years in the study of astronomy\n (D) argue that the mechanism was used only for very specific tasks\n (E) allow readers to imagine what the device looked like\n23. The passage’s statement that, by the 10th century, Muslim scholars had \ndeveloped the astrolabe into a sophisticated mechanical device would \njustify which of the following conclusions?\n (A) Muslim scholars were unaware of other scientific measuring devices.\n (B)  Muslim scholars developed a kind of technology that had never been \nknown before.\n (C)  There was no need for sophisticated mechanical devices such as the \nastrolabe before the 10th century.\n (D)  The astrolabe’s sophistication allowed for more exploration of the \nphysical world.\n (E)  Muslim scholars had a need to solve complex problems in \nastronomy, navigation, surveying, and timekeeping. \n24. The passage supplies information for answering which of the following \nquestions?\n (A) Where was the mechanism made?\n (B) What was the primary purpose of the Antikythera mechanism?\n (C)  How did ancient scientists know how to use the Antikythera \nmechanism?\n (D) Precisely how many gears did the mechanism have?\n (E) What is the purpose of computer tomography? \n"
+    },
+    {
+      "id": "mcgraw-p012",
+      "sourceId": "mcgraw",
+      "number": 12,
+      "title": "太空中的爆炸",
+      "section": "模拟测验 3",
+      "text": "Modern science fiction movies are often known for their breathtaking special effects. These effects can show us a glimpse of the future, and frequently have tremendous dramatic force. Sometimes, however, special effects can leave the science behind to focus only on the fiction. One of the worst offenders is a film’s depiction of explosions in outer space. On Earth, explosions occur in some form of matter, usually air or water. The change in energy level in the matter creates the energy differential known as a shock wave. The wave is what creates the characteristic “boom” of an explosion. Since there is very little matter in outer space, the energy transfer never takes place. Consequently, there is no sound. Further, because air and water are not perfect conduits for energy, they measurably slow the travel of the explosive force. This allows the explosion to unfold in relatively slow motion, which renders it visible to the eye. In space, there is nothing to slow the energy, which would disperse almost immediately. The effect for an observer would be a bright flash, gone almost as soon as it appeared, and nothing like the great billowing space clouds shown in the movies, suggesting that reality is insufficiently dramatic for cinematic representation.",
+      "paragraphs": [
+        "Modern science fiction movies are often known for their breathtaking special effects. These effects can show us a glimpse of the future, and frequently have tremendous dramatic force. Sometimes, however, special effects can leave the science behind to focus only on the fiction. One of the worst offenders is a film’s depiction of explosions in outer space. On Earth, explosions occur in some form of matter, usually air or water. The change in energy level in the matter creates the energy differential known as a shock wave. The wave is what creates the characteristic “boom” of an explosion. Since there is very little matter in outer space, the energy transfer never takes place. Consequently, there is no sound. Further, because air and water are not perfect conduits for energy, they measurably slow the travel of the explosive force. This allows the explosion to unfold in relatively slow motion, which renders it visible to the eye. In space, there is nothing to slow the energy, which would disperse almost immediately. The effect for an observer would be a bright flash, gone almost as soon as it appeared, and nothing like the great billowing space clouds shown in the movies, suggesting that reality is insufficiently dramatic for cinematic representation."
+      ],
+      "pages": [
+        402,
+        403
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p012-q25",
+          "number": 25,
+          "stem": "The author’s argument is developed primarily by the use of",
+          "options": [
+            {
+              "id": "A",
+              "text": "an attack on the misuse of scientific discoveries by modern film directors"
+            },
+            {
+              "id": "B",
+              "text": "a critique of technical developments in science fiction movie special effects"
+            },
+            {
+              "id": "C",
+              "text": "an example of how science fiction directors distort science to increase dramatic effect"
+            },
+            {
+              "id": "D",
+              "text": "an analogy between science fiction movie special effect and science education in schools"
+            },
+            {
+              "id": "E",
+              "text": "a warning against an overreliance on films to teach science to youngsters"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "C"
+          ],
+          "explanation": "The generally descriptive tone of the passage eliminates answer choices A and E, which are too negative. The passage also does not address the role of movies in education, so answer choice D is not correct. Instead, the passage describes how explosions would occur in space and how that differs from explosions on Earth (and, by extension, in the movies). This best fits with answer choice C.",
+          "pages": [
+            403
+          ],
+          "answerPages": [
+            419
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p012-q26",
+          "number": 26,
+          "stem": "According to the passage, which of the following is true about explosions in space? I. A lack of matter in space allows the energy from an explosion to travel very quickly. II. An explosion in space would be visible as a flash of bright light. III. Shock waves created by an explosion in space would cause an audible “boom.”",
+          "options": [
+            {
+              "id": "A",
+              "text": "I only"
+            },
+            {
+              "id": "B",
+              "text": "II only"
+            },
+            {
+              "id": "C",
+              "text": "I and II only"
+            },
+            {
+              "id": "D",
+              "text": "II and III only"
+            },
+            {
+              "id": "E",
+              "text": "I, II, and III"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "C"
+          ],
+          "explanation": "This question asks you to choose which of three statements is true, based on the passage. The answers are found in the second paragraph. The author states that there is nothing to slow the energy from an explosion; therefore, it would disperse very quickly. Thus Roman numeral I is true. The author also states that the effect of an explosion for an observer would be a bright flash, so Roman numeral II is true. While the author writes that shock waves from an explosion cause a “boom,” she also writes that those waves are not heard in space. Therefore, Roman numeral III is false. Consequently, only Roman numerals I and II are true.",
+          "pages": [
+            403
+          ],
+          "answerPages": [
+            419
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "\nModern science fiction movies are often known for their breathtaking special \neffects. These effects can show us a glimpse of the future, and frequently have \ntremendous dramatic force. Sometimes, however, special effects can leave the \nscience behind to focus only on the fiction. One of the worst offenders is a film’s \ndepiction of explosions in outer space. \nOn Earth, explosions occur in some form of matter, usually air or water. The \nchange in energy level in the matter creates the energy differential known as a \nshock wave. The wave is what creates the characteristic “boom” of an explosion. \nSince there is very little matter in outer space, the energy transfer never takes \nplace. Consequently, there is no sound. Further, because air and water are not \nperfect conduits for energy, they measurably slow the travel of the explosive \nforce. This allows the explosion to unfold in relatively slow motion, which \nrenders it visible to the eye. In space, there is nothing to slow the energy, which \nwould disperse almost immediately. The effect for an observer would be a bright \nflash, gone almost as soon as it appeared, and nothing like the great billowing \nspace clouds shown in the movies, suggesting that reality is insufficiently \ndramatic for cinematic representation.\n25. The author’s argument is developed primarily by the use of\n (A)  an attack on the misuse of scientific discoveries by modern film \ndirectors\n (B)  a critique of technical developments in science fiction movie special \neffects\n (C)  an example of how science fiction directors distort science to \nincrease dramatic effect\n (D)  an analogy between science fiction movie special effect and science \neducation in schools\n (E)  a warning against an overreliance on films to teach science to \nyoungsters\n26. According to the passage, which of the following is true about explosions \nin space?\n   I.  A lack of matter in space allows the energy from an\nexplosion to travel very quickly. \n  II.  An explosion in space would be visible as a flash of\nbright light. \n III.  Shock waves created by an explosion in space would\ncause an audible “boom.”\n (A) I only\n (B) II only\n (C) I and II only \n (D) II and III only\n (E) I, II, and III\n"
+    },
+    {
+      "id": "mcgraw-p013",
+      "sourceId": "mcgraw",
+      "number": 13,
+      "title": "印刷术与文艺复兴",
+      "section": "阅读专项 · 印刷术",
+      "text": "According to many scholars, Johannes Gutenberg’s mid-15th century invention of the movable-type printing press fueled the scientific and cultural revolution today known as the European Renaissance. With their unique combination of easy and accurate reproduction, printed books quickly became the repository of Western knowledge, replacing laboriously produced, handwritten manuscripts. Early works, known as incunabula, often married the two traditions. Texts could be printed with spaces left for scribes and illustrators to add the illuminated capitals and intricate artwork expected by wealthy patrons. Often religious texts, these volumes were designed to move believers with rich colors, florid imagery, and precious materials. Indeed, the resultant product was very much like its predecessor, the illuminated manuscript, a book whose text was adorned with painted initials, borders, and illustrations. Today, a few treasured 15th- century incunabula survive in libraries and museums, a testament to their robust construction and the care bestowed on them by their owners. Despite the luxury exhibited in some incunabula texts, movable-type print can be argued to have been a powerful democratizing force. While running the press was not without its own expense and toil, a work printed on paper could be made available for one-fifth that of a scribal text on vellum or parchment. The availability of scientific, political, and religious texts simply exploded. Nevertheless, many historians would quickly point out that Renaissance Europe was not the resplendent cultural and scientific center of the world envisioned in modern populist media. While exact rates of literacy are extremely controversial, it is generally agreed that the vast majority of Europeans in the 15th century were uneducated and wholly disenfranchised. The lofty realms of philosophy, science, and the arts were the preoccupation of society’s elite. Hence, the printed word frequently reflected the aspirations of the aristocracy or the interests of affluent landowners and merchants, all of whom were still the primary market for books. In this way, the perspective of the common citizen, what we may term the “working class,” is all but absent in the profusion of communication that is the Renaissance. Swiss historian Jacob Burckhardt, to whom the word Renaissance is attributed, makes no claim for increased equity in the authorship, publication, or ownership of printed manuscripts in 15th-century Europe. He asserts, however, that in the Italian Renaissance—an intellectual movement begun a full century before the invention of the printing press—was the fall of the notion of birthright: “And as time went on, the greater the influence of humanism on the Italian mind, the firmer and more widespread became the conviction that birth decides nothing as to the goodness or badness of a man.” While the idea of social fairness may have taken hold in the Renaissance, spread by the proliferation of ideas and texts, real economic justice was slower to develop. Just as incunabula bridged the transition from handwritten manuscript to fully printed text, the Renaissance revolution held a middle ground between medieval feudalism and Enlightenment democracy.",
+      "paragraphs": [
+        "According to many scholars, Johannes Gutenberg’s mid-15th century invention of the movable-type printing press fueled the scientific and cultural revolution today known as the European Renaissance. With their unique combination of easy and accurate reproduction, printed books quickly became the repository of Western knowledge, replacing laboriously produced, handwritten manuscripts. Early works, known as incunabula, often married the two traditions. Texts could be printed with spaces left for scribes and illustrators to add the illuminated capitals and intricate artwork expected by wealthy patrons. Often religious texts, these volumes were designed to move believers with rich colors, florid imagery, and precious materials. Indeed, the resultant product was very much like its predecessor, the illuminated manuscript, a book whose text was adorned with painted initials, borders, and illustrations. Today, a few treasured 15th- century incunabula survive in libraries and museums, a testament to their robust construction and the care bestowed on them by their owners. Despite the luxury exhibited in some incunabula texts, movable-type print can be argued to have been a powerful democratizing force. While running the press was not without its own expense and toil, a work printed on paper could be made available for one-fifth that of a scribal text on vellum or parchment. The availability of scientific, political, and religious texts simply exploded. Nevertheless, many historians would quickly point out that Renaissance Europe was not the resplendent cultural and scientific center of the world envisioned in modern populist media. While exact rates of literacy are extremely controversial, it is generally agreed that the vast majority of Europeans in the 15th century were uneducated and wholly disenfranchised. The lofty realms of philosophy, science, and the arts were the preoccupation of society’s elite. Hence, the printed word frequently reflected the aspirations of the aristocracy or the interests of affluent landowners and merchants, all of whom were still the primary market for books. In this way, the perspective of the common citizen, what we may term the “working class,” is all but absent in the profusion of communication that is the Renaissance. Swiss historian Jacob Burckhardt, to whom the word Renaissance is attributed, makes no claim for increased equity in the authorship, publication, or ownership of printed manuscripts in 15th-century Europe. He asserts, however, that in the Italian Renaissance—an intellectual movement begun a full century before the invention of the printing press—was the fall of the notion of birthright: “And as time went on, the greater the influence of humanism on the Italian mind, the firmer and more widespread became the conviction that birth decides nothing as to the goodness or badness of a man.” While the idea of social fairness may have taken hold in the Renaissance, spread by the proliferation of ideas and texts, real economic justice was slower to develop. Just as incunabula bridged the transition from handwritten manuscript to fully printed text, the Renaissance revolution held a middle ground between medieval feudalism and Enlightenment democracy."
+      ],
+      "pages": [
+        201,
+        202,
+        203,
+        204
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p013-q01",
+          "number": 1,
+          "stem": "The author is primarily concerned with",
+          "options": [
+            {
+              "id": "A",
+              "text": "describing how movable-print type revolutionized production of the written word"
+            },
+            {
+              "id": "B",
+              "text": "explaining how Johannes Gutenberg’s invention of the printing press revolutionized the production of written texts, laying the groundwork for social democracy"
+            },
+            {
+              "id": "C",
+              "text": "arguing that printed books were shoddy replacements for resplendent illuminated manuscripts"
+            },
+            {
+              "id": "D",
+              "text": "examining how the European Renaissance resulted in significantly increased social equity due to the invention of the printing press"
+            },
+            {
+              "id": "E",
+              "text": "denying that social justice always precedes economic justice in the evolution of human civilization"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "B"
+          ],
+          "explanation": "Only answer choice B covers the full scope of the passage. Although answer choice A states a point clearly made in the passage, it does not include the social and political concerns of the author. The other choices are either too broad or are inaccurate.",
+          "pages": [
+            202
+          ],
+          "answerPages": [
+            204
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p013-q02",
+          "number": 2,
+          "stem": "Which one of the following most accurately describes the author’s attitude toward “social fairness” (line 38)?",
+          "options": [
+            {
+              "id": "A",
+              "text": "“Social fairness” is a false academic construction and is impossible to achieve in “real-world” conditions."
+            },
+            {
+              "id": "B",
+              "text": "“Social fairness” is a by-product of the medieval period carried over to the Enlightenment."
+            },
+            {
+              "id": "C",
+              "text": "“Social fairness” is a modern term and, therefore, irrelevant to any discussion of the Renaissance."
+            },
+            {
+              "id": "D",
+              "text": "“Social fairness” is the ultimate goal of the human condition and is a necessary component of modern civilization."
+            },
+            {
+              "id": "E",
+              "text": "“Social fairness” is a desirable human condition that began to be realized in 15th-century Europe as a product of the Renaissance."
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "E"
+          ],
+          "explanation": "Although academic, the author’s tone in the passage is mildly argumentative and favorable toward social reform, as indicated in answer choice E. Although the author promotes the idea of “social fairness,” the tone in answer choice D is too strong and the language too absolute. Likewise, the other answer choices are not supported by the passage.",
+          "pages": [
+            203
+          ],
+          "answerPages": [
+            204
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p013-q03",
+          "number": 3,
+          "stem": "According to the author, which of the following would be the most accurate description of the incunabula?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The intricate artwork added to printed books in order to make them more appealing to the masses"
+            },
+            {
+              "id": "B",
+              "text": "Public funds dedicated to publishing scientific books"
+            },
+            {
+              "id": "C",
+              "text": "Imaginary demons supposed to descend upon sleeping persons"
+            },
+            {
+              "id": "D",
+              "text": "Cheap Renaissance paperbacks"
+            },
+            {
+              "id": "E",
+              "text": "Early printed works that often combined printing with elements of illuminated manuscripts"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "E"
+          ],
+          "explanation": "As defined in the first paragraph, incunabula are early printed works that often combined printing with elements of illuminated manuscripts. They are not the artwork added to the texts, so answer choice A is incorrect. Answer choice C is incorrect because it defines an incubus.",
+          "pages": [
+            203
+          ],
+          "answerPages": [
+            204
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p013-q04",
+          "number": 4,
+          "stem": "According to the passage, the statement made in line 24 (“uneducated and wholly disenfranchised”) regarding most 15th-century Europeans serves to",
+          "options": [
+            {
+              "id": "A",
+              "text": "preview the rise of Rousseauesque pedagogic techniques in the Enlightenment"
+            },
+            {
+              "id": "B",
+              "text": "reveal the prejudices of late-15th-century book dealers"
+            },
+            {
+              "id": "C",
+              "text": "reinforce the idea that the Renaissance was primarily an intellectual movement of and for the upper classes"
+            },
+            {
+              "id": "D",
+              "text": "counter the descriptions usually given by academics"
+            },
+            {
+              "id": "E",
+              "text": "explain why incunabula were frequently less expensive than handwritten manuscripts"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "C"
+          ],
+          "explanation": "Despite the introduction of mass-produced books, the book market was still primarily composed of the upper classes. The lower classes are implied to lack the academic and political education—not to mention cash—to take advantage of the newly available books. Answer choice D is incorrect because the statement counters the descriptions ascribed to “populist media,” not to academics.",
+          "pages": [
+            203
+          ],
+          "answerPages": [
+            204
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p013-q05",
+          "number": 5,
+          "stem": "Which of the following, if true, would most weaken the argument that the printing press enabled a Renaissance strictly for the upper classes?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Most printed Bibles (the most commonly printed book) were purchased by working-class people."
+            },
+            {
+              "id": "B",
+              "text": "Johannes Gutenberg frequently refused to print cookbooks or herbals."
+            },
+            {
+              "id": "C",
+              "text": "The advent of paper books led to a serious reduction in the price of vellum."
+            },
+            {
+              "id": "D",
+              "text": "The cheapest printed books often cost as much as a year’s salary for a day laborer, which is clearly too much."
+            },
+            {
+              "id": "E",
+              "text": "William Caxton, a prolific English printer, often printed historical texts."
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "A"
+          ],
+          "explanation": "If working-class people were discovered to have owned large numbers of printed books, it would suggest that book ownership was more equitable than the author believes, and that Renaissance ideals were, in fact, reaching the masses. The other choices either strengthen the argument or are irrelevant. Directions: The passage below is followed by two questions. The questions correspond to information that is stated or implied in the passage. Read the passage and choose the best answer for each question. Defined biologically, hair is primarily composed of keratin, a protein, which grows out through the skin from follicles deep within the dermis. This definition holds for all mammals. The difference for humans is not in the hair, but in the follicle. Under the microscope, an individual human’s hair follicles are anatomically indistinguishable, meaning that a hair follicle on your head is visually identical to one on your upper arm. Physiologically, however, the two follicles behave very differently. The first type produces terminal hair, the longer, darker, thicker hair generally found on the scalp, eyebrows, and eyelashes. The second type produces the fine, unpigmented vellus hair found on most places of the body, including the face and back. Vellus hair is usually very short and the follicles are not connected to sebaceous glands. 1. It can be inferred from the passage that (A) mammals do not have sebaceous glands (B) animals such as monkeys cannot grow terminal hair (C) the hair of a horse is composed mainly of keratin (D) scientists cannot distinguish human hair from the hair of other mammals (E) terminal hair grows much faster than vellus hair 2. The main purpose of the passage is to (A) introduce the idea that human hair is different from the hair of other mammals (B) explain how terminal hair follicles change into vellus hair follicles (C) describe the similarities between two types of human hair follicles (D) compare the anatomy of human hair follicles with that of other types of hair follicles (E) demonstrate that human hair growth contradicts the commonly held definition of biology",
+          "pages": [
+            204
+          ],
+          "answerPages": [
+            205
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "According to many scholars, Johannes Gutenberg’s mid-15th century invention \nof the movable-type printing press fueled the scientific and cultural revolution \ntoday known as the European Renaissance. With their unique combination of \neasy and accurate reproduction, printed books quickly became the repository of \nWestern knowledge, replacing laboriously produced, handwritten manuscripts. \nEarly works, known as incunabula, often married the two traditions. Texts could \nbe printed with spaces left for scribes and illustrators to add the illuminated \ncapitals and intricate artwork expected by wealthy patrons. Often religious \ntexts, these volumes were designed to move believers with rich colors, florid \nimagery, and precious materials. Indeed, the resultant product was very much \nlike its predecessor, the illuminated manuscript, a book whose text was adorned \nwith painted initials, borders, and illustrations. Today, a few treasured 15th-\ncentury incunabula survive in libraries and museums, a testament to their robust \nconstruction and the care bestowed on them by their owners. \nDespite the luxury exhibited in some incunabula texts, movable-type print \ncan be argued to have been a powerful democratizing force. While running the \npress was not without its own expense and toil, a work printed on paper could \nbe made available for one-fifth that of a scribal text on vellum or parchment. \nThe availability of scientific, political, and religious texts simply exploded. \nNevertheless, many historians would quickly point out that Renaissance Europe \nwas not the resplendent cultural and scientific center of the world envisioned in \nmodern populist media. While exact rates of literacy are extremely controversial, \nit is generally agreed that the vast majority of Europeans in the 15th century \nwere uneducated and wholly disenfranchised. The lofty realms of philosophy, \nscience, and the arts were the preoccupation of society’s elite. Hence, the printed \nword frequently reflected the aspirations of the aristocracy or the interests of \naffluent landowners and merchants, all of whom were still the primary market for \nbooks. In this way, the perspective of the common citizen, what we may term the \n“working class,” is all but absent in the profusion of communication that is the \nRenaissance.\nSwiss historian Jacob Burckhardt, to whom the word Renaissance is \nattributed, makes no claim for increased equity in the authorship, publication, or \nownership of printed manuscripts in 15th-century Europe. He asserts, however, \nthat in the Italian Renaissance—an intellectual movement begun a full century \nbefore the invention of the printing press—was the fall of the notion of birthright: \n“And as time went on, the greater the influence of humanism on the Italian \nmind, the firmer and more widespread became the conviction that birth decides \nnothing as to the goodness or badness of a man.” While the idea of social fairness \nmay have taken hold in the Renaissance, spread by the proliferation of ideas and \ntexts, real economic justice was slower to develop. Just as incunabula bridged \nthe transition from handwritten manuscript to fully printed text, the Renaissance \nrevolution held a middle ground between medieval feudalism and Enlightenment \ndemocracy.\n1. The author is primarily concerned with\n (A)  describing how movable-print type revolutionized production of the \nwritten word\n (B)  explaining how Johannes Gutenberg’s invention of the printing \npress revolutionized the production of written texts, laying the \ngroundwork for social democracy\n (C)  arguing that printed books were shoddy replacements for \nresplendent illuminated manuscripts\n (D)  examining how the European Renaissance resulted in significantly \nincreased social equity due to the invention of the printing press\n (E)  denying that social justice always precedes economic justice in the \nevolution of human civilization\n2. Which one of the following most accurately describes the author’s \nattitude toward “social fairness” (line 38)?\n (A)  “Social fairness” is a false academic construction and is impossible \nto achieve in “real-world” conditions.\n (B)  “Social fairness” is a by-product of the medieval period carried over \nto the Enlightenment.\n (C)  “Social fairness” is a modern term and, therefore, irrelevant to any \ndiscussion of the Renaissance.\n (D)  “Social fairness” is the ultimate goal of the human condition and is a \nnecessary component of modern civilization.\n (E)  “Social fairness” is a desirable human condition that began to be \nrealized in 15th-century Europe as a product of the Renaissance.\n3. According to the author, which of the following would be the most \naccurate description of the incunabula?\n (A)  The intricate artwork added to printed books in order to make them \nmore appealing to the masses\n (B) Public funds dedicated to publishing scientific books\n (C) Imaginary demons supposed to descend upon sleeping persons\n (D) Cheap Renaissance paperbacks\n (E)  Early printed works that often combined printing with elements of \nilluminated manuscripts\n4. According to the passage, the statement made in line 24 (“uneducated \nand wholly disenfranchised”) regarding most 15th-century Europeans \nserves to\n (A)  preview the rise of Rousseauesque pedagogic techniques in the \nEnlightenment\n (B) reveal the prejudices of late-15th-century book dealers\n (C)  reinforce the idea that the Renaissance was primarily an intellectual \nmovement of and for the upper classes\n (D) counter the descriptions usually given by academics\n (E)  explain why incunabula were frequently less expensive than \nhandwritten manuscripts\n5. Which of the following, if true, would most weaken the argument that \nthe printing press enabled a Renaissance strictly for the upper classes?\n (A)  Most printed Bibles (the most commonly printed book) were \npurchased by working-class people.\n (B) Johannes Gutenberg frequently refused to print cookbooks or herbals.\n (C)  The advent of paper books led to a serious reduction in the price of \nvellum.\n (D)  The cheapest printed books often cost as much as a year’s salary for \na day laborer, which is clearly too much.\n (E)  William Caxton, a prolific English printer, often printed historical \ntexts.\n"
+    },
+    {
+      "id": "mcgraw-p014",
+      "sourceId": "mcgraw",
+      "number": 14,
+      "title": "人类毛囊的差异",
+      "section": "阅读专项 · 毛发",
+      "text": "Defined biologically, hair is primarily composed of keratin, a protein, which grows out through the skin from follicles deep within the dermis. This definition holds for all mammals. The difference for humans is not in the hair, but in the follicle. Under the microscope, an individual human’s hair follicles are anatomically indistinguishable, meaning that a hair follicle on your head is visually identical to one on your upper arm. Physiologically, however, the two follicles behave very differently. The first type produces terminal hair, the longer, darker, thicker hair generally found on the scalp, eyebrows, and eyelashes. The second type produces the fine, unpigmented vellus hair found on most places of the body, including the face and back. Vellus hair is usually very short and the follicles are not connected to sebaceous glands.",
+      "paragraphs": [
+        "Defined biologically, hair is primarily composed of keratin, a protein, which grows out through the skin from follicles deep within the dermis. This definition holds for all mammals. The difference for humans is not in the hair, but in the follicle. Under the microscope, an individual human’s hair follicles are anatomically indistinguishable, meaning that a hair follicle on your head is visually identical to one on your upper arm. Physiologically, however, the two follicles behave very differently. The first type produces terminal hair, the longer, darker, thicker hair generally found on the scalp, eyebrows, and eyelashes. The second type produces the fine, unpigmented vellus hair found on most places of the body, including the face and back. Vellus hair is usually very short and the follicles are not connected to sebaceous glands."
+      ],
+      "pages": [
+        205
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p014-q01",
+          "number": 1,
+          "stem": "It can be inferred from the passage that",
+          "options": [
+            {
+              "id": "A",
+              "text": "mammals do not have sebaceous glands"
+            },
+            {
+              "id": "B",
+              "text": "animals such as monkeys cannot grow terminal hair"
+            },
+            {
+              "id": "C",
+              "text": "the hair of a horse is composed mainly of keratin"
+            },
+            {
+              "id": "D",
+              "text": "scientists cannot distinguish human hair from the hair of other mammals"
+            },
+            {
+              "id": "E",
+              "text": "terminal hair grows much faster than vellus hair"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "C"
+          ],
+          "explanation": "According to the passage, “hair is primarily composed of keratin, a protein, which grows out through the skin from follicles deep within the dermis. This definition holds for all mammals.” Therefore, a horse has hair that is mainly composed of keratin. The other answer choices are not supported by the passage.",
+          "pages": [
+            205
+          ],
+          "answerPages": [
+            206
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        },
+        {
+          "id": "mcgraw-p014-q02",
+          "number": 2,
+          "stem": "The main purpose of the passage is to",
+          "options": [
+            {
+              "id": "A",
+              "text": "introduce the idea that human hair is different from the hair of other mammals"
+            },
+            {
+              "id": "B",
+              "text": "explain how terminal hair follicles change into vellus hair follicles"
+            },
+            {
+              "id": "C",
+              "text": "describe the similarities between two types of human hair follicles"
+            },
+            {
+              "id": "D",
+              "text": "compare the anatomy of human hair follicles with that of other types of hair follicles"
+            },
+            {
+              "id": "E",
+              "text": "demonstrate that human hair growth contradicts the commonly held definition of biology"
+            }
+          ],
+          "kind": "single",
+          "answer": [
+            "A"
+          ],
+          "explanation": "The main purpose of this short passage is simply to introduce the idea that human hair is different from the hair of other mammals. Answer choices B, C, and D are too specific and beyond the scope of the passage. Answer choice E is not supported by information in the passage. Text Completion with Two or Three Blanks Questions The GRE has introduced a new question type that includes a short passage, usually one or two sentences in length, containing two or three numbered blanks. The blanks indicate that something has been omitted from the text. You are required to select words or phrases from corresponding columns of choices to fill all the blanks in a way that best completes the text. You will be given a choice of three answers per blank, each of which functions independently. Selecting an answer choice for one blank does not affect your choice for the second or third blanks. A correct answer must include one choice for each blank. You will not be given partial credit. As of the writing of this book, the POWERPREP® software does not include Text Completion with Two or Three Blanks questions. However, in addition to the samples you will ﬁ nd in this book, there are practice questions at www.gre.org. Keep in mind that there will be only one Text Completion question on your GRE. NOTE Anatomy of a GRE Text Completion Question Before moving on to strategies, you should understand what a Text Completion question looks like. Consider the following example:",
+          "pages": [
+            205
+          ],
+          "answerPages": [
+            206
+          ],
+          "answerStatus": "source-key",
+          "notes": []
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。"
+      ],
+      "rawText": "Defined biologically, hair is primarily composed of keratin, a protein, which \ngrows out through the skin from follicles deep within the dermis. This definition \nholds for all mammals. The difference for humans is not in the hair, but in \nthe follicle. Under the microscope, an individual human’s hair follicles are \nanatomically indistinguishable, meaning that a hair follicle on your head is \nvisually identical to one on your upper arm. Physiologically, however, the two \nfollicles behave very differently. The first type produces terminal hair, the longer, \ndarker, thicker hair generally found on the scalp, eyebrows, and eyelashes. The \nsecond type produces the fine, unpigmented vellus hair found on most places of \nthe body, including the face and back. Vellus hair is usually very short and the \nfollicles are not connected to sebaceous glands.\n1. It can be inferred from the passage that\n (A) mammals do not have sebaceous glands\n (B) animals such as monkeys cannot grow terminal hair\n (C) the hair of a horse is composed mainly of keratin \n (D)  scientists cannot distinguish human hair from the hair of other \nmammals\n (E) terminal hair grows much faster than vellus hair\n2. The main purpose of the passage is to\n (A)  introduce the idea that human hair is different from the hair of other \nmammals\n (B) explain how terminal hair follicles change into vellus hair follicles\n (C) describe the similarities between two types of human hair follicles\n (D)  compare the anatomy of human hair follicles with that of other types \nof hair follicles\n (E)  demonstrate that human hair growth contradicts the commonly held \ndefinition of biology\n"
+    },
+    {
+      "id": "mcgraw-p015",
+      "sourceId": "mcgraw",
+      "number": 15,
+      "title": "黑猩猩与人类祖先",
+      "section": "题型示例 · 黑猩猩",
+      "text": "Scientists know very little about the eating habits of our ancestors who lived over two and a half million years ago. To solve this problem, scientists have started examining chimpanzees’ hunting behavior and diet to find clues about our own prehistoric past. It is not difficult to determine why studying chimpanzees might be beneficial. Modern humans and chimpanzees are actually very closely related. Experts believe that chimpanzees share about 98.5 percent of our DNA sequence. If this is true, humans are more closely related to chimpanzees than they are to any other animal species.",
+      "paragraphs": [
+        "Scientists know very little about the eating habits of our ancestors who lived over two and a half million years ago. To solve this problem, scientists have started examining chimpanzees’ hunting behavior and diet to find clues about our own prehistoric past. It is not difficult to determine why studying chimpanzees might be beneficial. Modern humans and chimpanzees are actually very closely related. Experts believe that chimpanzees share about 98.5 percent of our DNA sequence. If this is true, humans are more closely related to chimpanzees than they are to any other animal species."
+      ],
+      "pages": [
+        30,
+        31
+      ],
+      "questions": [
+        {
+          "id": "mcgraw-p015-q01",
+          "number": 1,
+          "stem": "The main purpose of the passage is to",
+          "options": [
+            {
+              "id": "A",
+              "text": "explore biological and physiological similarities between humans and chimpanzees"
+            },
+            {
+              "id": "B",
+              "text": "examine the hunting behavior and diet of chimpanzees and compare it to human activity"
+            },
+            {
+              "id": "C",
+              "text": "discuss the health benefits of eating and hunting meat while simultaneously predicting the effect of this behavior on chimpanzee offspring"
+            },
+            {
+              "id": "D",
+              "text": "bring attention to the pioneering research of Dr. Jane Goodall in Tanzania"
+            },
+            {
+              "id": "E",
+              "text": "educate the public on the impact that tool use had on early human societies"
+            }
+          ],
+          "kind": "single",
+          "answer": null,
+          "explanation": null,
+          "pages": [
+            31
+          ],
+          "answerPages": [],
+          "answerStatus": "unverified",
+          "notes": [
+            "原书该题型示例未提供答案，不自动判分。"
+          ]
+        }
+      ],
+      "notes": [
+        "原书为2010年版旧制GRE，保留阅读练习原文；题型与内容未按现行考试改写。",
+        "题干中的line为原PDF行号，可通过来源原页核对。",
+        "原书PDF30–31与193页为同一题型示例，已合并。"
+      ],
+      "rawText": "Scientists know very little about the eating habits of our ancestors who \nlived over two and a half million years ago. To solve this problem, scientists have \nstarted examining chimpanzees’ hunting behavior and diet to find clues about our \nown prehistoric past. It is not difficult to determine why studying chimpanzees \nmight be beneficial. Modern humans and chimpanzees are actually very closely \nrelated. Experts believe that chimpanzees share about 98.5 percent of our DNA \nsequence. If this is true, humans are more closely related to chimpanzees than \nthey are to any other animal species.\n The main purpose of the passage is to \n (A)  explore biological and physiological similarities between humans \nand chimpanzees\n (B)  examine the hunting behavior and diet of chimpanzees and compare \nit to human activity\n (C)  discuss the health benefits of eating and hunting meat while \nsimultaneously predicting the effect of this behavior on chimpanzee \noffspring\n (D)  bring attention to the pioneering research of Dr. Jane Goodall in \nTanzania \n (E)  educate the public on the impact that tool use had on early human \nsocieties\n"
+    }
+  ],
+  "coverage": {
+    "passages": 15,
+    "questions": 40,
+    "unverified": 1,
+    "rawPages": "data/mixed-raw/mcgraw.json",
+    "sampleDuplicatePages": [
+      30,
+      31,
+      193
+    ]
+  }
+}

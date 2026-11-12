@@ -1,0 +1,38 @@
+[
+  {
+    "source": "white",
+    "expectedPassages": 204,
+    "extractedPassages": 204,
+    "questions": 1111,
+    "keyedQuestions": 1111,
+    "autoGradableQuestions": 1110,
+    "explanations": 0,
+    "translations": 0,
+    "answerConflicts": [],
+    "sourcePages": 519,
+    "contentPages": [
+      8,
+      509
+    ],
+    "issues": []
+  },
+  {
+    "source": "gold40",
+    "expectedPassages": 40,
+    "extractedPassages": 40,
+    "questions": 90,
+    "keyedQuestions": 89,
+    "autoGradableQuestions": 87,
+    "explanations": 90,
+    "translations": 40,
+    "answerConflicts": [
+      "gold40-p039-q03"
+    ],
+    "sourcePages": 45,
+    "contentPages": [
+      2,
+      44
+    ],
+    "issues": []
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "purpose": "Independent acceptance plan for the local GRE mock-exam module; this file does not claim tests passed.",
+  "rulesCheckedAt": "2026-11-07",
+  "primarySources": [
+    {
+      "url": "https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html",
+      "facts": [
+        "Current format beginning September 22, 2023: five sections, 118 minutes.",
+        "Issue first: one task, 30 minutes.",
+        "Verbal: 12 questions in 18 minutes and 15 questions in 23 minutes.",
+        "Quant: 12 questions in 21 minutes and 15 questions in 26 minutes.",
+        "Verbal and Quant may appear in either order after Issue.",
+        "Within the current section, candidates may navigate, mark, review, and change answers.",
+        "An on-screen calculator is available for Quant.",
+        "The real exam is section-adaptive; local uncalibrated questions cannot reproduce ETS adaptive calibration."
+      ]
+    },
+    {
+      "url": "https://www.ets.org/content/dam/ets-org/pdfs/gre/general-test-enhancement-faqs-for-score-users.pdf",
+      "facts": [
+        "The shorter exam has no scheduled ten-minute break.",
+        "Unscheduled test-center breaks do not stop the timer absent approved accommodations."
+      ]
+    },
+    {
+      "url": "https://www.ets.org/gre/test-takers/general-test/scores/understand-scores.html",
+      "facts": [
+        "Raw correct counts are transformed using equating and section difficulty.",
+        "The local trainer must not label a guessed 130–170 conversion as an official score."
+      ]
+    }
+  ],
+  "testScope": [
+    "Real local bank, no generated question fixtures added to production data",
+    "55 total prompts including 54 objective items and one Issue task",
+    "Exact five section counts/timings and 118-minute budget",
+    "All selected objective items have verified answers and intact question formats",
+    "Issue first; same-measure section 1 precedes section 2",
+    "Change answer, mark, review only current section, section transition locks prior section",
+    "TC whole-item grading, SE exact pair, RC sentence selection, numeric fraction, DI assets",
+    "No answer or explanation shown during exam",
+    "Quant-only calculator and correct arithmetic",
+    "Section-end warning and cancellation",
+    "Auto-advance at deadline, refresh does not reset timer, elapsed closed-page time catches up",
+    "Essay draft auto-save and final result synchronization",
+    "Omitted objective questions count against raw accuracy denominator",
+    "No invented scaled or AWA score",
+    "Finished exam archive and progress export/import without duplicated attempts",
+    "Old RC notes, bookmarks, and histories preserved",
+    "Mobile layout and no uncaught browser errors"
+  ]
+}

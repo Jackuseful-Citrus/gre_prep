@@ -1,0 +1,52 @@
+{
+  "testedAt": "2026-11-10T04:34:28.594Z",
+  "realLocalHTTP": true,
+  "mockedOpenAI": true,
+  "results": [
+    {
+      "name": "real file launcher passes Chrome preflight, CORS, local authentication and a real HTTP generation POST",
+      "ok": true
+    },
+    {
+      "name": "a stopped local service cannot prevent saving a newly collected word",
+      "ok": true
+    },
+    {
+      "name": "refresh with the service offline still displays cached matches and retains the new word",
+      "ok": true
+    },
+    {
+      "name": "integration makes no external browser requests and raises no browser runtime errors",
+      "ok": true
+    }
+  ],
+  "serverRequests": [
+    {
+      "method": "OPTIONS",
+      "path": "/api/status",
+      "origin": "null",
+      "tokenValid": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/status",
+      "origin": "null",
+      "tokenValid": true
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/vocabulary",
+      "origin": "null",
+      "tokenValid": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/vocabulary",
+      "origin": "null",
+      "tokenValid": true
+    }
+  ],
+  "upstreamCallCount": 1,
+  "pageErrors": [],
+  "externalRequests": []
+}

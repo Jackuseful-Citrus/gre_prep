@@ -1,0 +1,46 @@
+{
+  "pdfPages": 284,
+  "passages": 300,
+  "questions": 678,
+  "answerVerified": 0,
+  "answerUnverified": 678,
+  "questionKinds": {
+    "single": 590,
+    "sentence": 15,
+    "multiple": 73
+  },
+  "sourceTextCharacters": 682319,
+  "issues": [
+    {
+      "id": "reading300-p036-q2",
+      "issue": "question-options",
+      "kind": "single",
+      "optionCount": 4
+    },
+    {
+      "id": "reading300-p141-q3",
+      "issue": "question-options",
+      "kind": "single",
+      "optionCount": 4
+    },
+    {
+      "id": "reading300-p195-q3",
+      "issue": "question-options",
+      "kind": "single",
+      "optionCount": 4
+    },
+    {
+      "id": "reading300-p240-q3",
+      "issue": "source-option-truncation",
+      "option": "E"
+    },
+    {
+      "id": "reading300-p035",
+      "issue": "highlight-unrecovered"
+    },
+    {
+      "id": "reading300-p245",
+      "issue": "highlight-unrecovered"
+    }
+  ]
+}

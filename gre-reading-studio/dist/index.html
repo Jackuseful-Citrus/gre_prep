@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="阅间 GRE 综合训练：本地 RC、TC、SE、数学与写作题库，自由组卷、原文解析和学习记录。">
+  <title>阅间 · GRE 综合训练</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="platform.css">
+  <link rel="stylesheet" href="vocabulary.css">
+  <link rel="stylesheet" href="vocabulary-ai.css">
+  <link rel="stylesheet" href="question-ai.css">
+  <link rel="stylesheet" href="portable-progress.css">
+  <link rel="stylesheet" href="mock-exam.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="platform-data.js"></script>
+  <script defer src="platform-core.js"></script>
+  <script defer src="vocabulary.js"></script>
+  <script defer src="openai-vocabulary.js"></script>
+  <script defer src="openai-question.js"></script>
+  <script defer src="vocabulary-ai.js"></script>
+  <script defer src="question-images-ai.js"></script>
+  <script defer src="question-ai.js"></script>
+  <script defer src="portable-progress.js"></script>
+  <script defer src="mock-core.js"></script>
+  <script defer src="mock-exam.js"></script>
+  <script defer src="platform.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至内容</a>
+  <aside class="sidebar">
+    <a class="brand" href="#library" aria-label="阅间首页"><span class="brand-mark">R<span>·</span></span><span><strong>阅间</strong><small>TRAINING STUDIO</small></span></a>
+    <p class="sidebar-caption">GRE 训练，把每一次练习记下来。</p>
+    <p class="nav-caption">YOUR TRAINING DESK</p>
+    <nav aria-label="主导航">
+      <div id="platform-nav">
+        <button class="nav-item" data-pview="mock"><span>⌂</span> 随机刷题 <i></i></button>
+        <button class="nav-item" data-pview="home"><span>▦</span> 自由组卷 <i></i></button>
+        <button class="nav-item" data-pview="verbal"><span>V</span> Verbal 语文 <i></i></button>
+        <button class="nav-item" data-pview="quant"><span>Q</span> Quant 数学 <i></i></button>
+        <button class="nav-item" data-pview="writing"><span>A</span> AWA 写作 <i></i></button>
+        <button class="nav-item" data-pview="mixed"><span>⇄</span> 混合练习 <i></i></button>
+        <button class="nav-item" data-pview="errors"><span>↺</span> 全科错题 <i></i></button>
+        <button class="nav-item" data-pview="favorites"><span>☆</span> 全科收藏 <i></i></button>
+        <button class="nav-item" data-pview="vocabulary"><span>W</span> 生词本 <i></i></button>
+        <button class="nav-item" data-pview="analytics"><span>◷</span> 学习分析 <i></i></button>
+        <button class="nav-item" data-pview="materials"><span>▱</span> 资料与数据 <i></i></button>
+        <button class="nav-item" data-pview="rc"><span>▤</span> 原阅读练习器 <i></i></button>
+      </div>
+      <div id="legacy-nav" hidden>
+      <button class="nav-item active" data-view="library"><span>▤</span> 阅读题库 <i></i></button>
+      <button class="nav-item" data-view="review"><span>↺</span> 错题与收藏 <i></i></button>
+      <button class="nav-item" data-view="progress"><span>◷</span> 学习记录 <i></i></button>
+      <button class="nav-item" data-view="sources"><span>▱</span> 原始资料 <i></i></button>
+      </div>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="side-progress"><span>已练习题目</span><strong id="side-count">0</strong></div>
+      <div class="progress-track"><span id="side-bar"></span></div>
+      <p class="side-note">Read closely.<br><em>Think beyond the words.</em></p>
+      <p class="local-note"><span></span> 进度保存状态见页面底部</p>
+    </div>
+  </aside>
+  <div id="portable-save-bar"></div>
+  <main id="main" tabindex="-1">
+    <header class="page-header"><div><p class="eyebrow" id="page-kicker">A LITTLE READING, EVERY DAY</p><h1 id="page-title">在字里行间，找到思路。</h1><p class="description" id="page-description">从一篇开始。读文章、找依据，再核对原书答案。</p></div><div class="header-actions"><span class="pill">GRE · READING</span><button id="resume" class="button secondary small" hidden>继续上次练习 ↗</button></div></header>
+    <div id="content"></div>
+    <footer class="page-footer">阅间 · 独立阅读练习空间 <span>原文有出处，练习有记录。</span></footer>
+  </main>
+  <main id="platform-main" hidden tabindex="-1"><div id="platform-content"></div><div id="mock-content" hidden></div><footer class="page-footer">阅间 · GRE 综合训练 <span>全资料，本地练习。</span></footer></main>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+  <input id="platform-import" type="file" accept="application/json,.json" hidden>
+  <noscript>请启用 JavaScript 以使用阅读练习。原始 PDF 可在 sources 文件夹中打开。</noscript>
+</body>
+</html>

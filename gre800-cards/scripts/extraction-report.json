@@ -1,0 +1,66 @@
+{
+  "source": "《GRE800词 》.pdf",
+  "source_sha256": "bd256202e346a0eaeca30b1db6ab34616967302421ff728b5e5051d9dcf03aec",
+  "pdf_pages": 90,
+  "vocabulary_pdf_pages": [
+    5,
+    88
+  ],
+  "entry_count": 800,
+  "sense_count": 815,
+  "group_counts": {
+    "1": 100,
+    "2": 100,
+    "3": 100,
+    "4": 100,
+    "5": 100,
+    "6": 100,
+    "7": 100,
+    "8": 100
+  },
+  "missing_ids": [],
+  "duplicate_words": [],
+  "font_mapping_repairs": [
+    {
+      "from": "᧿",
+      "to": "描",
+      "occurrences": 6
+    },
+    {
+      "from": "ᨀ",
+      "to": "提",
+      "occurrences": 3
+    }
+  ],
+  "source_normalizations": [
+    {
+      "id": 113,
+      "detail": "Second sense omits the part of speech; inherit adj. from first sense."
+    },
+    {
+      "id": 264,
+      "detail": "Treat source synonym label 进： as 近：."
+    },
+    {
+      "id": 700,
+      "detail": "Treat the bilingual phrase labeled 近： as an example."
+    }
+  ],
+  "multiple_sense_ids": [
+    4,
+    55,
+    68,
+    113,
+    121,
+    191,
+    242,
+    377,
+    541,
+    575,
+    589,
+    605,
+    652,
+    763,
+    771
+  ]
+}

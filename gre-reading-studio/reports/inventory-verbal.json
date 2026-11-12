@@ -1,0 +1,326 @@
+{
+  "questions_before_cross_source_dedup": 5763,
+  "by_type": {
+    "TC1": 990,
+    "TC2": 1500,
+    "TC3": 844,
+    "SE": 2416,
+    "TC_LEGACY": 13
+  },
+  "by_status": {
+    "verified": 2534,
+    "needs_review": 112,
+    "extracted": 3116,
+    "incomplete": 1
+  },
+  "with_source_answer": 2644,
+  "with_explanation": 1153,
+  "sources": [
+    {
+      "id": "verbal-gwc1500",
+      "title": "GWC填空机经1500题【难度分级版】.pdf",
+      "source_file": "GWC填空机经1500题【难度分级版】.pdf",
+      "url": "sources/verbal-gwc1500.pdf",
+      "pages": 316,
+      "notes": [
+        "PDF使用保留版面顺序提取选项表格；同名DOCX原文另存于提取记录。原书重复★是复现标记，不是难度。"
+      ],
+      "question_count": 1499,
+      "types": {
+        "TC1": 297,
+        "TC2": 342,
+        "TC3": 263,
+        "SE": 597
+      },
+      "with_answer": 1490,
+      "verified": 1464,
+      "with_explanation": 0,
+      "quality": "有疑点时保留原文/原页并排除评分"
+    },
+    {
+      "id": "verbal-basic24",
+      "title": "gre基础填空24套精练与精析.pdf",
+      "source_file": "gre基础填空24套精练与精析.pdf",
+      "url": "sources/verbal-basic24.pdf",
+      "pages": 733,
+      "notes": [
+        "书中使用说明：SAT旧题改编的GRE基础练习，并非声称未经改编的GRE真题。"
+      ],
+      "question_count": 912,
+      "types": {
+        "TC2": 416,
+        "SE": 496
+      },
+      "with_answer": 912,
+      "verified": 828,
+      "with_explanation": 912,
+      "quality": "有疑点时保留原文/原页并排除评分"
+    },
+    {
+      "id": "verbal-basic24answers",
+      "title": "《GRE基础填空24套精练与精析（答案）》.pdf",
+      "source_file": "《GRE基础填空24套精练与精析（答案）》.pdf",
+      "url": "sources/verbal-basic24answers.pdf",
+      "pages": 12,
+      "notes": [],
+      "question_count": 0,
+      "types": {},
+      "with_answer": 0,
+      "verified": 0,
+      "with_explanation": 0,
+      "quality": "原答案/选项映射及结构检查通过"
+    },
+    {
+      "id": "verbal-gold200",
+      "title": "金皮书-GWC填空T1-T200.pdf",
+      "source_file": "金皮书-GWC填空T1-T200.pdf",
+      "url": "sources/verbal-gold200.pdf",
+      "pages": 48,
+      "notes": [],
+      "question_count": 201,
+      "types": {
+        "TC1": 40,
+        "TC2": 50,
+        "TC3": 31,
+        "SE": 80
+      },
+      "with_answer": 201,
+      "verified": 201,
+      "with_explanation": 200,
+      "quality": "原答案/选项映射及结构检查通过"
+    },
+    {
+      "id": "verbal-gold200answers",
+      "title": "金皮书-GWC填空T1-T200 答案.pdf",
+      "source_file": "金皮书-GWC填空T1-T200 答案.pdf",
+      "url": "sources/verbal-gold200answers.pdf",
+      "pages": 2,
+      "notes": [],
+      "question_count": 0,
+      "types": {},
+      "with_answer": 0,
+      "verified": 0,
+      "with_explanation": 0,
+      "quality": "原答案/选项映射及结构检查通过"
+    },
+    {
+      "id": "verbal-goldmixed",
+      "title": "GRE语文高频题目精练与精析-金皮书.pdf",
+      "source_file": "GRE语文高频题目精练与精析-金皮书.pdf",
+      "url": "sources/verbal-goldmixed.pdf",
+      "pages": 290,
+      "notes": [
+        "填空解析GWC-T001—T200与阅读解析共存。"
+      ],
+      "question_count": 0,
+      "types": {},
+      "with_answer": 0,
+      "verified": 0,
+      "with_explanation": 0,
+      "quality": "原答案/选项映射及结构检查通过"
+    },
+    {
+      "id": "verbal-gold200marked",
+      "title": "金皮书-GWC填空T1-T200（有标记）.pdf",
+      "source_file": "金皮书-GWC填空T1-T200（有标记）.pdf",
+      "url": "sources/verbal-gold200marked.pdf",
+      "pages": 55,
+      "notes": [
+        "带标记的同题版本，作为原始参考保存，不重复计题。"
+      ],
+      "question_count": 0,
+      "types": {},
+      "with_answer": 0,
+      "verified": 0,
+      "with_explanation": 0,
+      "quality": "原答案/选项映射及结构检查通过"
+    },
+    {
+      "id": "verbal-crown1300",
+      "title": "皇冠GRE填空1300题（套题版）.pdf",
+      "source_file": "GRE/GRE/皇冠GRE填空1300题（套题版）.pdf",
+      "url": "sources/verbal-crown1300.pdf",
+      "pages": 333,
+      "notes": [
+        "本地PDF未附标准答案；书中提示外部获取，未访问外部服务。"
+      ],
+      "question_count": 1300,
+      "types": {
+        "TC1": 257,
+        "TC2": 293,
+        "TC3": 229,
+        "SE": 521
+      },
+      "with_answer": 0,
+      "verified": 0,
+      "with_explanation": 0,
+      "quality": "有疑点时保留原文/原页并排除评分"
+    },
+    {
+      "id": "verbal-crown4",
+      "title": "皇冠GRE填空篇4.0版.pdf",
+      "source_file": "Archive.zip!/皇冠GRE填空篇4.0版.pdf",
+      "url": "sources/verbal-crown4.pdf",
+      "pages": 134,
+      "notes": [
+        "本地PDF未附标准答案；书中提示外部获取，未访问外部服务。"
+      ],
+      "question_count": 510,
+      "types": {
+        "TC1": 120,
+        "TC2": 99,
+        "SE": 201,
+        "TC3": 90
+      },
+      "with_answer": 0,
+      "verified": 0,
+      "with_explanation": 0,
+      "quality": "有疑点时保留原文/原页并排除评分"
+    },
+    {
+      "id": "verbal-zhang1300",
+      "title": "GRE填空机经1300题【微信公众号：张巍老师GRE】(1).pdf",
+      "source_file": "GRE/GRE备考资料.rar!/GRE备考资料/填空/GRE填空机经1300题【微信公众号：张巍老师GRE】(1).pdf",
+      "url": "sources/verbal-zhang1300.pdf",
+      "pages": 269,
+      "notes": [
+        "本地PDF未附标准答案，未访问外部服务。多栏表格使用版面顺序提取。"
+      ],
+      "question_count": 1300,
+      "types": {
+        "TC1": 257,
+        "TC2": 293,
+        "TC3": 229,
+        "SE": 521
+      },
+      "with_answer": 0,
+      "verified": 0,
+      "with_explanation": 0,
+      "quality": "有疑点时保留原文/原页并排除评分"
+    },
+    {
+      "id": "verbal-advanced36",
+      "title": "gre强化填空36套精练与精析.pdf",
+      "source_file": "gre强化填空36套精练与精析.pdf",
+      "url": "sources/verbal-advanced36.pdf",
+      "pages": 474,
+      "notes": [
+        "756个原答案与详细解析；本PDF未包含完整英文题干和选项，不从中文解析重构题目。"
+      ],
+      "question_count": 0,
+      "types": {},
+      "with_answer": 0,
+      "verified": 0,
+      "with_explanation": 0,
+      "quality": "原答案/选项映射及结构检查通过"
+    },
+    {
+      "id": "verbal-sixpairs",
+      "title": "GRE填空6选2对应词表.pdf",
+      "source_file": "GRE/GRE填空6选2对应词表.pdf",
+      "url": "sources/verbal-sixpairs.pdf",
+      "pages": 5,
+      "notes": [
+        "对应词表，不是完整六选二练习题。"
+      ],
+      "question_count": 0,
+      "types": {},
+      "with_answer": 0,
+      "verified": 0,
+      "with_explanation": 0,
+      "quality": "原答案/选项映射及结构检查通过"
+    },
+    {
+      "id": "verbal-mcgraw",
+      "title": "McGraw-Hill's GRE, 2010 Edition.pdf",
+      "source_file": "GRE/McGraw-Hill's GRE, 2010 Edition.pdf",
+      "url": "sources/verbal-mcgraw.pdf",
+      "pages": 477,
+      "notes": [
+        "2010年版出版社模拟题；旧式成对词组选项保留为TC_LEGACY，不伪装成现代独立多空题。"
+      ],
+      "question_count": 41,
+      "types": {
+        "TC1": 19,
+        "TC2": 7,
+        "TC_LEGACY": 13,
+        "TC3": 2
+      },
+      "with_answer": 41,
+      "verified": 41,
+      "with_explanation": 41,
+      "quality": "原答案/选项映射及结构检查通过"
+    },
+    {
+      "id": "verbal-guide",
+      "title": "gre备考胜经.pdf",
+      "source_file": "gre备考胜经.pdf",
+      "url": "sources/verbal-guide.pdf",
+      "pages": 356,
+      "notes": [
+        "备考讲解与图片例题混排；图片题干不由中文解析逆向生成，保留原页练习材料。"
+      ],
+      "question_count": 0,
+      "types": {},
+      "with_answer": 0,
+      "verified": 0,
+      "with_explanation": 0,
+      "quality": "原答案/选项映射及结构检查通过"
+    }
+  ],
+  "issues": [
+    {
+      "source_file": "gre强化填空36套精练与精析.pdf",
+      "question_count": 755,
+      "reason": "仅答案及解析，未检索到完整题干和选项；不可凭空补题。",
+      "status": "incomplete"
+    },
+    {
+      "source_file": "gre备考胜经.pdf",
+      "source_page": [
+        63,
+        65,
+        66,
+        73,
+        74,
+        81,
+        82,
+        84,
+        86,
+        88,
+        90,
+        92,
+        94,
+        95,
+        96,
+        99,
+        100,
+        101,
+        102,
+        107,
+        108,
+        110,
+        114,
+        115,
+        119
+      ],
+      "reason": "图片题干/选项与文字解析混排，未对原图片做未经核验OCR；以原书练习材料方式保留。",
+      "status": "incomplete"
+    },
+    {
+      "source_file": "GWC填空机经1500题【难度分级版】.pdf",
+      "source_section": "Section 132 / Question 10",
+      "source_page": [
+        275
+      ],
+      "reason": "原PDF明确写“缺第十题”；不补造题目。",
+      "status": "incomplete"
+    }
+  ],
+  "quality_notes": [
+    "verified在此表示完整结构检查通过且明确原答案可靠映射，不表示已解题重新审定出版社答案。",
+    "原文raw_text和PDF均保留；仅去页眉页脚、合并自动换行；题号前缀混排、全角选项点/同形标签被归一成UI ID。",
+    "来源之间同题未在本文件去重，交由统一库采用全文及选项严格去重，禁止相似题混合答案。",
+    "本地资料未上传，未访问书中公众号及外部答案服务。"
+  ]
+}

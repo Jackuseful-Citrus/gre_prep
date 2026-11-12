@@ -1,0 +1,16 @@
+{
+  "passages": 249,
+  "mainPassages": 178,
+  "readingPassages": 170,
+  "logicalStimuli": 79,
+  "questions": 507,
+  "sourceKeys": 507,
+  "conflicts": 0,
+  "unverified": 0,
+  "explanations": 507,
+  "translations": 249,
+  "originalExplanationBlocks": 178,
+  "rawText": "data/mixed-raw/reading170-exercises.json",
+  "rawExplanations": "data/mixed-raw/reading170-explained.json",
+  "warnings": []
+}

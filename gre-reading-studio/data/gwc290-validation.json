@@ -1,0 +1,47 @@
+{
+  "pdfPages": 292,
+  "passages": 289,
+  "questions": 597,
+  "answerVerified": 597,
+  "answerUnverified": 0,
+  "sections": {
+    "必读30篇": 30,
+    "Easy": 23,
+    "Medium": 67,
+    "Hard": 19,
+    "模考 1 · Section 1": 4,
+    "模考 1 · Section 2": 5,
+    "模考 2 · Section 1": 5,
+    "模考 2 · Section 2": 5,
+    "模考 3 · Section 1": 5,
+    "模考 3 · Section 2": 5,
+    "模考 4 · Section 1": 5,
+    "模考 4 · Section 2": 5,
+    "逻辑 · 削弱题": 14,
+    "逻辑 · 假设题": 15,
+    "逻辑 · 加强题": 12,
+    "逻辑 · 解释题": 9,
+    "逻辑 · 评价题": 3,
+    "逻辑 · 结论题": 9,
+    "逻辑 · Boldface题": 9,
+    "金皮书40篇": 40
+  },
+  "questionKinds": {
+    "single": 530,
+    "multiple": 57,
+    "sentence": 10
+  },
+  "sourceTextCharacters": 645699,
+  "issues": [
+    {
+      "issue": "source-count-discrepancy",
+      "detail": "原书标题为290篇，但实际正文为139篇分级阅读、39篇模考、71篇逻辑和40篇金皮书，共289篇。原书逻辑解释题答案表列出第10题，正文PDF222–224只包含第1–9题；没有补造缺失题。",
+      "pages": [
+        222,
+        223,
+        224,
+        239
+      ]
+    }
+  ]
+}

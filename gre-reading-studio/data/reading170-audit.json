@@ -1,0 +1,30 @@
+{
+  "passed": 17,
+  "checks": [
+    "Actual source has 249 stimuli and 507 questions",
+    "Unique passage and question IDs",
+    "All passage bodies and question stems are nonempty",
+    "Main reading numbers cover 1 through 139 exactly",
+    "39 practice-test stimuli, including eight logical questions",
+    "71 actual logical-booklet questions; no phantom explanation #10",
+    "Original answer-table count equals extracted question count",
+    "All selectable answers exist in their options",
+    "Choice questions use complete ABC or ABCDE sequences",
+    "All 507 questions include source explanation and provenance",
+    "All 249 stimuli include the original Chinese translation",
+    "Every highlight is a literal substring of its passage",
+    "All nine boldface problems retain two or more emphasized fragments",
+    "Missing paragraph break on PDF223 is repaired at the original sentence boundary",
+    "Difficulty values are sourced from exact table rows",
+    "Sentence selection preserves paragraph-specific answer mapping",
+    "Complete exercise and explanation PDFs and original difficulty workbook exist"
+  ],
+  "passages": 249,
+  "questions": 507,
+  "sentenceQuestions": 8,
+  "highlightedPassages": 92,
+  "notes": [
+    "The exercise source filename advertises 80 logical questions, but the actual file has 79: 71 booklet plus 8 practice-test logic stimuli. An orphan explanation #10 answer exists only in the key. No question text was invented.",
+    "All answer letters come from the original key and agree with the matched explanation book. This is source-consistency verification, not independent adjudication of the publisher’s answer quality."
+  ]
+}

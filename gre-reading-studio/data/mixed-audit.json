@@ -1,0 +1,25 @@
+{
+  "passed": 15,
+  "checks": [
+    "15 unique McGraw reading passages",
+    "40 reading questions",
+    "Every question has exactly five labelled nonempty options",
+    "39 explicit source keys and one unverified sample",
+    "Every source key is in the options and has answer-page provenance",
+    "All passage and question page references are valid",
+    "No extracted formula control codes in McGraw reading text",
+    "All 40 gold book entries retained in numeric order",
+    "All 40 translations nonempty",
+    "90 answer entries, including 2 sentence answers",
+    "R04 Q2 preserves both source answers A and B",
+    "R39 source inconsistency remains visible",
+    "Guide source reader spans all reading chapter pages",
+    "16 guide topic groups cover chapter without gaps",
+    "All three source PDF artifacts exist"
+  ],
+  "knownLimitations": [
+    "McGraw 2010题型示例缺原书答案，未自动判分。",
+    "备考胜经嵌入图片题通过PDF阅读模式保留。",
+    "金皮书R39第3题来源答案和解析矛盾，由gold40合并流程显式标记，不能静默改答案。"
+  ]
+}

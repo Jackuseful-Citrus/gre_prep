@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "questions": 529,
+  "types": {
+    "Argument": 291,
+    "Issue": 238
+  },
+  "source_files_verified_unchanged": 23,
+  "checks": [
+    "unique canonical and occurrence IDs",
+    "valid source-page ranges",
+    "no invented correct answers or choice conversion",
+    "English task/model separation",
+    "exact expected source prompt counts",
+    "model and guidance provenance flags",
+    "original files and copied assets SHA256 unchanged",
+    "identical guide duplicate verified"
+  ]
+}

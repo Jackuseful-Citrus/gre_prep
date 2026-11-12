@@ -1,0 +1,29 @@
+.vocabulary-panel{margin-top:20px;padding:20px;border:1px solid #d7e2d0;background:#f7f9f2;border-radius:7px;min-width:0}
+.vocabulary-panel h3{font-size:14px;color:var(--forest)}
+.vocabulary-panel>.row{gap:10px;flex-wrap:wrap}
+.vocabulary-hint{font-size:12px;line-height:1.8;color:#64765a;margin:9px 0 14px}
+.vocabulary-label{font-size:11px;color:#677a5a;margin:10px 0 7px}
+.vocabulary-chips{display:flex;flex-wrap:wrap;gap:8px;margin:9px 0 13px}
+.vocabulary-chip{padding:7px 11px;min-height:36px;border:1px solid #c9d7bf;border-radius:6px;background:var(--surface);font:15px/1.4 var(--serif);color:#344e38;max-width:100%;overflow-wrap:anywhere;text-align:left}
+.vocabulary-chip:hover:not(:disabled){border-color:var(--forest);background:#e8f0df}
+.vocabulary-chip[aria-pressed="true"]{background:#e4edda;border-color:#b6caa8;color:#48673b;opacity:1;cursor:default}
+.vocabulary-chip:focus-visible,.vocabulary-group summary:focus-visible{outline:2px solid var(--forest);outline-offset:3px}
+.vocabulary-group{margin-top:12px;border-top:1px solid #dfe7d8;padding-top:10px}
+.vocabulary-group summary,.vocabulary-source summary{font-size:12px;line-height:1.7;color:#5d7453;cursor:pointer;overflow-wrap:anywhere}
+.vocabulary-group .vocabulary-chips{max-height:240px;overflow-y:auto;padding:3px}
+.vocabulary-form{display:flex;align-items:end;gap:10px;margin-top:18px}
+.vocabulary-form .field{flex:1;min-width:0}
+.vocabulary-form input{width:100%;min-width:0}
+.vocabulary-form .button{flex-shrink:0;min-height:39px}
+.vocabulary-count{margin-top:12px;line-height:1.8}
+.vocabulary-total{margin:18px 0 12px}
+.vocabulary-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.vocabulary-entry{min-width:0}
+.vocabulary-entry>.row{align-items:start;gap:14px}
+.vocabulary-entry h2{font:21px/1.4 var(--serif);overflow-wrap:anywhere;min-width:0}
+.vocabulary-entry>.tiny{margin:9px 0 15px}
+.vocabulary-entry [data-vocab-remove]{flex-shrink:0;padding:5px 0}
+.vocabulary-source{margin-top:12px;border-top:1px solid var(--line);padding-top:12px}
+.vocabulary-source p{margin-top:10px;font:14px/1.8 var(--serif);overflow-wrap:anywhere;white-space:pre-wrap}
+.vocabulary-source p.tiny{font:10px/1.7 var(--sans);color:var(--muted)}
+@media(max-width:700px){.vocabulary-list{grid-template-columns:1fr}.vocabulary-panel{padding:16px}.vocabulary-form{flex-wrap:wrap}.vocabulary-form .field{flex-basis:100%}.vocabulary-form .button{width:100%}.vocabulary-chip{min-height:40px}.vocabulary-panel .text-link{font-size:11px}}

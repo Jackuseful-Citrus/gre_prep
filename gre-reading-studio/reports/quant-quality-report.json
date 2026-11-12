@@ -1,0 +1,251 @@
+{
+  "questions": 1239,
+  "by_type": {
+    "QuantMultiple": 88,
+    "QuantSingle": 288,
+    "QC": 258,
+    "NumericEntry": 93,
+    "DI": 89,
+    "QuantRecall": 315,
+    "QuantDrill": 108
+  },
+  "by_status": {
+    "verified": 765,
+    "needs_review": 364,
+    "extracted": 109,
+    "incomplete": 1
+  },
+  "coverage": [
+    {
+      "source_id": "gwc600",
+      "title": "GWC 数学机经600题（实际604题）",
+      "source_file": "GWC数学机经600题.pdf",
+      "questions": 604,
+      "question_types": {
+        "QuantMultiple": 62,
+        "QuantSingle": 199,
+        "QC": 190,
+        "NumericEntry": 82,
+        "DI": 71
+      },
+      "verified": 601,
+      "has_source_answer": 604,
+      "machine_answers": 601,
+      "explanations": 0,
+      "needs_review": 3,
+      "notes": [
+        "实际编号604题；原书名保留。答案表在 PDF 144–146 页；详细解析未包含在本地原书。数学原题用局部原版图像呈现，避免文本抽取破坏公式。"
+      ]
+    },
+    {
+      "source_id": "math360",
+      "title": "最新数学回忆版机经（360题版）",
+      "source_file": "GRE/GRE备考资料.rar!GRE备考资料/数学/最新数学回忆版机经(360题版).pdf",
+      "questions": 360,
+      "question_types": {
+        "QuantRecall": 314,
+        "QuantSingle": 20,
+        "QuantMultiple": 26
+      },
+      "verified": 0,
+      "has_source_answer": 0,
+      "machine_answers": 0,
+      "explanations": 0,
+      "needs_review": 360,
+      "notes": [
+        "来源：GRE/GRE备考资料.rar 内 GRE备考资料/数学/最新数学回忆版机经(360题版).pdf。回忆版中文概要，原书注明部分叙述不清；本地未附答案，全部不计正式正确率。"
+      ]
+    },
+    {
+      "source_id": "mcgraw-quant",
+      "title": "McGraw-Hill's GRE, 2010 Edition · Quant",
+      "source_file": "GRE\\McGraw-Hill's GRE, 2010 Edition.pdf",
+      "questions": 262,
+      "question_types": {
+        "QC": 66,
+        "QuantSingle": 62,
+        "NumericEntry": 9,
+        "DI": 17,
+        "QuantDrill": 108
+      },
+      "verified": 152,
+      "has_source_answer": 261,
+      "machine_answers": 153,
+      "explanations": 261,
+      "needs_review": 110,
+      "notes": [
+        "2010年旧版；来源试题与现行考试结构不同。原题、答案与解析均保留原页。基础技能训练另作非考试短答练习。",
+        "另外纳入108道非GRE格式技能短答练习、17道讲解例题；原书139页和160页的重复示例分别关联诊断卷第6和第12题。"
+      ]
+    },
+    {
+      "source_id": "guide-quant",
+      "title": "GRE备考胜经 · 数学例题",
+      "source_file": "gre备考胜经.pdf",
+      "questions": 13,
+      "question_types": {
+        "NumericEntry": 2,
+        "QuantRecall": 1,
+        "QuantSingle": 7,
+        "QC": 2,
+        "DI": 1
+      },
+      "verified": 12,
+      "has_source_answer": 13,
+      "machine_answers": 12,
+      "explanations": 13,
+      "needs_review": 1,
+      "notes": [
+        "PDF 258–274 页数学专题；相同多边形题在263/268页重复，合并来源。第260页例题缺少所问对象和选项，保留incomplete，不评分。"
+      ]
+    },
+    {
+      "source_id": "math-mindmap",
+      "title": "微臣GRE数学知识与技能 · 思维导图",
+      "source_file": "【思维导图】微臣GRE数学知识与技能.pdf",
+      "questions": 0,
+      "question_types": {},
+      "verified": 0,
+      "has_source_answer": 0,
+      "machine_answers": 0,
+      "explanations": 0,
+      "needs_review": 0,
+      "notes": [
+        "知识/术语资料，未发现独立完整试题；作为参考资料保留。"
+      ]
+    },
+    {
+      "source_id": "math-vocabulary",
+      "title": "Math Vocabulary · 数学专业词汇",
+      "source_file": "GRE/GRE备考资料.rar!GRE备考资料/数学/Math Vocabulary（数学专业词汇）.pdf",
+      "questions": 0,
+      "question_types": {},
+      "verified": 0,
+      "has_source_answer": 0,
+      "machine_answers": 0,
+      "explanations": 0,
+      "needs_review": 0,
+      "notes": [
+        "知识/术语资料，未发现独立完整试题；作为参考资料保留。"
+      ]
+    }
+  ],
+  "confirmed_duplicate_groups": [
+    {
+      "question_ids": [
+        "gwc600-application-010",
+        "gwc600-advanced-061"
+      ],
+      "reason": "去除原题号和空白后完整题干/公式/选项一致，原答案一致；无另附图表差异。最后一组已核对两处原版分式图片。"
+    },
+    {
+      "question_ids": [
+        "gwc600-analysis-025",
+        "gwc600-advanced-071"
+      ],
+      "reason": "去除原题号和空白后完整题干/公式/选项一致，原答案一致；无另附图表差异。最后一组已核对两处原版分式图片。"
+    },
+    {
+      "question_ids": [
+        "gwc600-analysis-029",
+        "gwc600-advanced-122"
+      ],
+      "reason": "去除原题号和空白后完整题干/公式/选项一致，原答案一致；无另附图表差异。最后一组已核对两处原版分式图片。"
+    },
+    {
+      "question_ids": [
+        "gwc600-analysis-035",
+        "gwc600-advanced-058"
+      ],
+      "reason": "去除原题号和空白后完整题干/公式/选项一致，原答案一致；无另附图表差异。最后一组已核对两处原版分式图片。"
+    },
+    {
+      "question_ids": [
+        "gwc600-analysis-036",
+        "gwc600-advanced-157"
+      ],
+      "reason": "去除原题号和空白后完整题干/公式/选项一致，原答案一致；无另附图表差异。最后一组已核对两处原版分式图片。"
+    },
+    {
+      "question_ids": [
+        "gwc600-traps-014",
+        "gwc600-advanced-084"
+      ],
+      "reason": "去除原题号和空白后完整题干/公式/选项一致，原答案一致；无另附图表差异。最后一组已核对两处原版分式图片。"
+    }
+  ],
+  "possible_duplicate_groups": [
+    [
+      "gwc600-application-019",
+      "gwc600-advanced-085"
+    ],
+    [
+      "gwc600-application-037",
+      "gwc600-advanced-035"
+    ],
+    [
+      "gwc600-application-038",
+      "gwc600-advanced-036"
+    ],
+    [
+      "gwc600-algebra-020",
+      "gwc600-new-090"
+    ]
+  ],
+  "do_not_merge": [
+    {
+      "question_ids": [
+        "gwc600-geometry-006",
+        "gwc600-traps-031"
+      ],
+      "reason": "抽取文字均为Quantity A=x、Quantity B=y，但原图分别为圆内角和两条直线，实际不同题目。"
+    }
+  ],
+  "source_copy_hashes": [
+    {
+      "source_id": "gwc600",
+      "sha256": "6be12db89291ad4d9cb9672559494ac4e3fb385dea820458db8a6d2bea0493ff",
+      "copy_matches": true
+    },
+    {
+      "source_id": "math360",
+      "sha256": "c1485fde3432336b15ee195371ea087f47f1cc4abf81cdd093e9b2c85011dd6d",
+      "copy_matches": true
+    },
+    {
+      "source_id": "mcgraw-quant",
+      "sha256": "e87cbf75ae4e3e715e356fbb58468bed51d0dcbeb40ab64f688675a58eaf779d",
+      "copy_matches": true
+    },
+    {
+      "source_id": "guide-quant",
+      "sha256": "5a4364ed77b01a8862f7239a916640d68e47c9774d28b66d3aa9ffb047ca4f27",
+      "copy_matches": true
+    },
+    {
+      "source_id": "math-mindmap",
+      "sha256": "87da54846282808478c0eb8c22cf5dc076f5d15d2d6fb84eae3edeee5b2bb61e",
+      "copy_matches": true
+    },
+    {
+      "source_id": "math-vocabulary",
+      "sha256": "ef08f9d9a2a1b9d4ad9c52d4c5738c3262d65dd27088e5312cf2d9d25db24a47",
+      "copy_matches": true
+    }
+  ],
+  "checks": {
+    "unique_ids": true,
+    "all_question_images_exist_and_decode": true,
+    "all_answer_images_exist_and_decode": true,
+    "verified_answer_options_valid": true,
+    "source_copy_hashes_match": true,
+    "notes": [
+      "GWC604连续编号和原答案表逐段总数均校验。",
+      "数学360的5处跨页选项已连接。",
+      "McGraw DI共享图表包含跨页引用；技能练习Angles第3题图跨页已连接。",
+      "六处GWC题号前图形裁剪边界已逐图检查；进阶52–53题跨页共用温度表已关联。",
+      "未自动求解或生成任何答案；源书答案矛盾和缺项保留待核验。",
+      "原书提供的难度区间保留source_difficulty，不伪装为逐题难度。"
+    ]
+  }
+}
