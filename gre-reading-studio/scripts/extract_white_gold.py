@@ -5,6 +5,7 @@ normalized for display; raw page text and original PDFs are retained.
 """
 from pathlib import Path
 import json, re, shutil, sys, io, bisect
+from library_paths import resolve_material, source_url, copy_source, normalize_material_links
 
 ROOT = Path(__file__).resolve().parents[2]
 PROJECT = ROOT / 'gre-reading-studio'
@@ -45,9 +46,7 @@ def extract_source(sid, file, start, end):
         return offsets[max(0,bisect.bisect_right([o[0] for o in offsets],pos)-1)][1]
     def page_range(a,b):
         return list(range(page_at(a),page_at(max(a,b-1))+1))
-    source_dir = PROJECT / 'dist/sources'
-    source_dir.mkdir(parents=True,exist_ok=True)
-    shutil.copyfile(file,source_dir/(sid+'.pdf'))
+    copy_source(file, sid + '.pdf')
     return reader, raw, full, page_range
 
 
@@ -192,7 +191,7 @@ def gold_explanations(passages):
 def main():
     all_reports=[]
     for sid,pattern,title,start,end in [('white','白皮书','GRE 阅读白皮书',8,509),('gold40','R1-R40','金皮书 · GWC 阅读 R1–R40',2,44)]:
-        file=next(p for p in ROOT.glob('*.pdf') if pattern in p.name)
+        file=resolve_material(source_id=sid)
         reader,raw,full,page_range=extract_source(sid,file,start,end)
         keys=white_keys(raw) if sid=='white' else gold_keys(raw)
         marker=r'^[ \t]*Passage\s+(\d+)[ \t]*$' if sid=='white' else r'^[ \t]*GWC-R(\d+)[ \t]*$'
@@ -210,11 +209,11 @@ def main():
                   'translations':sum(bool(p.get('translation')) for p in passages),
                   'answerConflicts':[q['id'] for p in passages for q in p['questions'] if q.get('alternateAnswer')],
                   'sourcePages':len(reader.pages),'contentPages':[start,end],'issues':problems}
-        result={'source':{'id':sid,'title':title,'fileName':file.name,'pages':len(reader.pages),'path':f'sources/{sid}.pdf',
+        result={'source':{'id':sid,'title':title,'fileName':file.relative_to(ROOT).as_posix(),'pages':len(reader.pages),'path':source_url(source_id=sid),
                          'notes':['保留原始 PDF 及逐页文字。展示文字仅合并换行；原材料拼写、语法及词内空格未静默改写。','答案按原资料答案表录入，未对原答案正确性作额外保证。'],
                          'supplementarySources':supplementary},
                 'passages':passages,'coverage':coverage}
-        (PROJECT/'data'/(sid+'.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+        (PROJECT/'data'/(sid+'.json')).write_text(json.dumps(normalize_material_links(result),ensure_ascii=False,indent=2),encoding='utf-8')
         all_reports.append({'source':sid,**coverage})
     (PROJECT/'data/white-gold-validation.json').write_text(json.dumps(all_reports,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(all_reports,ensure_ascii=False,indent=2))

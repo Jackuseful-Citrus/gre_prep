@@ -2,6 +2,7 @@
 from pathlib import Path
 import json,re,sys,shutil,bisect,collections
 from extract_white_gold import tidy,paragraphs,gold_bold
+from library_paths import resolve_material, source_url, copy_source, normalize_material_links
 ROOT=Path(__file__).resolve().parents[2]
 PROJECT=ROOT/'gre-reading-studio'
 sys.path.insert(0,str(ROOT/'gre800-cards/scripts/vendor'))
@@ -9,12 +10,13 @@ from pypdf import PdfReader
 
 
 def main():
-    pdf=PROJECT/'data/archive-reading.pdf'
+    pdf=resolve_material(source_id='crown')
     reader=PdfReader(pdf)
     rawpath=PROJECT/'data/raw/crown-pages.json'
     if rawpath.exists():raw=json.loads(rawpath.read_text(encoding='utf-8'))
     else:
         raw=[{'page':i+1,'text':p.extract_text() or ''} for i,p in enumerate(reader.pages)]
+        rawpath.parent.mkdir(parents=True, exist_ok=True)
         rawpath.write_text(json.dumps(raw,ensure_ascii=False,indent=2),encoding='utf-8')
     full='';offsets=[];headings=[]
     for p in raw[3:]:
@@ -96,13 +98,13 @@ def main():
               'unnumberedQuestions':4,
               'issues':issues}
     source={'id':'crown','title':'皇冠 GRE 高频阅读 4.0','fileName':'皇冠GRE阅读篇4.0版.pdf',
-            'archivePath':'Archive.zip / 皇冠GRE阅读篇4.0版.pdf','pages':175,'path':'sources/crown.pdf',
+            'archivePath':'Archive.zip / 皇冠GRE阅读篇4.0版.pdf','pages':175,'path':source_url(source_id='crown'),
             'notes':['从用户文件夹内 Archive.zip 提取。全部 XGPR001–XGPR219 均保留。',
                      '资料要求到公众号获取答案；本地文件未附答案，本来源不提供推测答案。',
                      '保留原 PDF、逐页文字与篇目 rawText；仅清理页眉、页码、栏目标题及显示换行。']}
-    (PROJECT/'data/crown.json').write_text(json.dumps({'source':source,'passages':passages,'coverage':coverage},ensure_ascii=False,indent=2),encoding='utf-8')
+    (PROJECT/'data/crown.json').write_text(json.dumps(normalize_material_links({'source':source,'passages':passages,'coverage':coverage}),ensure_ascii=False,indent=2),encoding='utf-8')
     (PROJECT/'data/crown-validation.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2),encoding='utf-8')
-    shutil.copyfile(pdf,PROJECT/'dist/sources/crown.pdf')
+    copy_source(pdf, 'crown.pdf')
     print(json.dumps(coverage,ensure_ascii=False,indent=2))
 
 

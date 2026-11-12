@@ -8,7 +8,7 @@
       "阅读篇112–203页含图片嵌入的练习题。保留原页阅读，不把仅有解析的文本误当完整选择题。"
     ],
     "reader": {
-      "url": "sources/guide-reading.pdf",
+      "url": "../../materials/sources/guide-reading.pdf",
       "originalPages": [
         112,
         113,
@@ -237,7 +237,7 @@
         140
       ],
       "readerPage": 1,
-      "url": "sources/guide-reading.pdf#page=1",
+      "url": "../../materials/sources/guide-reading.pdf#page=1",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -266,7 +266,7 @@
         156
       ],
       "readerPage": 30,
-      "url": "sources/guide-reading.pdf#page=30",
+      "url": "../../materials/sources/guide-reading.pdf#page=30",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -281,7 +281,7 @@
         158
       ],
       "readerPage": 46,
-      "url": "sources/guide-reading.pdf#page=46",
+      "url": "../../materials/sources/guide-reading.pdf#page=46",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -296,7 +296,7 @@
         160
       ],
       "readerPage": 48,
-      "url": "sources/guide-reading.pdf#page=48",
+      "url": "../../materials/sources/guide-reading.pdf#page=48",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -311,7 +311,7 @@
         162
       ],
       "readerPage": 50,
-      "url": "sources/guide-reading.pdf#page=50",
+      "url": "../../materials/sources/guide-reading.pdf#page=50",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -328,7 +328,7 @@
         166
       ],
       "readerPage": 52,
-      "url": "sources/guide-reading.pdf#page=52",
+      "url": "../../materials/sources/guide-reading.pdf#page=52",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -344,7 +344,7 @@
         169
       ],
       "readerPage": 56,
-      "url": "sources/guide-reading.pdf#page=56",
+      "url": "../../materials/sources/guide-reading.pdf#page=56",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -360,7 +360,7 @@
         172
       ],
       "readerPage": 59,
-      "url": "sources/guide-reading.pdf#page=59",
+      "url": "../../materials/sources/guide-reading.pdf#page=59",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -379,7 +379,7 @@
         178
       ],
       "readerPage": 62,
-      "url": "sources/guide-reading.pdf#page=62",
+      "url": "../../materials/sources/guide-reading.pdf#page=62",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -394,7 +394,7 @@
         180
       ],
       "readerPage": 68,
-      "url": "sources/guide-reading.pdf#page=68",
+      "url": "../../materials/sources/guide-reading.pdf#page=68",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -413,7 +413,7 @@
         186
       ],
       "readerPage": 70,
-      "url": "sources/guide-reading.pdf#page=70",
+      "url": "../../materials/sources/guide-reading.pdf#page=70",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -428,7 +428,7 @@
         188
       ],
       "readerPage": 76,
-      "url": "sources/guide-reading.pdf#page=76",
+      "url": "../../materials/sources/guide-reading.pdf#page=76",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -444,7 +444,7 @@
         191
       ],
       "readerPage": 78,
-      "url": "sources/guide-reading.pdf#page=78",
+      "url": "../../materials/sources/guide-reading.pdf#page=78",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -461,7 +461,7 @@
         195
       ],
       "readerPage": 81,
-      "url": "sources/guide-reading.pdf#page=81",
+      "url": "../../materials/sources/guide-reading.pdf#page=81",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -479,7 +479,7 @@
         200
       ],
       "readerPage": 85,
-      "url": "sources/guide-reading.pdf#page=85",
+      "url": "../../materials/sources/guide-reading.pdf#page=85",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"
@@ -495,7 +495,7 @@
         203
       ],
       "readerPage": 90,
-      "url": "sources/guide-reading.pdf#page=90",
+      "url": "../../materials/sources/guide-reading.pdf#page=90",
       "mode": "source-reading",
       "notes": [
         "原文练习及解析请在原页阅读。图片题未计入可自动判分题数。"

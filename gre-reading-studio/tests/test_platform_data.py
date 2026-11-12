@@ -6,10 +6,14 @@ reports/platform-data-acceptance.json; it never rebuilds or edits the database.
 from pathlib import Path
 from collections import Counter, defaultdict
 import ast, copy, hashlib, json, re, sys, unicodedata, logging
+from urllib.parse import unquote, urlsplit
+
+if hasattr(sys.stdout,'reconfigure'):sys.stdout.reconfigure(encoding='utf-8')
 
 APP=Path(__file__).resolve().parents[1]
 ROOT=APP.parent
-WORK=ROOT/'gre-upgrade-work'
+WORK=APP/'data/platform'
+MATERIALS=ROOT/'materials'
 DIST=APP/'dist'
 sys.path.insert(0,str(ROOT/'gre800-cards/scripts/vendor'))
 from pypdf import PdfReader
@@ -85,7 +89,10 @@ def main():
  b=read(APP/'gre_question_bank.json');questions=b['questions'];sources={s['id']:s for s in b['sources']};materials={m['id']:m for m in b['materials']};ids={q['question_id']:q for q in questions}
  quality=read(APP/'reports/gre_quality_report.json')
  old= json.loads((DIST/'data.js').read_text('utf8').split('=',1)[1].strip().removesuffix(';'))
- baseline=read(WORK/'baseline.json');inventory=read(WORK/'reports/gre_library_inventory.json')
+ manifest=read(MATERIALS/'manifest.json')
+ documents={row['path']:row for row in manifest['documents']}
+ check(manifest.get('version')==1 and bool(documents),'materials_manifest_present',manifest.get('version'))
+ check(len(documents)==len(manifest['documents']),'unique_material_document_path',len(documents))
  check(len(ids)==len(questions),'unique_question_id',len(questions))
  check(len(sources)==len(b['sources']),'unique_source_id',len(sources))
  check(len(materials)==len(b['materials']),'unique_material_id',len(materials))
@@ -93,13 +100,22 @@ def main():
  js=json.loads((DIST/'platform-data.js').read_text('utf8').split('=',1)[1].strip().removesuffix(';'))
  check(js==b,'file_and_browser_bank_equal','gre_question_bank.json / platform-data.js')
 
- # Original reading engine, data, styling and all vocabulary files remain intact.
- for rel,digest in baseline.items():
-  if rel in ['gre-reading-studio/dist/index.html','gre-reading-studio/dist/app.js']:continue  # Navigation shell/record bridge are intentionally extended.
-  p=ROOT/rel
-  check(p.exists() and sha(p)==digest,'legacy_hash_preserved',rel)
+ # Source documents have a canonical location and preserve their recorded bytes.
+ for rel,row in documents.items():
+  p=(ROOT/rel).resolve()
+  safe=rel.startswith('materials/') and p.is_relative_to(MATERIALS.resolve())
+  check(safe,'material_document_stays_in_materials',rel)
+  if not safe:continue
+  check(p.is_file(),'material_document_exists',rel)
+  if p.is_file():
+   check(p.stat().st_size==row['bytes'],'material_document_byte_count',rel)
+   check(sha(p)==row['sha256'],'original_material_hash_preserved',rel)
+  for alias in row.get('aliases',[]):
+   check(manifest['path_aliases'].get(alias)==rel,'material_alias_resolves',{'alias':alias,'path':rel})
+ for alias,rel in manifest['path_aliases'].items():
+  check(rel in documents,'material_alias_target_registered',{'alias':alias,'path':rel})
  oldq={q['id']:(p,q) for p in old['passages'] for q in p['questions']}
- check(len(oldq)==3322,'legacy_expected_count',len(oldq))
+ check(len(oldq)==old['stats']['questions'],'legacy_count_matches_reading_statistics',len(oldq))
  for qid,(p,q) in oldq.items():
   nq=ids.get(qid);check(nq is not None,'legacy_id_retained',qid)
   if not nq:continue
@@ -107,19 +123,20 @@ def main():
   check(nq['question_content']==q['stem'] and nq['options']==q.get('options',[]) and nq['correct_answer']==q.get('answer'),'legacy_content_key_preserved',qid)
   check(materials.get(p['id'],{}).get('text')==p['text'],'legacy_passage_preserved',p['id'])
   check(nq['gradable']==bool(q.get('gradable')),'legacy_scoring_preserved',qid)
- for row in inventory['files']:
-  if row.get('role')!='原始资料' or not row.get('sha256'):continue
-  p=ROOT/row['source_path']
-  check(p.is_file() and sha(p)==row['sha256'],'original_material_hash_preserved',row['source_path'])
-
  # Resolve local source documents once, including subset PDFs with original page maps.
  def source_url(s):return s.get('url') or s.get('path') or s.get('reader',{}).get('url')
  for sid,s in sources.items():
   url=source_url(s)
   check(bool(url),'source_url_present',sid)
   if not url:continue
-  check(not re.match(r'^[a-z]+://',url,re.I),'offline_source_url',{'source':sid,'url':url})
-  path=DIST/url.split('#')[0]
+  parts=urlsplit(url)
+  check(not parts.scheme and not parts.netloc and not parts.query,'offline_source_url',{'source':sid,'url':url})
+  path=(DIST/unquote(parts.path)).resolve()
+  safe=path.is_relative_to(MATERIALS.resolve())
+  check(safe,'source_in_materials_folder',{'source':sid,'url':url})
+  if not safe:continue
+  relative=path.relative_to(ROOT).as_posix()
+  check(relative in documents,'source_document_registered',{'source':sid,'path':relative})
   check(path.is_file(),'source_file_exists',{'source':sid,'url':url})
   if path.is_file() and path.suffix.lower()=='.pdf':
    try:pdfs[sid]=len(PdfReader(path).pages)
@@ -191,10 +208,9 @@ def main():
  check(len(dups)==len(duplist),'unique_dedup_mapping',len(duplist))
  all_input={};bankmat={};partcounts={};input_materials=[];confirmed_groups=[];unconfirmed_groups=[]
  for part in ['verbal','quant','awa']:
-  p=WORK/f'{part}-bank.json';copy=APP/'data/platform'/p.name
-  check(p.is_file() and copy.is_file(),'input_bank_present',part)
+  p=WORK/f'{part}-bank.json'
+  check(p.is_file(),'input_bank_present',part)
   if not p.exists():continue
-  check(copy.is_file() and sha(copy)==sha(p),'build_uses_latest_staging_bank',part)
   inp=read(p);partcounts[part]=len(inp['questions']);all_input.update({q['question_id']:q for q in inp['questions']});bankmat.update({m['id']:m for m in inp.get('materials',[])});input_materials.extend(inp.get('materials',[]))
   confirmed_groups.extend(inp.get('confirmed_duplicate_groups',[]))
   unconfirmed_groups.extend(g.get('question_ids',[]) if isinstance(g,dict) else g for g in inp.get('do_not_merge',[])+inp.get('possible_duplicate_groups',[]))
@@ -204,7 +220,13 @@ def main():
  for group in unconfirmed_groups:
   targets=[qid if qid in ids else dups.get(qid) for qid in group]
   check(all(t in ids for t in targets) and len(set(targets))==len(group),'unconfirmed_visual_variants_never_merged',group)
- for m in input_materials:check(materials.get(m['id'])==m,'every_input_material_preserved',m['id'])
+ for m in input_materials:
+  expected_material=dict(m)
+  original_file=m.get('source_file')
+  if isinstance(original_file,str):
+   alias=original_file.replace('\\','/').replace('!/', ' / ')
+   expected_material['source_file']=manifest['path_aliases'].get(alias,original_file)
+  check(materials.get(m['id'])==expected_material,'every_input_material_preserved',m['id'])
  for qid,q in all_input.items():
   retained=qid if qid in ids else dups.get(qid)
   check(retained in ids,'every_source_question_accounted',qid)

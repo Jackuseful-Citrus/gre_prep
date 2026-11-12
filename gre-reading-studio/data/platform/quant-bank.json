@@ -4,7 +4,7 @@
       "id": "gwc600",
       "title": "GWC 数学机经600题（实际604题）",
       "source_file": "GWC数学机经600题.pdf",
-      "url": "sources/quant-gwc600.pdf",
+      "url": "../../materials/sources/quant-gwc600.pdf",
       "pages": 147,
       "notes": [
         "实际编号604题；原书名保留。答案表在 PDF 144–146 页；详细解析未包含在本地原书。数学原题用局部原版图像呈现，避免文本抽取破坏公式。"
@@ -14,7 +14,7 @@
       "id": "math360",
       "title": "最新数学回忆版机经（360题版）",
       "source_file": "GRE/GRE备考资料.rar!GRE备考资料/数学/最新数学回忆版机经(360题版).pdf",
-      "url": "sources/quant-math360.pdf",
+      "url": "../../materials/sources/quant-math360.pdf",
       "pages": 24,
       "notes": [
         "来源：GRE/GRE备考资料.rar 内 GRE备考资料/数学/最新数学回忆版机经(360题版).pdf。回忆版中文概要，原书注明部分叙述不清；本地未附答案，全部不计正式正确率。"
@@ -25,7 +25,7 @@
       "id": "mcgraw-quant",
       "title": "McGraw-Hill's GRE, 2010 Edition · Quant",
       "source_file": "GRE\\McGraw-Hill's GRE, 2010 Edition.pdf",
-      "url": "sources/quant-mcgraw-quant.pdf",
+      "url": "../../materials/sources/awa-22.pdf",
       "pages": 477,
       "notes": [
         "2010年旧版；来源试题与现行考试结构不同。原题、答案与解析均保留原页。基础技能训练另作非考试短答练习。",
@@ -36,7 +36,7 @@
       "id": "guide-quant",
       "title": "GRE备考胜经 · 数学例题",
       "source_file": "gre备考胜经.pdf",
-      "url": "sources/quant-guide-quant.pdf",
+      "url": "../../materials/sources/awa-23.pdf",
       "pages": 356,
       "notes": [
         "PDF 258–274 页数学专题；相同多边形题在263/268页重复，合并来源。第260页例题缺少所问对象和选项，保留incomplete，不评分。"
@@ -46,7 +46,7 @@
       "id": "math-mindmap",
       "title": "微臣GRE数学知识与技能 · 思维导图",
       "source_file": "【思维导图】微臣GRE数学知识与技能.pdf",
-      "url": "sources/quant-math-mindmap.pdf",
+      "url": "../../materials/sources/quant-math-mindmap.pdf",
       "pages": 1,
       "notes": [
         "知识/术语资料，未发现独立完整试题；作为参考资料保留。"
@@ -57,7 +57,7 @@
       "id": "math-vocabulary",
       "title": "Math Vocabulary · 数学专业词汇",
       "source_file": "GRE/GRE备考资料.rar!GRE备考资料/数学/Math Vocabulary（数学专业词汇）.pdf",
-      "url": "sources/quant-math-vocabulary.pdf",
+      "url": "../../materials/sources/quant-math-vocabulary.pdf",
       "pages": 5,
       "notes": [
         "知识/术语资料，未发现独立完整试题；作为参考资料保留。"

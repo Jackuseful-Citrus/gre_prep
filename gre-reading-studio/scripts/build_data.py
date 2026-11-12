@@ -12,6 +12,7 @@ import re
 import unicodedata
 from collections import Counter
 from pathlib import Path
+from library_paths import normalize_material_links
 
 ROOT = Path(__file__).resolve().parents[1]
 NAMES = ['gold40', 'gwc290', 'white', 'mcgraw', 'crown', 'reading170', 'reading300', 'guide']
@@ -73,7 +74,7 @@ def main():
         if not path.exists():
             audit.append({'source': name, 'status':'pending'})
             continue
-        data = json.loads(path.read_text(encoding='utf-8'))
+        data = normalize_material_links(json.loads(path.read_text(encoding='utf-8')))
         source = copy.deepcopy(data['source'])
         source['url'] = source.get('path') or source.get('pdfUrl') or source.get('reader',{}).get('url') or source.get('url')
         source['coverage'] = data.get('coverage',{})
@@ -153,6 +154,7 @@ def main():
     questions = [q for p in library for q in p['questions']]
     stats = {'passages':len(library),'questions':len(questions),'gradable':sum(q['gradable'] for q in questions),'ungraded':sum(not q['gradable'] for q in questions),'conflicts':len(conflicts),'originalPassages':original_count,'originalQuestions':original_questions,'mergedPassages':original_count-len(library),'sourceReading':len(docs),'topics':dict(Counter(p['topic'] for p in library))}
     result = {'version':1,'sources':list(sources.values()),'passages':library,'sourceReading':docs,'stats':stats,'classificationNote':'主题和题型由关键词规则自动归类；难度仅沿用原资料标记。完全一致的文章与题目合并来源，文字或选项不同的版本分别保留。'}
+    result = normalize_material_links(result)
     (ROOT/'dist'/'data.js').write_text('window.GRE_READING_DATA='+json.dumps(result,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
     (ROOT/'data'/'build-report.json').write_text(json.dumps({'stats':stats,'conflicts':conflicts,'invalidKeys':invalid,'sources':audit},ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(stats, ensure_ascii=False,indent=2))

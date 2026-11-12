@@ -1,0 +1,620 @@
+{
+  "version": 1,
+  "date": "2026-11-12",
+  "method": "Archive paths and links validated before extraction; study files compared byte-for-byte by SHA256 against existing documents and browser source PDFs. Historical application bundles inspected without replacing current code.",
+  "summary": {
+    "archives_inspected": 8,
+    "study_archives_extracted": 3,
+    "study_documents_extracted": 44,
+    "new_vocabulary_documents": 4,
+    "new_question_documents": 0,
+    "question_count_before": 10348,
+    "question_count_after": 10348,
+    "gradable_count": 5487,
+    "with_original_answer": 5599,
+    "all_question_records_unchanged": false,
+    "all_question_ids_unchanged": true,
+    "question_ids_sha256": "452647765f5f64adf13cc2fb475d563b6b10bf23681625255e6d22c83d0f9f48",
+    "consolidated_documents": 78,
+    "question_content_and_answers_unchanged": true,
+    "source_paths_migrated": true
+  },
+  "archives": [
+    {
+      "archive": "Archive.zip",
+      "sha256": "282f3f88dc11b2894ad1232044ad3c9cfa2b129e2791cb5d7cde489c6cb8f3ba",
+      "kind": "study",
+      "document_members": 6,
+      "metadata_members": 6,
+      "historical_application_members": 0,
+      "nested_archives": [],
+      "all_study_members_extracted": true,
+      "archive_redundant_after_material_consolidation": true
+    },
+    {
+      "archive": "GRE.rar",
+      "sha256": "92f82db414e30160e091743909ee7442d26dc607b9ee4d6eea7efc0a681d3d39",
+      "kind": "study",
+      "document_members": 29,
+      "metadata_members": 0,
+      "historical_application_members": 0,
+      "nested_archives": [
+        {
+          "member": "GRE/GRE备考资料.rar",
+          "sha256": "3d32999ca6f1025c66289b914026fa9f975b531dd37e5e98fc62de030f20ea65"
+        }
+      ],
+      "all_study_members_extracted": true,
+      "archive_redundant_after_material_consolidation": true
+    },
+    {
+      "archive": "GRE/GRE备考资料.rar",
+      "sha256": "3d32999ca6f1025c66289b914026fa9f975b531dd37e5e98fc62de030f20ea65",
+      "kind": "study",
+      "document_members": 9,
+      "metadata_members": 0,
+      "historical_application_members": 0,
+      "nested_archives": [],
+      "all_study_members_extracted": true,
+      "archive_redundant_after_material_consolidation": true
+    },
+    {
+      "archive": "gre-reading-studio-local.zip",
+      "sha256": "d0149b7c08eba55741929fb7aa92d775511cac2729a473ee4464928d117820fb",
+      "kind": "old_application_bundle",
+      "document_members": 11,
+      "metadata_members": 0,
+      "historical_application_members": 7,
+      "nested_archives": [],
+      "all_study_members_extracted": null,
+      "archive_redundant_after_material_consolidation": true
+    },
+    {
+      "archive": "gre800-cards-back-deploy.tar.gz",
+      "sha256": "1bb09a5a4aedebac88579ae3e940f8a4915ffcd649e71283b7c17e619acd6d72",
+      "kind": "old_application_bundle",
+      "document_members": 0,
+      "metadata_members": 0,
+      "historical_application_members": 10,
+      "nested_archives": [],
+      "all_study_members_extracted": null,
+      "archive_redundant_after_material_consolidation": true
+    },
+    {
+      "archive": "gre800-cards-deploy.tar.gz",
+      "sha256": "fea5287aad5196f6f80783b75fe3f37c4d08c9060ab3ce35dbc4504e4f5ebbd9",
+      "kind": "old_application_bundle",
+      "document_members": 0,
+      "metadata_members": 0,
+      "historical_application_members": 7,
+      "nested_archives": [],
+      "all_study_members_extracted": null,
+      "archive_redundant_after_material_consolidation": true
+    },
+    {
+      "archive": "gre800-cards-self-check-deploy.tar.gz",
+      "sha256": "d4be524c446e89c303840918acdf64416b83a5dcacbe36028f6f6cb833ae4ca0",
+      "kind": "old_application_bundle",
+      "document_members": 0,
+      "metadata_members": 0,
+      "historical_application_members": 10,
+      "nested_archives": [],
+      "all_study_members_extracted": null,
+      "archive_redundant_after_material_consolidation": true
+    },
+    {
+      "archive": "gre800-cards-v2-deploy.tar.gz",
+      "sha256": "4c1d0c41e8698c149e6ab74d48c6c7365f1e12e9803472c8f8cc09c5b605e57b",
+      "kind": "old_application_bundle",
+      "document_members": 0,
+      "metadata_members": 0,
+      "historical_application_members": 10,
+      "nested_archives": [],
+      "all_study_members_extracted": null,
+      "archive_redundant_after_material_consolidation": true
+    }
+  ],
+  "new_documents": [
+    {
+      "archive": "Archive.zip",
+      "member": "GRE镇考3000词2.0（乱序）.pdf",
+      "sha256": "5c1b2b14576e3f142b35e51e78dc250984a709662b2a018db62357624674a80e",
+      "bytes": 4492658,
+      "type": "vocabulary_reference",
+      "destination": "materials/vocabulary/GRE镇考3000词2.0（乱序）.pdf"
+    },
+    {
+      "archive": "Archive.zip",
+      "member": "再要你命3000.xlsx",
+      "sha256": "55cc7aa5f1edcf4df9c2f5d1d4ee8b179e3ba04d257d484c592f0b3ff70ef9ca",
+      "bytes": 300406,
+      "type": "vocabulary_reference",
+      "destination": "materials/vocabulary/再要你命3000.xlsx"
+    },
+    {
+      "archive": "Archive.zip",
+      "member": "皇冠GRE超级词频Alpha版.xlsx",
+      "sha256": "0b35a4bac93899485d8fd288c5a11d303746746cb3e9c56f52edc285c19fec3d",
+      "bytes": 282026,
+      "type": "vocabulary_reference",
+      "destination": "materials/vocabulary/皇冠GRE超级词频Alpha版.xlsx"
+    },
+    {
+      "archive": "Archive.zip",
+      "member": "真经GRE等价词汇总.pdf",
+      "sha256": "7e3db171ca0707301ea522add2a18be831bacd97872b36b7cc5b093e6b45909b",
+      "bytes": 837204,
+      "type": "vocabulary_reference",
+      "destination": "materials/vocabulary/真经GRE等价词汇总.pdf"
+    }
+  ],
+  "existing_document_coverage": [
+    {
+      "archive": "Archive.zip",
+      "member": "GRE镇考3000词2.0（乱序）.pdf",
+      "sha256": "5c1b2b14576e3f142b35e51e78dc250984a709662b2a018db62357624674a80e",
+      "matched_source_ids": [],
+      "already_available": false,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/vocabulary/GRE镇考3000词2.0（乱序）.pdf"
+    },
+    {
+      "archive": "Archive.zip",
+      "member": "再要你命3000.xlsx",
+      "sha256": "55cc7aa5f1edcf4df9c2f5d1d4ee8b179e3ba04d257d484c592f0b3ff70ef9ca",
+      "matched_source_ids": [],
+      "already_available": false,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/vocabulary/再要你命3000.xlsx"
+    },
+    {
+      "archive": "Archive.zip",
+      "member": "皇冠GRE填空篇4.0版.pdf",
+      "sha256": "03f0f613673cfd73501e16fa9a838b249858590fa71e4082660a57da444c2cd5",
+      "matched_source_ids": [
+        "verbal-crown4"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/verbal-crown4.pdf"
+    },
+    {
+      "archive": "Archive.zip",
+      "member": "皇冠GRE超级词频Alpha版.xlsx",
+      "sha256": "0b35a4bac93899485d8fd288c5a11d303746746cb3e9c56f52edc285c19fec3d",
+      "matched_source_ids": [],
+      "already_available": false,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/vocabulary/皇冠GRE超级词频Alpha版.xlsx"
+    },
+    {
+      "archive": "Archive.zip",
+      "member": "皇冠GRE阅读篇4.0版.pdf",
+      "sha256": "f858d3064b0e5f6725244bc7d92c395b6e87a336bb049233d620ebe6e23ff93a",
+      "matched_source_ids": [
+        "crown"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/crown.pdf"
+    },
+    {
+      "archive": "Archive.zip",
+      "member": "真经GRE等价词汇总.pdf",
+      "sha256": "7e3db171ca0707301ea522add2a18be831bacd97872b36b7cc5b093e6b45909b",
+      "matched_source_ids": [],
+      "already_available": false,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/vocabulary/真经GRE等价词汇总.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/Argument2021新题.pdf",
+      "sha256": "f793dc3c06026d9973843f9447a9fb7bd0ad619f441bd0051e99c9c498917f84",
+      "matched_source_ids": [
+        "awa-02"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-02.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE/argument 范文good (2).pdf",
+      "sha256": "b9dcb9572f5ad210c4625873dc3bbd484edc8cfbd59bba512516fd5ab18a770e",
+      "matched_source_ids": [
+        "awa-06"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-06.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE/Argument-176 177.docx",
+      "sha256": "5fe1751546abf81e153abe994d9d3fec8f02f6b2df4c5d18defee4b4ba7c3b8c",
+      "matched_source_ids": [
+        "awa-07"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-07.docx"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE/Argument-178.docx",
+      "sha256": "bc5f744e19399a149a73cedb732e27311aba0535425ed57c5ee33d2efa2933e8",
+      "matched_source_ids": [
+        "awa-08"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-08.docx"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE/Argument-179.docx",
+      "sha256": "957f0e2e68f1af2c0339f01abe4539d11ca8d14a2da825930ec2ce9d1bf469de",
+      "matched_source_ids": [
+        "awa-09"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-09.docx"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE/Argument-180.docx",
+      "sha256": "8bb1153eec0313e9940ec051e9de69ac7df57d0cd82163881fc5ce2f269b0a77",
+      "matched_source_ids": [
+        "awa-10"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-10.docx"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE/GRE写作题库全解析(新2020版).pdf",
+      "sha256": "514a921f2e0cf0c291a3cd03d54459689d6cda71550fb24384c004ad90a95492",
+      "matched_source_ids": [
+        "awa-11"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-11.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE/GRE核心词汇一本通.pdf",
+      "sha256": "5fa5617c5e55598ec46274fb93b5cbb98191bf144d807e49783b90a5cf7cb4e3",
+      "matched_source_ids": [],
+      "already_available": true,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/vocabulary/GRE核心词汇一本通.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE/新argument题库分类（2020版）.pdf",
+      "sha256": "39cc409b5ef0feb79b9e18ebbaf7e96fd520ce84570c286f0ac5c43ebf42fe0c",
+      "matched_source_ids": [
+        "awa-12"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-12.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE/新issue题库分类（2020版）.pdf",
+      "sha256": "214f5874d776d9d6b5b51fbea9415ba57170ebc0f3d4c72410277b39fae42350",
+      "matched_source_ids": [
+        "awa-13"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-13.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE/皇冠GRE填空1300题（套题版）.pdf",
+      "sha256": "cd95073a63d7a89c184cd80df1959c353779b0e25d4ea792a6c7fcd2401d4356",
+      "matched_source_ids": [
+        "verbal-crown1300"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/verbal-crown1300.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE(第一遍样例，但个人觉得这个方法不适合我）.xlsx",
+      "sha256": "815ac3eed315d5ef6bd82df5acbcef48bcad4f4326b8546bc4a7be96c98d0ffa",
+      "matched_source_ids": [],
+      "already_available": true,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/reference/GRE(第一遍样例，但个人觉得这个方法不适合我）.xlsx"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE作文满分素材Issue+Argument/ETS作文官方题库-Argument.pdf",
+      "sha256": "7096eda02420db416dc6ef334f3f6b38ec972f874c95b24e2311654366ba3937",
+      "matched_source_ids": [
+        "awa-14"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-14.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE作文满分素材Issue+Argument/ETS作文官方题库-Issue.pdf",
+      "sha256": "a7f29494b6330c98019b18a4098006a41370b35c179482f1f9cbfcd8e7b46e33",
+      "matched_source_ids": [
+        "awa-15"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-15.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE作文满分素材Issue+Argument/GRE作文-新G题库版《北美范文》.pdf",
+      "sha256": "484bf329216a43ca12b7a87f9488d3ecfd7f6f8609ff67e8fa7513d26f68fd66",
+      "matched_source_ids": [
+        "awa-16"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-16.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE作文满分素材Issue+Argument/GRE作文Argument常见逻辑漏洞分析+经典范文.pdf",
+      "sha256": "c142ee11e9105e342634d0475655551c7f6029001fcc4c1480a33714bf7181d7",
+      "matched_source_ids": [
+        "awa-17"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-17.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE作文满分素材Issue+Argument/GRE作文Argument范文分析.pdf",
+      "sha256": "f0cd3f5600589f17201d679c6643d85dc46d5d092f1cf2873334e0d65acae476",
+      "matched_source_ids": [
+        "awa-18"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-18.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE作文满分素材Issue+Argument/GRE作文常用句型集.pdf",
+      "sha256": "8d6f7d7829ee332f65426cb0cacc562a4375b3ad6d26ac1ad5b62aaf92bffbb8",
+      "matched_source_ids": [
+        "awa-19"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-19.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE写作逐题解析(1).pdf",
+      "sha256": "d43cb2d8a5de5aeecf1c6af3d5cbf9ba42f6fbcdc372cff6111a78ebb181868f",
+      "matched_source_ids": [
+        "awa-03"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-03.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE同义近义词.docx",
+      "sha256": "960216e0d3bd215bc128a9fcfd47b9e00ca566e8bce42bc42ec6fcd13f600f76",
+      "matched_source_ids": [],
+      "already_available": true,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/vocabulary/GRE同义近义词.docx"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE填空6选2对应词表.pdf",
+      "sha256": "a5d1c028f17283527334346fe7a10a91693f284fc68824c509a52ff5a74c0c5b",
+      "matched_source_ids": [
+        "verbal-sixpairs"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/verbal-sixpairs.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE混淆词.docx",
+      "sha256": "0e55053524914d51dd8cb216073259f59494ad93c26e18208b90121af2684c3c",
+      "matched_source_ids": [],
+      "already_available": true,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/vocabulary/GRE混淆词.docx"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE混淆词最终版.docx",
+      "sha256": "5503aca0ad5903294c484ca023c44c126002cedb0c39442c51e1d7f59a277dd2",
+      "matched_source_ids": [],
+      "already_available": true,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/vocabulary/GRE混淆词最终版.docx"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/GRE熟词僻义.docx",
+      "sha256": "5f60ed460952f71d899f26a095db29ac5071da1640df68723fff85f10f3b10ec",
+      "matched_source_ids": [],
+      "already_available": true,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/vocabulary/GRE熟词僻义.docx"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/issue 范文good.pdf",
+      "sha256": "b87346fca4b7dd743d31051d065a16ddf3526b37ec124cb84b4fd15835df1e73",
+      "matched_source_ids": [
+        "awa-04"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-04.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/Issue2021新题.pdf",
+      "sha256": "452e7414e5ebbfb90fc0347a788f6669812cc299743919e436a28dcf40ed7e05",
+      "matched_source_ids": [
+        "awa-05"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-05.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/McGraw-Hill's GRE, 2010 Edition.pdf",
+      "sha256": "e87cbf75ae4e3e715e356fbb58468bed51d0dcbeb40ab64f688675a58eaf779d",
+      "matched_source_ids": [
+        "verbal-mcgraw",
+        "mcgraw-quant",
+        "awa-22"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-22.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/杨鹏GRE长难句.pdf",
+      "sha256": "a1eb8e514f39af9e264af608cf530940fa31359879f3474834c0dcf0f803c69c",
+      "matched_source_ids": [],
+      "already_available": true,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/reference/杨鹏GRE长难句.pdf"
+    },
+    {
+      "archive": "GRE.rar",
+      "member": "GRE/陈琦GRE长难句.pdf",
+      "sha256": "e00c6e4170e8ad73cbde5e75f1697157d93120880de8ff11a7e41ab115e026e6",
+      "matched_source_ids": [],
+      "already_available": true,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/reference/陈琦GRE长难句.pdf"
+    },
+    {
+      "archive": "GRE/GRE备考资料.rar",
+      "member": "GRE备考资料/作文/argument参考答案&高频题目.pdf",
+      "sha256": "2a0812bf3ec313cad22da1d6e810b927326f48043a0e6b60b43268a8831ee42a",
+      "matched_source_ids": [
+        "awa-20"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-20.pdf"
+    },
+    {
+      "archive": "GRE/GRE备考资料.rar",
+      "member": "GRE备考资料/作文/GRE写作高频题目及考点精析-黑皮书.pdf",
+      "sha256": "4fb4e168648e28b2e3ba8a0a4401ac148a831c6152664190ecbc3c46ee434032",
+      "matched_source_ids": [
+        "awa-21"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/awa-21.pdf"
+    },
+    {
+      "archive": "GRE/GRE备考资料.rar",
+      "member": "GRE备考资料/填空/GRE填空机经1300题【微信公众号：张巍老师GRE】(1).pdf",
+      "sha256": "c1be40bf2e645c531757f307e2cb7bbe3f17e5034fc522b5c9141636be815fe9",
+      "matched_source_ids": [
+        "verbal-zhang1300"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/verbal-zhang1300.pdf"
+    },
+    {
+      "archive": "GRE/GRE备考资料.rar",
+      "member": "GRE备考资料/数学/Math Vocabulary（数学专业词汇）.pdf",
+      "sha256": "ef08f9d9a2a1b9d4ad9c52d4c5738c3262d65dd27088e5312cf2d9d25db24a47",
+      "matched_source_ids": [
+        "math-vocabulary"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/quant-math-vocabulary.pdf"
+    },
+    {
+      "archive": "GRE/GRE备考资料.rar",
+      "member": "GRE备考资料/数学/最新数学回忆版机经(360题版).pdf",
+      "sha256": "c1485fde3432336b15ee195371ea087f47f1cc4abf81cdd093e9b2c85011dd6d",
+      "matched_source_ids": [
+        "math360"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/quant-math360.pdf"
+    },
+    {
+      "archive": "GRE/GRE备考资料.rar",
+      "member": "GRE备考资料/阅读+逻辑/GRE白皮书/GRE阅读170篇精讲精析.pdf",
+      "sha256": "ee0fd41671a854aae3d7c2217cfb1563c8a60d381b45ad018284df56d3c46fc6",
+      "matched_source_ids": [
+        "reading170-explained"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/reading170-explained.pdf"
+    },
+    {
+      "archive": "GRE/GRE备考资料.rar",
+      "member": "GRE备考资料/阅读+逻辑/GRE白皮书/GRE阅读170篇精讲精析（配套习题）/GRE真题阅读170篇+逻辑80题.pdf",
+      "sha256": "b5cc18851d5637bfdb3916006346b6af39a077b58c92672cf36a0d21c69f38f4",
+      "matched_source_ids": [
+        "reading170"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/reading170-exercises.pdf"
+    },
+    {
+      "archive": "GRE/GRE备考资料.rar",
+      "member": "GRE备考资料/阅读+逻辑/GRE白皮书/GRE阅读170篇精讲精析（配套习题）/文章及题型难度汇总表格.xlsx",
+      "sha256": "b8fb7e3cbb793a4d88bd9acb57f99b8634fc7ac2a4e17b0340cde7d91cffb639",
+      "matched_source_ids": [],
+      "already_available": true,
+      "role": "vocabulary_or_reading_reference",
+      "material_path": "materials/sources/difficulty.xlsx"
+    },
+    {
+      "archive": "GRE/GRE备考资料.rar",
+      "member": "GRE备考资料/阅读+逻辑/GRE阅读机经300篇【微信公众号：张巍老师GRE】.pdf",
+      "sha256": "3abc6faf8385d507d2ed2ff6dce0f83abec61f841924bf698057572c3aa4b667",
+      "matched_source_ids": [
+        "reading300"
+      ],
+      "already_available": true,
+      "role": "question_bank_or_source_reference",
+      "material_path": "materials/sources/reading300.pdf"
+    }
+  ],
+  "notes": [
+    "???????????????????????????????????????",
+    "????????????????????????????",
+    "?????????????????10,348 ??????ID????????????????",
+    "?????? ID????????????????????",
+    "????????????????????? materials ??????????????"
+  ]
+}

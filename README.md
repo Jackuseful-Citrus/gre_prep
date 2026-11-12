@@ -1,31 +1,37 @@
 # gre_prep
 
-本地 GRE 备考资料与浏览器练习工具，包含「阅间」综合训练和「词间」800 词卡。
+本地 GRE 学习台：综合题库、800 词卡和统一资料库。下载整个仓库，解压后用浏览器打开 **`GRE-start.html`** 即可；日常使用不需要启动脚本、Python、Node.js 或服务器。
 
-## 开始使用
+## 学习与资料
 
-下载并解压整个仓库，或使用 Git 克隆；保留目录结构和相邻资料文件。用 Chrome 或 Edge 打开根目录的 `GRE-start.html`，选择需要的应用。日常离线练习不需要安装 Python、Node.js 或启动服务器。
+- **阅间综合训练**：`gre-reading-studio/dist/index.html`，包含阅读、填空、数学、写作与模考。
+- **词间 800 词卡**：`gre800-cards/dist/index.html`，包含自认复习、反向回忆、同义词与间隔复习。
+- **全部资料**：`materials/index.html`，可搜索题目原书、词汇表与参考资料。原始文档统一放在 `materials/`，完全相同的副本只保留一份。
 
-- Windows：也可双击 `打开GRE-Windows.cmd`。
-- Linux：也可运行 `sh ./打开GRE-Linux.sh`。
-- 阅间综合训练：`gre-reading-studio/dist/index.html`，提供阅读、填空、数学及模考等练习。
-- 词间 800 词卡：`gre800-cards/dist/index.html`，提供词卡、自认复习、反向回忆、同义词训练与间隔复习。
+题库目前包含 **10,348 道题目，5,487 道可判分题**。本次已解压并核对资料压缩包，其中的题目此前均已收录；新增整理 4 份词汇资料，没有重复增加题目。来源与文件校验清单见 `materials/manifest.json`，压缩包核对记录见 `gre-reading-studio/reports/archive-refresh.json`。
 
-## 保存学习进度
+## 保存进度
 
-首次使用阅间时，在本地创建 `gre-reading-studio/user-data` 文件夹，然后在页面底部点击「选择进度文件夹」，选择该文件夹并允许读写。答题、生词等记录会保存到其中的 `progress.json`；换电脑后选择同一文件夹即可恢复。该文件夹不纳入 Git。
+阅间默认自动保存到当前浏览器，底栏显示实际保存状态。点击「保存进度」可立即保存；不必选择文件夹。
 
-词间的学习记录保存在当前浏览器中，可在「学习分析」导出、导入进度。换电脑或清理浏览器数据前，请先备份。
+如需额外备份，在 Chrome 或 Edge 中点击「选择备份文件夹」，选择电脑、OneDrive 等同步盘或移动存储上的可写文件夹。允许读写后会自动备份至 `progress.json`，并保留上一份快照。换电脑时选择同一文件夹即可恢复；同步盘的跨设备同步由同步软件完成。
 
-AI 功能需要网络和可用的 API 额度。在阅间页面中自行输入 OpenAI API Key；密钥仅保留在当前页面内存中，刷新或关闭页面后需要重新输入。
+底栏的「导出进度」「导入进度」适用于不支持文件夹授权的浏览器，备份包含导入的题库。词间的独立进度在「学习分析」中导出、导入。换浏览器、移动项目或清理浏览器数据前，请先备份；浏览器存储不会自动跨设备同步。
 
-## 文件布局
+AI 功能需要网络和可用的 API 额度。在页面中输入自己的 OpenAI API Key；密钥仅保留在页面内存中，不写入进度文件。
 
-- `GRE-start.html`、`portable/`：统一入口及页面样式。
-- `gre-reading-studio/`：综合训练应用、题库数据、处理脚本和测试；`dist/` 内包含运行所需的页面、题图与来源资料。
-- `gre800-cards/`：词卡应用、词库、提取脚本和测试；`dist/` 可直接打开。
-- `GRE/` 及根目录的 PDF、表格等文件：学习资料。
-- `portability-tests/`：便携运行相关的检查脚本。
-- `U盘与Linux使用说明.txt`：复制、启动和保存进度的详细说明。
+## 项目维护
 
-仓库排除了个人学习进度、API 密钥、本机缓存和旧部署压缩包。请将自己的密钥与进度保存在本地。
+`scripts/` 中保留题库构建、资料提取和校核工具，供维护数据时使用；网页启动不调用这些脚本。`tests/` 与 `portability-tests/` 用于验证题库、页面和保存功能。
+
+重新构建已整理的题库：
+
+```sh
+python gre-reading-studio/scripts/build_data.py
+python gre-reading-studio/scripts/build_platform.py
+python gre-reading-studio/scripts/build_material_catalog.py
+```
+
+构建统一题库需要 `openpyxl`；从原 PDF 重新提取还需 `pypdf`。保留 `materials/` 和 `data/`，不需要旧压缩包或临时工作目录。
+
+个人进度、密钥、本机缓存和清理备份不纳入 Git。完整使用说明见 `使用说明.txt`。

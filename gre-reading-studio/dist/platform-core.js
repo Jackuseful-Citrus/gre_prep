@@ -23,12 +23,26 @@
     return same(response.selected||[],q.correct_answer);
   }
   function complete(q,r){const m=mode(q);if(m==='numeric')return q.gradable?!!rational(r.text):!!r.text?.trim();if(m==='writing'||m==='open')return !!r.text?.trim();if(m==='pair')return r.selected?.length===2;if(m==='blanks')return q.blank_groups.every(g=>g.options.filter(o=>r.selected?.includes(o.id)).length===1);return !!r.selected?.length;}
-  function localAsset(value){return typeof value==='string'&&/^(?:sources|question-images)\/[A-Za-z0-9_./\-]+$/.test(value)&&!value.split('/').includes('..');}
+  function localAsset(value){
+    if(typeof value!=='string')return false;
+    const relative=value.startsWith('../../materials/sources/')?value.slice('../../materials/'.length):value;
+    return /^(?:sources|question-images)\/[A-Za-z0-9_./\-]+$/.test(relative)&&!relative.split('/').includes('..');
+  }
+  function assetURL(value){
+    if(!localAsset(value)||!value.startsWith('sources/'))return value;
+    const aliases={'quant-mcgraw-quant.pdf':'awa-22.pdf','verbal-mcgraw.pdf':'awa-22.pdf','quant-guide-quant.pdf':'awa-23.pdf','verbal-guide.pdf':'awa-23.pdf'};
+    const name=value.slice('sources/'.length);
+    return '../../materials/sources/'+(aliases[name]||name);
+  }
   function validateBank(input){
     if(!input||input.schema_version!==2||!Array.isArray(input.questions)||!Array.isArray(input.sources)||!Array.isArray(input.materials))throw Error('需要 schema_version: 2，questions、sources 和 materials 数组。');
     if(input.questions.length>100000)throw Error('一次最多导入 100,000 道题。');
     const bank=JSON.parse(JSON.stringify(input)),ids=new Set(),sourceIds=new Set(bank.sources.map(s=>s.id)),materialIds=new Set(bank.materials.map(m=>m.id));
-    for(const s of bank.sources)if(s.url&&!localAsset(s.url))throw Error('来源文件仅允许本地 sources/ 路径。');
+    for(const s of bank.sources){
+      if(s.url&&!localAsset(s.url))throw Error('来源文件仅允许本地 materials/sources/ 资料路径。');
+      if(s.url)s.url=assetURL(s.url);
+      if(s.reader?.url){if(!localAsset(s.reader.url))throw Error('原文资料路径不安全。');s.reader.url=assetURL(s.reader.url);}
+    }
     for(const m of bank.materials)for(const image of m.images||[])if(!localAsset(image.src))throw Error('共用材料图片路径不安全。');
     for(const q of bank.questions){
       if(typeof q.question_id!=='string'||!q.question_id||ids.has(q.question_id))throw Error('题目ID缺失或重复。');ids.add(q.question_id);
@@ -49,6 +63,7 @@
       if(q.gradable&&mode(q)==='single'&&q.correct_answer.length!==1)throw Error('单选题必须且只能有一个原答案。');
       if(q.gradable&&mode(q)==='blanks'&&(!q.blank_groups.every(g=>g.options.filter(o=>q.correct_answer.includes(o.id)).length===1)||q.correct_answer.length!==q.blank_groups.length))throw Error('每一空必须恰好有一个原答案。');
     }
+    for(const item of [...bank.materials,...bank.questions])for(const field of ['images','explanation_images'])for(const image of item[field]||[])image.src=assetURL(image.src);
     return bank;
   }
   function stats(attempts,bank){
@@ -56,5 +71,5 @@
     for(const a of attempts){const q=questions.get(a.questionId);if(!q)continue;const eligible=q.gradable&&q.answer_status==='verified'&&q.category!=='AWA'&&typeof a.correct==='boolean';result.total++;if(eligible){result.graded++;if(a.correct)result.correct++;}if(Number.isFinite(a.elapsedMs)){result.time+=a.elapsedMs;result.timed++;}const t=result.byType[q.question_type] ||= {total:0,graded:0,correct:0};t.total++;if(eligible){t.graded++;if(a.correct)t.correct++;}result.byCategory[q.category]=(result.byCategory[q.category]||0)+1;}
     return result;
   }
-  return {types,escape,same,rational,mode,grade,complete,validateBank,localAsset,stats};
+  return {types,escape,same,rational,mode,grade,complete,validateBank,localAsset,assetURL,stats};
 });

@@ -5,11 +5,12 @@ Original pages and formatting runs are retained separately for reproducibility.
 """
 from pathlib import Path
 import sys,re,json,shutil,collections
+from library_paths import resolve_material, source_url, copy_source, normalize_material_links
 ROOT=Path(__file__).resolve().parents[2]
 PROJECT=ROOT/'gre-reading-studio';OUT=PROJECT/'data'
 sys.path.insert(0,str(ROOT/'gre800-cards/scripts/vendor'))
 from pypdf import PdfReader
-SOURCE=OUT/'archive-sources/reading300.pdf'
+SOURCE=resolve_material(source_id='reading300')
 reader=PdfReader(SOURCE)
 rawfile=OUT/'reading300-raw-pages.json'
 if rawfile.exists():pages=json.loads(rawfile.read_text(encoding='utf8'))
@@ -135,8 +136,8 @@ for p in passages:
         issues.append({'id':p['id'],'issue':'highlight-unrecovered'})
 qs=[q for p in passages for q in p['questions']]
 coverage={'pdfPages':len(pages),'passages':len(passages),'questions':len(qs),'answerVerified':0,'answerUnverified':len(qs),'questionKinds':dict(collections.Counter(q['kind'] for q in qs)),'sourceTextCharacters':sum(map(len,pages)),'issues':issues}
-result={'source':{'id':'reading300','title':'真经 GRE 阅读机经 300 篇','fileName':'GRE阅读机经300篇【微信公众号：张巍老师GRE】.pdf','pages':len(pages),'pdfUrl':'sources/reading300.pdf','archive':'GRE/GRE备考资料.rar','archiveMember':'GRE备考资料/阅读+逻辑/GRE阅读机经300篇【微信公众号：张巍老师GRE】.pdf','notes':['来自用户本地 GRE/GRE备考资料.rar。','封面与末页说明答案和解析需另行获取；本 PDF 无答案表。','完整原始文本保存在 data/reading300-raw-pages.json；展示数据只整理换行和题号。']},'passages':passages,'coverage':coverage}
-(OUT/'reading300.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf8')
+result={'source':{'id':'reading300','title':'真经 GRE 阅读机经 300 篇','fileName':'GRE阅读机经300篇【微信公众号：张巍老师GRE】.pdf','pages':len(pages),'pdfUrl':source_url(source_id='reading300'),'archive':'GRE/GRE备考资料.rar','archiveMember':'GRE备考资料/阅读+逻辑/GRE阅读机经300篇【微信公众号：张巍老师GRE】.pdf','notes':['来自用户本地 GRE/GRE备考资料.rar。','封面与末页说明答案和解析需另行获取；本 PDF 无答案表。','完整原始文本保存在 data/reading300-raw-pages.json；展示数据只整理换行和题号。']},'passages':passages,'coverage':coverage}
+(OUT/'reading300.json').write_text(json.dumps(normalize_material_links(result),ensure_ascii=False,indent=2),encoding='utf8')
 (OUT/'reading300-validation.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2),encoding='utf8')
-shutil.copy2(SOURCE,PROJECT/'dist/sources/reading300.pdf')
+copy_source(SOURCE, 'reading300.pdf')
 print(json.dumps(coverage,ensure_ascii=False,indent=2))

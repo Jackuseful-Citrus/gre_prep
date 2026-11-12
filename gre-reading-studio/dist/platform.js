@@ -14,7 +14,7 @@
   function indexBank(){questions=new Map(bank.questions.map(q=>[q.question_id,q]));sources=new Map(bank.sources.map(s=>[s.id,s]));materials=new Map(bank.materials.map(m=>[m.id,m]));}
   function idbOpen(){return new Promise(resolve=>{try{const req=indexedDB.open('gre-training-local-v2',1);req.onupgradeneeded=()=>req.result.createObjectStore('data');req.onsuccess=()=>resolve(req.result);req.onerror=()=>resolve(null);}catch{resolve(null);}});}
   function dbGet(key){return new Promise(resolve=>{if(!db)return resolve(null);const req=db.transaction('data').objectStore('data').get(key);req.onsuccess=()=>resolve(req.result);req.onerror=()=>resolve(null);});}
-  function dbSet(key,value){return new Promise((resolve,reject)=>{if(!db)return reject(Error('浏览器未提供 IndexedDB'));const tx=db.transaction('data','readwrite');tx.objectStore('data').put(value,key);tx.oncomplete=()=>resolve();tx.onerror=()=>reject(tx.error);});}
+  function dbSet(key,value){return new Promise((resolve,reject)=>{if(!db)return reject(Error('浏览器未提供 IndexedDB'));const tx=db.transaction('data','readwrite');tx.objectStore('data').put(value,key);tx.oncomplete=()=>resolve();tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||Error('浏览器保存中止'));});}
   function validState(input){
     if(!input||input.version!==2||!Array.isArray(input.attempts)||!Array.isArray(input.favorites))throw Error('不是阅间综合训练的进度文件。');
     const out=defaults(),seen=new Set();
@@ -176,7 +176,9 @@
     if(!file)return;
     try{
       if(file.size>250*1024*1024)throw Error('文件超过 250 MB。');
-      const input=JSON.parse(await file.text());
+      let input=JSON.parse(await file.text());
+      if(importKind==='progress'&&input.format==='gre-portable-progress')input=input.document;
+      if(importKind==='progress'&&input.app==='gre-training-studio'&&Array.isArray(input.importedBanks)){await restorePortable(input);window.GREPortable?.changed();toast('完整备份已合并，学习记录与导入题库均已恢复。');render();return;}
       if(importKind==='progress'&&input.version===1&&input.questions){legacy.mergeProgress(input);importLegacy();await save();toast('RC progress imported.');render();return;}
       if(importKind==='bank'){
         const extra=C.validateBank(input),existing=await dbGet('imported-banks')||[];
@@ -239,7 +241,7 @@
     if(action==='writing-timer'){writingLimit=Number($('#essay-limit').value);writingEnd=Date.now()+writingLimit*60000;writingExpired=false;tick();}
     if(action==='save-essay'){const d=state.drafts[writingId];if(!d.text.trim()){toast('请先写下作文内容。');return;}accrue();const essay=storeEssay(questions.get(writingId),d.text,d.elapsedMs);state.attempts.push({id:'essay:'+essay.id,questionId:writingId,at:essay.at,correct:null,elapsedMs:d.elapsedMs,selected:[],text:d.text,uncertain:false});save();toast('已保存为新的历史作文版本。');}
     if(action==='export-essay'){const d=state.drafts[writingId];download(`GRE-essay-draft-${writingId}.txt`,essayDocument({questionId:writingId,text:d.text,at:Date.now()}),'text/plain;charset=utf-8');}
-    if(action==='export-progress'){accrue();save();download('gre-training-progress.json',JSON.stringify({app:'gre-training-studio',exportedAt:new Date().toISOString(),progress:state,legacyRC:legacy.readProgress(),mock:mock?.exportProgress()},null,2));}
+    if(action==='export-progress'){accrue();save();void snapshotPortable().then(snapshot=>download('gre-training-progress.json',JSON.stringify({...snapshot,exportedAt:new Date().toISOString()},null,2))).catch(()=>toast('备份导出失败，请重试。'));}
     if(action==='export-bank')download('gre_question_bank.json',JSON.stringify(bank));
     if(action==='import-progress'||action==='import-bank'){importKind=action==='import-bank'?'bank':'progress';$('#platform-import').click();}
   },true);
@@ -352,7 +354,7 @@
   AI?.init({getEntries:()=>state.vocabulary,saveEntry:async(word,raw)=>{const entry=state.vocabulary.find(entry=>entry.word===word),ai=V.normalizeAI(raw,word);if(!entry||!ai)return false;entry.ai=ai;return save();}});
   QA?.init({getResults:()=>state.questionAnalysis,saveResult:async(id,result)=>{state.questionAnalysis[id]=result;return save();}});
   initializing=false;
-  const portableReady=window.GREPortable?.init({snapshot:snapshotPortable,restore:restorePortable});
+  const portableReady=window.GREPortable?.init({snapshot:snapshotPortable,restore:restorePortable,persistBrowser:async()=>{const results=await Promise.all([save({preserveTimestamp:true,silent:true,force:true}),legacy.persistProgress(),mock?.persistProgress()??true]);return results.every(Boolean);}});
   if(location.hash==='#rc'){view='rc';syncVisibility();legacy.navigate('library');}else{view=location.hash==='#vocabulary'?'vocabulary':location.hash==='#home'?'home':'mock';render();}
   await portableReady;
 })();

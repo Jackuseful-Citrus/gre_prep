@@ -42,16 +42,17 @@
     return out;
   }
   let savedContent=JSON.stringify({...state,updatedAt:0});
-  function persist({preserveTimestamp=false,silent=false,force=false}={}) {
+  function persist({preserveTimestamp=false,silent=false,force=false,refresh=true}={}) {
     const content=JSON.stringify({...state,updatedAt:0}),changed=content!==savedContent;
-    if(!changed&&!force)return;
+    if(!changed&&!force)return storageAvailable;
     if(changed&&!preserveTimestamp)state.updatedAt=Date.now();
     savedContent=content;
     if(storageAvailable)try { localStorage.setItem(KEY,JSON.stringify(state)); }
     catch (e) { storageAvailable=false; storageWarning='浏览器无法保存记录；可在学习记录页导出备份。'; toast(storageWarning); }
-    updateRail();
+    if(refresh)updateRail();
     if(!silent)window.dispatchEvent(new CustomEvent('gre-rc-progress'));
     if(changed&&!silent&&!preserveTimestamp)window.GREPortable?.changed();
+    return storageAvailable;
   }
   function toast(message) { clearTimeout(toastTimer); $('#toast').textContent=message;$('#toast').hidden=false;toastTimer=setTimeout(()=>$('#toast').hidden=true,3800); }
   function updateRail(){const n=Object.keys(state.questions).length;$('#side-count').textContent=`${n} / ${DATA.stats.questions}`;$('#side-bar').style.width=`${Math.min(100,n/DATA.stats.questions*100)}%`;$('#resume').hidden=!state.session||!!state.session.endedAt||view==='study';}
@@ -67,7 +68,8 @@
   function pdfLink(sourceId,pages=[]) {
     const s=sources.get(sourceId); if(!s)return '#';
     const url=s.url||s.path||s.pdfUrl||s.reader?.url;
-    if(!url||!/^sources\/[a-zA-Z0-9._/-]+\.pdf$/.test(url))return '#';
+    const local=typeof url==='string'&&url.startsWith('../../materials/sources/')?url.slice('../../materials/'.length):url;
+    if(!local||!/^sources\/[a-zA-Z0-9._/-]+\.pdf$/.test(local)||local.split('/').includes('..'))return '#';
     const p=pages[0]||1, mapped=s.reader?.pageMap?.[p]||p;
     return `${url}#page=${mapped}`;
   }
@@ -185,6 +187,7 @@
   document.addEventListener('change',event=>{const el=event.target;if(el.dataset.filter&&el.id!=='search'){filters[el.dataset.filter]=el.type==='checkbox'?el.checked:el.value;page=1;$('#library-results').innerHTML=libraryResults();}if(el.id==='uncertain'){draft().uncertain=el.checked;persist();}if(el.id==='import-file')importProgress(el.files[0]);});
   window.GREReadingBridge={
     navigate,
+    persistProgress:()=>persist({preserveTimestamp:true,silent:true,force:true,refresh:false}),
     readProgress:()=>JSON.parse(JSON.stringify(state)),
     validateProgress:input=>validateState(input),
     restoreProgress:input=>{const next=validateState(input);state=next;persist({preserveTimestamp:true,silent:true,force:true});render();return JSON.parse(JSON.stringify(state));},

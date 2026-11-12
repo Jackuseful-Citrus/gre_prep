@@ -4,13 +4,41 @@ from collections import Counter, defaultdict
 import copy, hashlib, json, re, shutil, unicodedata
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment
+from library_paths import normalize_material_links
 APP=Path(__file__).resolve().parents[1]
 ROOT=APP.parent;WORK=APP/'data/platform';DIST=APP/'dist'
 TYPE_NAMES={'RC1':'RC 单选','RCMultiple':'RC 多选','RCSentence':'RC 选句','TC1':'TC 单空','TC2':'TC 双空','TC3':'TC 三空','TC_LEGACY':'旧版成对选项填空','SE':'SE 六选二','QC':'数量比较','QuantSingle':'数学单选','QuantMultiple':'数学多选','NumericEntry':'数值填空','DI':'数据解释','QuantRecall':'数学回忆自答','QuantDrill':'数学知识练习','Issue':'Issue 写作','Argument':'Argument 写作','WritingExercise':'写作练习'}
 def norm(s):return re.sub(r'\s+',' ',unicodedata.normalize('NFKC',s or '').translate(str.maketrans({'“':'"','”':'"','‘':"'",'’':"'"}))).strip()
-def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
+def read(p):return normalize_material_links(json.loads(p.read_text(encoding='utf-8-sig')))
+
+def source_inventory(sources):
+ """Rebuild a portable inventory from the inputs that actually made the bank.
+
+ The former workstation scan is intentionally not a build input: it can be
+ absent in a fresh checkout and contains obsolete paths after reorganizing
+ the material library. Source provenance stays in source_file; local_path is
+ resolved from the browser URL and is always relative to the repository.
+ """
+ rows=[]
+ for source in sources:
+  provenance=str(source.get('source_file') or source.get('fileName') or '')
+  url=source.get('url') or source.get('path') or source.get('reader',{}).get('url')
+  local=(DIST/url).resolve() if url else None
+  local_path=local.relative_to(ROOT.resolve()).as_posix() if local and local.is_relative_to(ROOT.resolve()) else None
+  rows.append({'name':Path(provenance.replace('\\','/')).name or source['title'],
+   'source_id':source['id'],'source_path':provenance,'local_path':local_path,
+   'file_type':Path(provenance).suffix.lstrip('.').lower(),
+   'bytes':local.stat().st_size if local and local.is_file() else None,
+   'question_types':source.get('types',[]),'question_count':source.get('imported_count',0),
+   'answers':'见题库逐题核验状态','explanations':'见题库来源与解析记录',
+   'difficulty':'沿用原资料标记','quality':'从当前题库来源重建',
+   'role':'题库来源或参考资料','duplicate_of':None,'notes':copy.deepcopy(source.get('notes',[]))})
+ return {'version':2,'stage':'当前题库来源清单','files':rows,'archive_members':[],
+  'summary':{'integrated_sources':len(rows),'inventory_scope':'当前题库来源；全部学习资料见根目录 materials 目录',
+   'machine_specific_baseline_required':False}}
+
 def rc_bank():
- old=json.loads((DIST/'data.js').read_text(encoding='utf8').split('=',1)[1].strip().removesuffix(';'))
+ old=normalize_material_links(json.loads((DIST/'data.js').read_text(encoding='utf8').split('=',1)[1].strip().removesuffix(';')))
  bank={'sources':[],'questions':[],'materials':[],'exclusions':[]}
  for src in old['sources']:
   s=copy.deepcopy(src);s.update(source_file=s.get('fileName'),url=s.get('url') or s.get('path') or s.get('reader',{}).get('url'),category='Verbal',group='阅读资料');bank['sources'].append(s)
@@ -111,6 +139,7 @@ def main():
    if match:r['source_id']=match['id']
  data={'schema_version':2,'title':'阅间 · GRE 综合训练','questions':questions,'materials':list(materials.values()),'sources':list(sources.values()),'reference_materials':refs,'statistics':stats,'pending_sources':pending,'quality_policy':'只使用本地原题与原答案。verified 表示提取内容与原键已核验；其他状态不计正式正确率。相似题不进行语义合并。'}
  APP.mkdir(exist_ok=True);(APP/'data/platform').mkdir(parents=True,exist_ok=True);(APP/'reports').mkdir(exist_ok=True)
+ data=normalize_material_links(data)
  for name in ['gre_question_bank.json']:(APP/name).write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')),encoding='utf8')
  # Static script enables file:// without fetch or a server.
  (DIST/'platform-data.js').write_text('window.GRE_PLATFORM_DATA='+json.dumps(data,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf8')
@@ -118,7 +147,8 @@ def main():
   p=WORK/f'{part}-bank.json'
   dest=APP/'data/platform'/p.name
   if p.exists() and p.resolve()!=dest.resolve():shutil.copy2(p,dest)
- if (WORK/'assets').exists():shutil.copytree(WORK/'assets',DIST,dirs_exist_ok=True)
+ # Original documents live only in materials/. Retained extraction assets are images.
+ if (WORK/'assets/question-images').exists():shutil.copytree(WORK/'assets/question-images',DIST/'question-images',dirs_exist_ok=True)
  report={'counts':stats,'total':len(questions),'duplicates':dups,'quality_issues':issues,'reference_materials':refs,'pending_sources':pending,'legacy_rc_questions_preserved':sum(bool(q.get('legacy_rc_id')) for q in questions),'raw_sources_modified':False}
  (APP/'reports/gre_quality_report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8')
  workbook(APP/'gre_import_report.xlsx',[
@@ -127,7 +157,7 @@ def main():
   ('去重记录',['保留ID','合并ID','来源'],[[d['retained'],d['merged'],d['source']] for d in dups]),
   ('质量核验',['题目ID','状态','疑点','来源','页码'],[[r['question_id'],r['status'],r['notes'],r['source_file'],r['source_page']] for r in issues]),
   ('参考与未完整导入',['资料详情'],[[r] for r in refs])])
- inv=read(WORK/'library-inventory-baseline.json');inv['stage']='全库只读扫描及导入后核验';inv['import_statistics']=stats
+ inv=source_inventory(list(sources.values()));inv['import_statistics']=stats
  for row in inv['files']+inv['archive_members']:
   matches=[s for s in sources.values() if str(s.get('source_file','')).replace('\\','/')==row['source_path'].replace('\\','/') or Path(s.get('source_file','')).name==row['name']]
   if matches:

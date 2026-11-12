@@ -9,7 +9,7 @@
       "删除页眉与行号；仅合并PDF自动换行，未改写题干、选项或答案。"
     ],
     "reader": {
-      "url": "sources/mcgraw-reading.pdf",
+      "url": "../../materials/sources/mcgraw-reading.pdf",
       "originalPages": [
         30,
         31,

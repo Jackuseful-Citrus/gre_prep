@@ -30,12 +30,12 @@ QuantRecall/QuantDrill可使用response_type:"open"，不参与选择题判分�
 AWA的instructions、model_essay、guidance保留原写作要求、范文、指导，correct_answer为null。
 
 sources示例：
-[{id:"source-id",title:"原书名",source_file:"原路径",url:"sources/source.pdf",pages:100,notes:[]}]
+[{id:"source-id",title:"原书名",source_file:"原路径",url:"../../materials/sources/source.pdf",pages:100,notes:[]}]
 PDF节选用reader.pageMap将原物理页码映射到节选页码，并保留reader.originalPages。
 answer_source和explanation_source使用{source_id,pages:[原页码]}。
 原答案不一致时保留answer_candidates并标needs_review，不能覆盖冲突证据。
 
 answer_status：verified / extracted / needs_review / incomplete。
 只有内容与原答案完整核验的客观题可标verified。乱码、缺图、截断题要明确标记，不能补造。
-图像和PDF仅用本地相对路径；不允许http(s)、脚本地址或上级目录。
-导入JSON前，把配套文件放到dist/sources或dist/question-images对应位置。
+图像和PDF仅用本地相对路径；只允许固定的 ../../materials/sources/ 资料前缀和 question-images/ 题图路径；不允许http(s)、脚本地址或其他上级目录。
+导入JSON前，把配套文件放到项目根目录 materials/sources 或 gre-reading-studio/dist/question-images对应位置。

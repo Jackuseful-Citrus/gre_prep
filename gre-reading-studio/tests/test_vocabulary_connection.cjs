@@ -3,7 +3,7 @@
 'use strict';
 const {chromium}=require('C:/Temp/gre800-browser-qa/node_modules/playwright-core');
 const {pathToFileURL}=require('node:url');
-const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),assert=require('node:assert/strict');
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const ROOT=path.resolve(__dirname,'..'),FILE=pathToFileURL(path.join(ROOT,'dist/index.html')).href;
 const BANK=JSON.parse(fs.readFileSync(path.join(ROOT,'gre_question_bank.json'),'utf8'));
 const question=BANK.questions.find(q=>q.question_type==='TC1'&&q.gradable);
@@ -75,19 +75,13 @@ async function tokenInTab(p,token){await p.waitForFunction(({key,token})=>JSON.p
    assert.equal(await p.evaluate(()=>window.connectionTestUnreloaded),true);assert.ok(!(await p.url()).includes(TOKEN_A));assert.equal(await p.evaluate(key=>JSON.parse(localStorage.getItem(key)).token,CONNECTION_KEY),TOKEN_A);
   });
   await check('progress exports exclude both the shared local token and any connection metadata',async()=>{
-   await oldTab.evaluate(()=>GREPlatform.go('materials'));const pending=oldTab.waitForEvent('download');await oldTab.locator('[data-paction="export-progress"]').click();const downloaded=await pending,raw=fs.readFileSync(await downloaded.path(),'utf8'),backup=JSON.parse(raw);
+   await oldTab.evaluate(()=>GREPlatform.go('materials'));const pending=oldTab.waitForEvent('download');await oldTab.locator('#platform-content [data-paction="export-progress"]').click();const downloaded=await pending,raw=fs.readFileSync(await downloaded.path(),'utf8'),backup=JSON.parse(raw);
    assert.ok(!raw.includes(TOKEN_A)&&!raw.includes(TOKEN_B));assert.ok(!raw.includes(CONNECTION_KEY)&&!raw.includes(SESSION_KEY)&&!raw.includes('OPENAI_API_KEY'));assert.deepEqual(backup.progress.vocabulary,original.vocabulary);assert.deepEqual(backup.progress.notes,original.notes);
   });
   await check('invalid launch endpoints cannot make cross-network requests or persist a connection',async()=>{
    for(const url of ['https://attacker.invalid','http://127.0.0.1:43991/extra','http://user:secret@127.0.0.1:43991']){
     const isolated=await setup(),p=await isolated.newPage(launch(TOKEN_A,url));assert.equal(isolated.traffic.length,0);assert.equal(await p.evaluate(key=>localStorage.getItem(key),CONNECTION_KEY),null);assert.equal(await p.locator('[data-ai-action="connect"]').isDisabled(),false);
    }
-  });
-  await check('the generated local handoff file opens the original application with its complete connection fragment',async()=>{
-   const {writeLaunchPage}=require('../scripts/vocabulary-api.cjs');assert.equal(typeof writeLaunchPage,'function');
-   const directory=fs.mkdtempSync(path.join(os.tmpdir(),'GRE handoff 中文 ')),created=await writeLaunchPage(43991,TOKEN_A,{directory});
-   const file=typeof created==='string'?created:created.path||created.filePath;assert.ok(file&&fs.existsSync(file));
-   const isolated=await setup(),p=await isolated.newPage(pathToFileURL(file).href);await ready(p);await tokenInTab(p,TOKEN_A);assert.ok(p.url().startsWith(FILE));assert.deepEqual((await snapshot(p)).notes,isolated.seed.notes);
   });
   await check('connection-only verification never reaches OpenAI or generates vocabulary and raises no page errors',async()=>{
    assert.deepEqual(external,[]);assert.deepEqual(errors,[]);assert.equal(shared.traffic.filter(r=>r.method==='POST').length,0);

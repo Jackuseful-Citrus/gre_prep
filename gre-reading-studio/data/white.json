@@ -4,7 +4,7 @@
     "title": "GRE 阅读白皮书",
     "fileName": "《GRE阅读白皮书》（白皮书）.pdf",
     "pages": 519,
-    "path": "sources/white.pdf",
+    "path": "../../materials/sources/white.pdf",
     "notes": [
       "保留原始 PDF 及逐页文字。展示文字仅合并换行；原材料拼写、语法及词内空格未静默改写。",
       "答案按原资料答案表录入，未对原答案正确性作额外保证。"

@@ -10,7 +10,7 @@
       "难度仅取同目录难度表对应章节和编号，原值保留。"
     ],
     "reader": {
-      "url": "sources/reading170-exercises.pdf",
+      "url": "../../materials/sources/reading170-exercises.pdf",
       "originalPages": [
         1,
         2,
@@ -519,7 +519,7 @@
         "仅用于对应题目的中文翻译、原书答案标记与解释；与练习总表不同的答案作为冲突保留。"
       ],
       "reader": {
-        "url": "sources/reading170-explained.pdf",
+        "url": "../../materials/sources/reading170-explained.pdf",
         "originalPages": [
           1,
           2,

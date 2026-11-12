@@ -1,6 +1,7 @@
 """Lossless page archive plus conservative reading-question extraction from mixed books."""
 from pathlib import Path
 import sys,json,re,unicodedata
+from library_paths import resolve_material, source_output, source_url, pdf_pages, normalize_material_links
 sys.stdout.reconfigure(encoding='utf-8')
 ROOT=Path(__file__).resolve().parents[2]
 PROJECT=ROOT/'gre-reading-studio'; DATA=PROJECT/'data'; RAW=DATA/'mixed-raw'
@@ -8,7 +9,7 @@ sys.path.insert(0,str(ROOT/'gre800-cards/scripts/vendor'))
 from pypdf import PdfReader,PdfWriter
 
 def save(name,obj):
- (DATA/name).write_text(json.dumps(obj,ensure_ascii=False,indent=2),encoding='utf-8')
+ (DATA/name).write_text(json.dumps(normalize_material_links(obj),ensure_ascii=False,indent=2),encoding='utf-8')
 def compact(s):
  return re.sub(r'\s+',' ',s).strip()
 def pages_for(a,b,offsets):
@@ -24,15 +25,15 @@ def combined(pages,clean=False,start=1):
   a=len(text); text+=s+'\n';offsets.append((i,a,len(text)))
  return text,offsets
 def subset(sid,fn,nums):
- r=PdfReader(ROOT/fn);w=PdfWriter(); nums=sorted(set(nums))
+ r=PdfReader(resolve_material(fn));w=PdfWriter(); nums=sorted(set(nums))
  for n in nums:w.add_page(r.pages[n-1])
- dest=PROJECT/'dist/sources';dest.mkdir(parents=True,exist_ok=True)
- with (dest/(sid+'-reading.pdf')).open('wb') as f:w.write(f)
- return {'url':'sources/'+sid+'-reading.pdf','originalPages':nums,'pageMap':{str(n):i+1 for i,n in enumerate(nums)}}
+ dest=source_output(sid+'-reading.pdf')
+ with dest.open('wb') as f:w.write(f)
+ return {'url':source_url(dest),'originalPages':nums,'pageMap':{str(n):i+1 for i,n in enumerate(nums)}}
 
 def extract_mcgraw():
  fn="GRE/McGraw-Hill's GRE, 2010 Edition.pdf"
- raw=json.loads((RAW/'mcgraw.json').read_text(encoding='utf-8'))
+ raw=pdf_pages(fn,RAW/'mcgraw.json')
  alltext,offs=combined(raw,True)
  specs=[]
  section_specs=[('诊断练习',[57,59,61],(76,78)),('模拟测验 1',[309,310,312],(329,331)),('模拟测验 2',[353,354,356],(373,375)),('模拟测验 3',[399,400,402],(418,420))]
@@ -93,7 +94,7 @@ def extract_mcgraw():
  print('mcgraw',len(result),sum(len(p['questions']) for p in result))
 
 def extract_gold():
- raw=json.loads((RAW/'mixed-gold.json').read_text(encoding='utf-8'))
+ raw=pdf_pages('GRE语文高频题目精练与精析-金皮书.pdf',RAW/'mixed-gold.json')
  text,offs=combined(raw[194:],start=195)
  markers=list(re.finditer(r'GWC-R(\d\d)\b',text))
  result=[]
@@ -128,19 +129,34 @@ def extract_gold():
  print('gold',len(result),sum(len(p['answers']) for p in result))
 
 def export_guide():
- fn='gre备考胜经.pdf';raw=json.loads((RAW/'guide.json').read_text(encoding='utf-8'))
+ fn='gre备考胜经.pdf';raw=pdf_pages(fn,RAW/'guide.json')
  src={'id':'guide','title':'GRE备考胜经 · 阅读方法与样题','fileName':fn,'pages':356,'notes':['阅读篇112–203页含图片嵌入的练习题。保留原页阅读，不把仅有解析的文本误当完整选择题。'],'reader':subset('guide',fn,range(112,204))}
  groups=[(112,140,'句间关系与指代'),(141,156,'句型与词义'),(157,158,'三大高频题型 · 民族国家'),(159,160,'题干理解'),(161,162,'主旨与指代 · Paule Marshall'),(163,166,'错误选项 · Bearden'),(167,169,'词汇题'),(170,172,'作者态度'),(173,178,'观点与结构'),(179,180,'细节定位'),(181,186,'难度与阅读速度'),(187,188,'驳论文主旨'),(189,191,'长文章主旨'),(192,195,'加强与假设'),(196,200,'逻辑与题材'),(201,203,'多重否定')]
  entries=[]
  for a,b,title in groups:
-  entries.append({'id':f'guide-reader-{a}','sourceId':'guide','title':title,'pages':list(range(a,b+1)),'readerPage':a-111,'url':'sources/guide-reading.pdf#page='+str(a-111),'mode':'source-reading','notes':['原文练习及解析请在原页阅读。图片题未计入可自动判分题数。']})
+  entries.append({'id':f'guide-reader-{a}','sourceId':'guide','title':title,'pages':list(range(a,b+1)),'readerPage':a-111,'url':source_url('sources/guide-reading.pdf')+'#page='+str(a-111),'mode':'source-reading','notes':['原文练习及解析请在原页阅读。图片题未计入可自动判分题数。']})
  save('guide.json',{'source':src,'passages':[],'sourceReading':entries,'coverage':{'readingPages':[112,203],'fallbackGroups':len(entries),'structuredQuestions':0,'reason':'题目主要作为图片嵌入，原始页面方式完整保留。'}})
  # The three sentence books have no complete passage/question/choices combination.
- inventory=json.loads((RAW/'inventory.json').read_text(encoding='utf-8'))
+ inventory=mixed_inventory()
  exclusions=[]
  for x in inventory:
   if x['id'].startswith('sentences'):
    exclusions.append({'id':x['id'],'fileName':x['fileName'],'pages':x['pages'],'characters':x['characters'],'classification':'sentence-analysis','includedAsQuestions':False,'reason':'长难句拆解与翻译训练；未发现独立的完整阅读文章、题干和选项组合。陈琦PDF43页的阅读题干仅用作语法示例。' if x['id']=='sentences-chen' else '长难句拆解与翻译训练；未发现独立的完整阅读文章、题干和选项组合。'})
  save('mixed-inventory.json',{'sources':inventory,'excluded':exclusions,'method':'保存全部抽取页文本；综合书阅读章按原页保留；答案仅取原书明确答案字段。'})
 
-extract_mcgraw();extract_gold();export_guide()
+def mixed_inventory():
+ files={'mixed-gold':'GRE语文高频题目精练与精析-金皮书.pdf',
+  'guide':'gre备考胜经.pdf','mcgraw':"GRE/McGraw-Hill's GRE, 2010 Edition.pdf",
+  'sentences300':'gre gmat lsat长难句300例精讲精练.pdf',
+  'sentences-chen':'GRE/陈琦GRE长难句.pdf','sentences-yang':'GRE/杨鹏GRE长难句.pdf'}
+ report=[]
+ for sid,name in files.items():
+  pages=pdf_pages(name,RAW/(sid+'.json'))
+  report.append({'id':sid,'fileName':resolve_material(name).relative_to(ROOT).as_posix(),
+   'pages':len(pages),'characters':sum(map(len,pages)),
+   'readingHits':[{'page':i+1,'text':' '.join(s.split())[:180]} for i,s in enumerate(pages) if re.search(r'reading comprehension|阅读|逻辑',s,re.I)]})
+ (RAW/'inventory.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+ return report
+
+if __name__=='__main__':
+ extract_mcgraw();extract_gold();export_guide()

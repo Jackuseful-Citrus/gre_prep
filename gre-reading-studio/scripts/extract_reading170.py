@@ -1,5 +1,6 @@
 from pathlib import Path
 import sys,json,re,shutil
+from library_paths import resolve_material, source_url, pdf_pages, normalize_material_links
 sys.stdout.reconfigure(encoding='utf-8')
 ROOT=Path(__file__).resolve().parents[2]; P=ROOT/'gre-reading-studio'; DATA=P/'data'; RAW=DATA/'mixed-raw'
 sys.path.insert(0,str(ROOT/'gre800-cards/scripts/vendor'))
@@ -12,7 +13,7 @@ def original_bold(body,span):
  plain=''.join(body[i] for i in positions);needle=''.join(span.split())
  a=plain.find(needle)
  return body[positions[a]:positions[a+len(needle)-1]+1] if a>=0 and len(needle)>=6 else None
-def save(name,x):(DATA/name).write_text(json.dumps(x,ensure_ascii=False,indent=2),encoding='utf-8')
+def save(name,x):(DATA/name).write_text(json.dumps(normalize_material_links(x),ensure_ascii=False,indent=2),encoding='utf-8')
 def joined(pages,start=1,footers=False):
  text='';off=[]
  for n,s in enumerate(pages,start):
@@ -21,8 +22,8 @@ def joined(pages,start=1,footers=False):
  return text,off
 def pp(a,b,off):return [n for n,x,y in off if y>a and x<b]
 
-raw=json.loads((RAW/'reading170-exercises.json').read_text(encoding='utf-8'))
-expraw=json.loads((RAW/'reading170-explained.json').read_text(encoding='utf-8'))
+raw=pdf_pages(resolve_material(source_id='reading170'),RAW/'reading170-exercises.json')
+expraw=pdf_pages(resolve_material(source_id='reading170-explained'),RAW/'reading170-explained.json')
 text,off=joined(raw,footers=True);exptext,expoff=joined(expraw)
 warnings=[]
 
@@ -41,7 +42,7 @@ for line in keytext.splitlines():
  position+=len(line)+1
 
 # Difficulty table has explicit source section and number columns; no inferred difficulty values.
-w=openpyxl.load_workbook(DATA/'archive-sources/difficulty.xlsx',read_only=True,data_only=True)
+w=openpyxl.load_workbook(resolve_material('sources/difficulty.xlsx'),read_only=True,data_only=True)
 difficulties={};section='main'
 for rownum,row in enumerate(w.worksheets[0].values,1):
  val=row[1]
@@ -52,7 +53,7 @@ for rownum,row in enumerate(w.worksheets[0].values,1):
   key=f'{section}-{int(val)}'; difficulties[key]={'title':row[2],'difficulty':row[3],'row':rownum,'questions':[{'type':row[4+2*i],'difficulty':row[5+2*i]} for i in range(4)]}
 
 # Read original bold spans for function / boldface questions.
-pdf=PdfReader(DATA/'archive-sources/reading170-exercises.pdf');bold={}
+pdf=PdfReader(resolve_material(source_id='reading170'));bold={}
 for n,page in enumerate(pdf.pages[:232],1):
  spans=[];run=['']
  def visitor(s,cm,tm,f,sz):
@@ -216,14 +217,11 @@ for gi,gm in enumerate(groups):
   passages.append({'id':pid,'sourceId':'reading170','number':num,'sourceKey':key,'title':f'{kind} · {num:02d}','section':'逻辑 · '+kind,'text':compact(body),'paragraphs':[compact(body)],'pages':nums,'questions':[q],'highlights':highlights,'translation':ex['translation'] if ex else None,'explanationPages':ex['pages'] if ex else [],'notes':[],'rawText':block[prevEnd:qend]})
   prevEnd=qend
 
-for filename in ['reading170-exercises.pdf','reading170-explained.pdf','difficulty.xlsx']:
- shutil.copyfile(DATA/'archive-sources'/filename,P/'dist/sources'/filename)
-source={'id':'reading170','title':'GRE 阅读170篇 · 练习与逻辑分册','fileName':'Archive.zip / 阅读170篇/《GRE阅读170篇》配套练习题目（2019年6月）.pdf','pages':246,'notes':['原书名为170篇；当前题目本含170篇阅读及79道逻辑单题，共249篇/组。总答案表另有解释题第10题答案，但当前题目本无该题，不虚构补入。','原PDF提取断词、拼写和格式疑点未静默更正，答案冲突不自动判分。','难度仅取同目录难度表对应章节和编号，原值保留。'],'reader':{'url':'sources/reading170-exercises.pdf','originalPages':list(range(1,247)),'pageMap':{str(x):x for x in range(1,247)}}}
-archive_report=json.loads((DATA/'archive-extraction-report.json').read_text(encoding='utf-8'))
-provenance={Path(x['destination'].replace('\\','/')).name:x['archive']+' / '+x['member'] for x in archive_report}
+source={'id':'reading170','title':'GRE 阅读170篇 · 练习与逻辑分册','fileName':'Archive.zip / 阅读170篇/《GRE阅读170篇》配套练习题目（2019年6月）.pdf','pages':246,'notes':['原书名为170篇；当前题目本含170篇阅读及79道逻辑单题，共249篇/组。总答案表另有解释题第10题答案，但当前题目本无该题，不虚构补入。','原PDF提取断词、拼写和格式疑点未静默更正，答案冲突不自动判分。','难度仅取同目录难度表对应章节和编号，原值保留。'],'reader':{'url':source_url(source_id='reading170'),'originalPages':list(range(1,247)),'pageMap':{str(x):x for x in range(1,247)}}}
+provenance={name:resolve_material('sources/'+name).relative_to(ROOT).as_posix() for name in ['reading170-exercises.pdf','reading170-explained.pdf']}
 source['fileName']=provenance['reading170-exercises.pdf']
 qall=[q for p in passages for q in p['questions']]
 coverage={'passages':len(passages),'mainPassages':len(markers),'readingPassages':170,'logicalStimuli':len(passages)-170,'questions':len(qall),'sourceKeys':sum(q['answerStatus']=='source-key' for q in qall),'conflicts':sum('conflict' in q['answerStatus'] for q in qall),'unverified':sum(q['answerStatus']=='unverified' for q in qall),'explanations':sum(bool(q['explanation']) for q in qall),'translations':sum(bool(p.get('translation')) for p in passages),'originalExplanationBlocks':len(expblocks),'rawText':'data/mixed-raw/reading170-exercises.json','rawExplanations':'data/mixed-raw/reading170-explained.json','warnings':warnings}
-save('reading170.json',{'source':source,'additionalSources':[{'id':'reading170-explained','title':'GRE阅读170篇精讲精析 · 原书解析','fileName':provenance['reading170-explained.pdf'],'pages':952,'notes':['仅用于对应题目的中文翻译、原书答案标记与解释；与练习总表不同的答案作为冲突保留。'],'reader':{'url':'sources/reading170-explained.pdf','originalPages':list(range(1,953)),'pageMap':{str(x):x for x in range(1,953)}}}],'passages':passages,'coverage':coverage})
+save('reading170.json',{'source':source,'additionalSources':[{'id':'reading170-explained','title':'GRE阅读170篇精讲精析 · 原书解析','fileName':provenance['reading170-explained.pdf'],'pages':952,'notes':['仅用于对应题目的中文翻译、原书答案标记与解释；与练习总表不同的答案作为冲突保留。'],'reader':{'url':source_url(source_id='reading170-explained'),'originalPages':list(range(1,953)),'pageMap':{str(x):x for x in range(1,953)}}}],'passages':passages,'coverage':coverage})
 save('reading170-extraction-report.json',coverage)
 print(json.dumps(coverage,ensure_ascii=False,indent=2))

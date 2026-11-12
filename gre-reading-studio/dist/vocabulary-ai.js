@@ -7,7 +7,7 @@
   let adapter=null,session=null,status='offline',connectionMessage='',model='',working=false,checking=null,sessionRevision=0,localAvailable=false,configured=false,features={},configuring=false,configMessage='',preferences={auto:true,relationMode:'confusable',autoQuestion:true,collapsed:false};
   const queue=[],jobs=new Map(),runtime=new Map(),awaitingConnection=new Map();
   let directKey='',directModel='gpt-4.1-mini',generationRevision=0,settingsInstance=0,questionStateSignature='';
-  const keyNote=()=>directKey?'密钥仅在当前页面内存中使用，刷新或关闭页面后需重新输入；不会写入进度或 U 盘。':localAvailable&&features.config?'密钥仅在本机服务运行期间使用，不写入进度或 U 盘。':'在这里输入密钥即可直接连接 OpenAI。密钥仅在当前页面内存中使用，不写入进度或 U 盘。';
+  const keyNote=()=>directKey?'密钥仅在当前页面内存中使用，刷新或关闭页面后需重新输入；不会写入进度或备份文件。':localAvailable&&features.config?'密钥仅在本机服务运行期间使用，不写入进度或备份文件。':'在这里输入密钥即可直接连接 OpenAI。密钥仅在当前页面内存中使用，不写入进度或备份文件。';
   function validSession(raw){
     if(!raw||typeof raw.url!=='string'||typeof raw.token!=='string'||!/^[a-f0-9]{64}$/i.test(raw.token))return null;
     try{const url=new URL(raw.url);if(url.protocol!=='http:'||url.hostname!=='127.0.0.1'||!url.port||Number(url.port)<1||Number(url.port)>65535||url.username||url.password||url.pathname!=='/'||url.search||url.hash)return null;return {url:url.origin,token:raw.token};}catch{return null;}
@@ -66,15 +66,15 @@
     const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeout);
     try{
       const response=await fetch(target.url+path,{method:body?'POST':'GET',mode:'cors',credentials:'omit',cache:'no-store',headers:{'X-GRE-Token':target.token,...(body?{'Content-Type':'application/json'}:{})},body:body?JSON.stringify(body):undefined,signal:controller.signal});
-      let data;try{data=await response.json();}catch{throw Object.assign(Error('本机服务返回了无法识别的内容，请重启 AI 生词服务。'),{code:'invalid_output'});}
+      let data;try{data=await response.json();}catch{throw Object.assign(Error('当前连接返回了无法识别的内容，请在 API 设置中重新启用网页直连。'),{code:'invalid_output'});}
       if(!response.ok)throw Object.assign(Error(messageFor(data?.code,response.status)),{code:data?.code||'service_error',httpStatus:response.status,...(path==='/api/progress'&&data?.code==='PROGRESS_CONFLICT'?{current:data.current}:{})});
       return data;
-    }catch(error){if(error.name==='AbortError')throw Object.assign(Error('请求超时，请稍后重试。'),{code:'timeout'});if(error instanceof TypeError)throw Object.assign(Error('无法连接本机服务，请运行阅间便携启动器，并允许浏览器访问本机服务。'),{code:'connection_failed'});throw error;}finally{clearTimeout(timer);}
+    }catch(error){if(error.name==='AbortError')throw Object.assign(Error('请求超时，请稍后重试。'),{code:'timeout'});if(error instanceof TypeError)throw Object.assign(Error('当前连接不可用，请在 API 设置中输入密钥以使用网页直连。'),{code:'connection_failed'});throw error;}finally{clearTimeout(timer);}
   }
   function getServiceState(){return {localAvailable,configured,model,features:{...features},connectionId:sessionRevision,status};}
   function getQuestionServiceState(){
     const ready=status==='ready'&&!!(directKey||localAvailable&&configured&&features.question);
-    const message=ready?'':!directKey&&localAvailable&&configured&&!features.question?'本机服务版本尚不支持题目分析，请重新运行更新后的启动器。':connectionMessage||'请展开 API 设置，输入密钥并启用 API。';
+    const message=ready?'':!directKey&&localAvailable&&configured&&!features.question?'当前连接不支持题目分析，请在 API 设置中启用网页直连。':connectionMessage||'请展开 API 设置，输入密钥并启用 API。';
     return {ready,auto:preferences.autoQuestion,model:directKey?directModel:model,revision:`${sessionRevision}:${generationRevision}`,message};
   }
   function emitQuestionState(){

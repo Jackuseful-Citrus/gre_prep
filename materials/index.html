@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <title>全部资料 · GRE</title>
+  <link rel="stylesheet" href="../assets/launcher.css">
+  <link rel="stylesheet" href="catalog.css">
+  <script defer src="catalog-data.js"></script>
+  <script defer src="catalog.js"></script>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="../GRE-start.html">← 返回学习首页</a>
+    <header>
+      <p class="eyebrow">YOUR GRE LIBRARY</p>
+      <h1>全部资料</h1>
+      <p class="intro">题目原书、词汇与参考资料，放在一起，随时查阅。</p>
+    </header>
+    <section class="catalog-tools" aria-label="查找资料">
+      <label class="search-label" for="material-search">搜索资料</label>
+      <div class="search-row">
+        <input id="material-search" type="search" placeholder="输入书名或关键词" autocomplete="off">
+        <button id="clear-search" type="button">清空</button>
+      </div>
+      <div class="catalog-filters" role="group" aria-label="资料分类">
+        <button type="button" data-category="all" aria-pressed="true">全部 <span data-count="all">0</span></button>
+        <button type="button" data-category="questions" aria-pressed="false">题目与原书 <span data-count="questions">0</span></button>
+        <button type="button" data-category="vocabulary" aria-pressed="false">词汇资料 <span data-count="vocabulary">0</span></button>
+        <button type="button" data-category="reference" aria-pressed="false">参考资料 <span data-count="reference">0</span></button>
+      </div>
+    </section>
+    <p id="result-count" class="catalog-count" role="status" aria-live="polite"></p>
+    <div id="material-list" class="material-grid"></div>
+    <p id="empty-state" class="catalog-empty" hidden>没有找到匹配资料，试试其他关键词。</p>
+    <noscript><p>请启用 JavaScript 查看资料目录，也可直接打开本文件夹中的资料文件。</p></noscript>
+    <footer>点击资料即可打开或下载。所有文件均在本地，可离线使用。</footer>
+  </main>
+</body>
+</html>

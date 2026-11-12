@@ -2,7 +2,7 @@
 
 Run: python scripts/extract_vocab.py
 Dependency: pypdf (install with python -m pip install --target scripts/vendor pypdf)
-The default input is ../《GRE800词 》.pdf relative to the project directory.
+The default input is resolved through the repository's materials/manifest.json.
 All numbered entries and all numbered senses are preserved. No other source is used.
 """
 from __future__ import annotations
@@ -15,9 +15,11 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts' / 'vendor'))
+sys.path.insert(0, str(ROOT.parent / 'gre-reading-studio' / 'scripts'))
 from pypdf import PdfReader
+from library_paths import resolve_material
 
-PDF = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT.parent / '《GRE800词 》.pdf'
+PDF = Path(sys.argv[1]) if len(sys.argv) > 1 else resolve_material('《GRE800词 》.pdf')
 # Two deterministic character-map defects in the PDF's embedded text layer.
 CHAR_CORRECTIONS = {'᧿': '描', 'ᨀ': '提'}
 POS = re.compile(r'^((?:adj|adv|conj|vi|vt|n|v)\.(?:\s*/\s*(?:adj|adv|conj|vi|vt|n|v)\.)*)\s*')

@@ -1,8 +1,8 @@
 """Independent acceptance checks for the final, browser-consumed library.
 
 Run: python tests/test_library.py
-Checks provenance, lossless coverage, scoring safety, PDF mappings, and that the
-existing vocabulary app was not changed. No application implementation is copied.
+Checks provenance, lossless coverage, scoring safety, PDF mappings, and canonical
+source document integrity. No application implementation is copied.
 """
 import collections
 import hashlib
@@ -16,9 +16,11 @@ import unittest
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-MATERIALS = ROOT.parent
+WORKSPACE = ROOT.parent
+MATERIALS = WORKSPACE/'materials'
 REQUIRED_DATASETS = ['gold40', 'gwc290', 'white', 'mcgraw', 'crown', 'reading170', 'reading300', 'guide']
-sys.path.insert(0, str(MATERIALS/'gre800-cards/scripts/vendor'))
+sys.path.insert(0, str(WORKSPACE/'gre800-cards/scripts/vendor'))
+sys.path.insert(0, str(ROOT/'scripts'))
 from pypdf import PdfReader
 
 
@@ -50,6 +52,8 @@ class LibraryAcceptance(unittest.TestCase):
         cls.data = json.loads(match.group(1))
         cls.datasets = {name:read_json(ROOT/'data'/f'{name}.json') for name in REQUIRED_DATASETS if (ROOT/'data'/f'{name}.json').exists()}
         cls.sources = {s['id']:s for s in cls.data['sources']}
+        cls.manifest = read_json(MATERIALS/'manifest.json')
+        cls.documents = {row['path']:row for row in cls.manifest['documents']}
         cls.original_passages = {}
         cls.original_questions = {}
         for dataset in cls.datasets.values():
@@ -67,8 +71,11 @@ class LibraryAcceptance(unittest.TestCase):
         self.assertTrue(url, source['id'])
         parts = urlsplit(url)
         self.assertFalse(parts.scheme, f"Source should remain usable locally: {url}")
+        self.assertFalse(parts.netloc, f"Source should not address a remote host: {url}")
+        self.assertFalse(parts.query, f"Source should be a local document: {url}")
         path = (ROOT/'dist'/unquote(parts.path)).resolve()
-        self.assertTrue(path.is_relative_to((ROOT/'dist').resolve()), url)
+        self.assertTrue(path.is_relative_to(MATERIALS.resolve()), url)
+        self.assertIn(path.relative_to(WORKSPACE).as_posix(), self.documents, url)
         self.assertTrue(path.is_file(), str(path))
         return path
 
@@ -221,11 +228,17 @@ class LibraryAcceptance(unittest.TestCase):
                     if r.get('rawText') is not None:self.assertEqual(r['rawText'],original['rawText'],original['id'])
             self.assertTrue(p.get('rawText') or any(r.get('rawText') for r in p['references']),p['id'])
 
-    def test_13_existing_vocabulary_project_is_unchanged(self):
-        baseline=read_json(ROOT/'data/vocabulary-project-baseline.json')
-        for relative,expected in baseline.items():
-            path=MATERIALS/'gre800-cards/dist'/relative
-            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(),expected,relative)
+    def test_13_source_documents_match_the_materials_manifest(self):
+        self.assertEqual(self.manifest['version'],1)
+        self.assertEqual(len(self.documents),len(self.manifest['documents']))
+        for source in self.sources.values():
+            path=self.local_pdf(source)
+            relative=path.relative_to(WORKSPACE).as_posix()
+            expected=self.documents[relative]
+            self.assertEqual(path.stat().st_size,expected['bytes'],relative)
+            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(),expected['sha256'],relative)
+            for alias in expected.get('aliases',[]):
+                self.assertEqual(self.manifest['path_aliases'].get(alias),relative,alias)
 
     def test_14_semantic_boundaries_are_not_normalized_away(self):
         spec=importlib.util.spec_from_file_location('reading_builder',ROOT/'scripts/build_data.py')

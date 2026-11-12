@@ -1,4 +1,4 @@
-/* Portable UI acceptance using isolated browser profiles and browser-owned test folders.
+/* Progress UI acceptance using isolated browser profiles and browser-owned test folders.
  * No user progress, API keys, external networks, or removable drives are touched. */
 'use strict';
 const {chromium}=require('C:/Temp/gre800-browser-qa/node_modules/playwright-core');
@@ -24,14 +24,26 @@ async function check(name,fn){try{await fn();results.push({name,ok:true});consol
     FileSystemDirectoryHandle.prototype.requestPermission=async()=>grantPermission;
     window.showDirectoryPicker=async()=>folder;
     window.snapshot=async()=>JSON.parse(JSON.stringify(current));
+    window.browserWrites=0;window.browserFailure=false;
+    window.persistBrowser=async()=>{browserWrites++;if(browserFailure)return false;localStorage.setItem('qa-progress',JSON.stringify(current));return true;};
     window.restore=async incoming=>{restores++;if(restoringFailure)throw Error('test restore refused');const words=[...new Set([...current.progress.vocabulary,...incoming.progress.vocabulary].map(item=>item.word))];current={...incoming,progress:{...incoming.progress,vocabulary:words.map(word=>({word}))}};};
    },{document:doc(words),api,restoreFailure,permission,grantPermission});
    await p.addScriptTag({path:path.join(ROOT,'dist/portable-progress.js')});
-   await p.evaluate(()=>GREPortable.init({snapshot,restore}));return p;
+   await p.evaluate(()=>GREPortable.init({snapshot,restore,persistBrowser}));return p;
   }
   const read=p=>p.evaluate(async()=>JSON.parse(await(await(await folder.getFileHandle('progress.json')).getFile()).text()));
   const mutate=(p,word)=>p.evaluate(word=>{current.progress.vocabulary.push({word});GREPortable.changed();},word);
-  await check('the first Save click opens the folder picker synchronously and merges the selected progress before saving',async()=>{
+  await check('browser autosave and Save work without selecting a folder or triggering a leave-page warning',async()=>{
+   const isolated=await context(),q=await page(isolated,{words:['browser-default']});
+   await q.evaluate(()=>{window.pickerCalls=0;window.showDirectoryPicker=()=>{pickerCalls++;throw Error('must not ask for a folder');};});
+   assert.equal(await q.evaluate(()=>GREPortable.getState().storage),'browser');
+   assert.equal(await q.evaluate(()=>GREPortable.getState().dirty),false);
+   assert.equal(await q.evaluate(()=>dispatchEvent(new Event('beforeunload',{cancelable:true}))),true);
+   await mutate(q,'automatic');await q.waitForFunction(()=>!GREPortable.getState().dirty);
+   await q.locator('[data-portable-action="save"]').click();await q.waitForFunction(()=>GREPortable.getState().state==='saved');
+   assert.equal(await q.evaluate(()=>pickerCalls),0);assert.deepEqual(await q.evaluate(()=>JSON.parse(localStorage.getItem('qa-progress')).progress.vocabulary.map(item=>item.word)),['browser-default','automatic']);
+  });
+  await check('folder selection opens the picker synchronously and merges existing progress before backup',async()=>{
    const isolated=await context(),q=await page(isolated,{words:['browser-before-first-save']});
    await q.evaluate(async document=>{
     const existing={format:'gre-portable-progress',version:1,storeId:crypto.randomUUID(),revision:1,savedAt:Date.now(),document};
@@ -40,19 +52,22 @@ async function check(name,fn){try{await fn();results.push({name,ok:true});consol
     GREVocabularyAI.connect=async()=>{connectCalls++;};
     window.showDirectoryPicker=()=>{pickerCalls++;pickerInClick=navigator.userActivation.isActive;return Promise.resolve(folder);};
    },doc(['disk-before-first-save']));
-   await q.locator('[data-portable-action="save"]').click();await q.waitForFunction(()=>GREPortable.getState().state==='saved');
+   await q.locator('[data-portable-action="choose-folder"]').click();await q.waitForFunction(()=>GREPortable.getState().storage==='folder'&&GREPortable.getState().state==='saved');
    assert.deepEqual(await q.evaluate(()=>({calls:pickerCalls,inClick:pickerInClick,connects:connectCalls})),{calls:1,inClick:true,connects:0});
    assert.equal(await q.evaluate(()=>GREPortable.getState().dirty),false);assert.equal(await q.evaluate(()=>restores),1);assert.deepEqual((await read(q)).document.progress.vocabulary.map(item=>item.word).sort(),['browser-before-first-save','disk-before-first-save'].sort());
   });
-  await check('canceling the first Save folder picker leaves progress unsaved without creating a file',async()=>{
+  await check('canceling optional folder selection preserves browser autosave and creates no backup file',async()=>{
    const isolated=await context(),q=await page(isolated,{words:['still-unsaved']});await q.evaluate(()=>{window.pickerCalls=0;window.showDirectoryPicker=()=>{pickerCalls++;return Promise.reject(new DOMException('Selection canceled','AbortError'));};});
-   await q.locator('[data-portable-action="save"]').click();await q.waitForFunction(()=>document.querySelector('[data-portable-status]').textContent.includes('已取消'));
-   const status=await q.evaluate(()=>GREPortable.getState());assert.equal(status.dirty,true);assert.equal(status.savedAt,null);assert.notEqual(status.state,'saved');assert.equal(await q.evaluate(()=>pickerCalls),1);assert.doesNotMatch(await q.locator('[data-portable-status]').innerText(),/已保存/);
+   await q.locator('[data-portable-action="choose-folder"]').click();await q.waitForFunction(()=>document.querySelector('[data-portable-status]').textContent.includes('已取消'));
+   const status=await q.evaluate(()=>GREPortable.getState());assert.equal(status.dirty,false);assert.ok(status.savedAt);assert.equal(status.state,'saved');assert.equal(await q.evaluate(()=>pickerCalls),1);assert.equal(await q.evaluate(()=>dispatchEvent(new Event('beforeunload',{cancelable:true}))),true);
    assert.equal(await q.evaluate(async()=>{try{await folder.getFileHandle('progress.json');return true;}catch(error){if(error.name==='NotFoundError')return false;throw error;}}),false);
-   const cancellation=await q.evaluate(async()=>{let returned=false,pickerBeforeReturn=false;window.showDirectoryPicker=()=>{pickerBeforeReturn=!returned;return Promise.reject(new DOMException('Selection canceled','AbortError'));};const saving=GREPortable.saveNow();returned=true;try{await saving;return {name:'resolved',pickerBeforeReturn};}catch(error){return {name:error.name,pickerBeforeReturn};}});assert.deepEqual(cancellation,{name:'AbortError',pickerBeforeReturn:true});
+   const cancellation=await q.evaluate(async()=>{let returned=false,pickerBeforeReturn=false;window.showDirectoryPicker=()=>{pickerBeforeReturn=!returned;return Promise.reject(new DOMException('Selection canceled','AbortError'));};const saving=GREPortable.chooseDirectory();returned=true;try{await saving;return {name:'resolved',pickerBeforeReturn};}catch(error){return {name:error.name,pickerBeforeReturn};}});assert.deepEqual(cancellation,{name:'AbortError',pickerBeforeReturn:true});
   });
-  await check('an unsupported directory picker gives webpage browser guidance without contacting a helper',async()=>{
-   const isolated=await context(),q=await page(isolated);await q.evaluate(()=>{window.showDirectoryPicker=undefined;GREVocabularyAI.connect=async()=>{throw Error('must not connect');};});await q.locator('[data-portable-action="save"]').click();await q.waitForFunction(()=>GREPortable.getState().state==='error');const text=await q.locator('[data-portable-status]').innerText();assert.match(text,/Chrome.*Edge/);assert.doesNotMatch(text,/启动器|本机服务/);assert.equal(await q.evaluate(()=>GREPortable.getState().dirty),true);
+  await check('browsers without a directory picker still save normally and expose export/import fallback',async()=>{
+   const isolated=await context(),q=await page(isolated);await q.evaluate(()=>{window.showDirectoryPicker=undefined;GREVocabularyAI.connect=async()=>{throw Error('must not connect');};});await q.locator('[data-portable-action="save"]').click();await q.waitForFunction(()=>GREPortable.getState().state==='saved');const text=await q.locator('[data-portable-status]').innerText();assert.match(text,/浏览器/);assert.doesNotMatch(text,/启动器|本机服务/);assert.equal(await q.evaluate(()=>GREPortable.getState().dirty),false);assert.equal(await q.locator('[data-portable-action="choose-folder"]').count(),0);assert.equal(await q.locator('[data-paction="export-progress"]').count(),1);assert.equal(await q.locator('[data-paction="import-progress"]').count(),1);
+  });
+  await check('browser storage failure remains unsaved, warns on close, and retries without requesting a folder',async()=>{
+   const isolated=await context(),q=await page(isolated,{words:['before-failure']});await q.evaluate(()=>{browserFailure=true;});await mutate(q,'keep-in-memory');await q.waitForFunction(()=>GREPortable.getState().state==='error');assert.equal(await q.evaluate(()=>GREPortable.getState().dirty),true);assert.equal(await q.evaluate(()=>dispatchEvent(new Event('beforeunload',{cancelable:true}))),false);assert.deepEqual(await q.evaluate(()=>JSON.parse(localStorage.getItem('qa-progress')).progress.vocabulary.map(item=>item.word)),['before-failure']);await q.evaluate(()=>{browserFailure=false;});await q.locator('[data-portable-action="save"]').click();await q.waitForFunction(()=>!GREPortable.getState().dirty);assert.equal(await q.evaluate(()=>dispatchEvent(new Event('beforeunload',{cancelable:true}))),true);
   });
   let c,p;
   await check('folder selection writes real browser filesystem files, preserves format, and excludes unrelated settings',async()=>{
@@ -91,19 +106,8 @@ async function check(name,fn){try{await fn();results.push({name,ok:true});consol
    await mutate(q,'after-failure');assert.equal(await q.evaluate(async()=>{try{await GREPortable.saveNow();return false;}catch{return true;}}),true);assert.deepEqual(await read(q),before);assert.equal(await q.evaluate(()=>GREPortable.getState().dirty),true);assert.equal(await q.evaluate(()=>dispatchEvent(new Event('beforeunload',{cancelable:true}))),false);
    await q.evaluate(()=>{failWrites=false;});await q.locator('[data-portable-action="grant"]').click();await q.waitForFunction(()=>GREPortable.getState().state==='saved');assert.equal((await read(q)).document.progress.vocabulary.length,2);
   });
-  await check('local service saves and restores even when no OpenAI key is configured',async()=>{
-   const isolated=await context();let stored={storeId:'741ce320-a5b6-4e96-9bec-38b532e99a18',revision:2,savedAt:Date.now(),document:doc(['server-word'])};let posts=0;
-   await isolated.exposeFunction('qaRequest',async(url,body)=>{if(url==='/api/progress'&&!body)return structuredClone(stored);if(url==='/api/progress'){posts++;if(body.revision!==stored.revision)return {error:'conflict',code:'PROGRESS_CONFLICT',current:stored};stored={...stored,revision:stored.revision+1,savedAt:Date.now(),document:body.document};return structuredClone(stored);}throw Error('Unexpected URL');});
-   const q=await page(isolated,{words:['browser-word'],api:true});assert.equal(await q.evaluate(()=>GREPortable.getState().state),'saved');assert.equal(posts,1);assert.deepEqual(stored.document.progress.vocabulary.map(item=>item.word).sort(),['server-word','browser-word'].sort());
-   await mutate(q,'another');await q.evaluate(()=>GREPortable.saveNow());assert.equal(posts,2);assert.equal(stored.document.progress.vocabulary.length,3);
-  });
-  await check('old local services without progress support do not receive nonexistent API requests',async()=>{
-   const isolated=await context();let requests=0;await isolated.exposeFunction('qaRequest',()=>{requests++;throw Error('Unexpected request');});const q=await page(isolated);await q.evaluate(()=>{serviceState.localAvailable=true;window.dispatchEvent(new Event('gre-local-service'));});await q.waitForTimeout(50);assert.equal(requests,0);assert.match(await q.locator('[data-portable-status]').innerText(),/进度文件夹|新版/);
-  });
-  await check('Save and exit shuts down only after the final progress write succeeds',async()=>{
-   const isolated=await context();let stored={storeId:'741ce320-a5b6-4e96-9bec-38b532e99a18',revision:0,savedAt:0,document:null},fail=false;const calls=[];
-   await isolated.exposeFunction('qaRequest',async(url,body)=>{calls.push(url+(body?' POST':' GET'));if(url==='/api/shutdown')return {stopped:true};if(!body)return structuredClone(stored);if(fail)return {error:'write failed',code:'PROGRESS_WRITE_FAILED'};stored={...stored,revision:stored.revision+1,savedAt:Date.now(),document:body.document};return structuredClone(stored);});
-   const q=await page(isolated,{words:['exit-word'],api:true});fail=true;await mutate(q,'not-yet-saved');await q.evaluate(()=>GREPortable.saveAndExit());assert.ok(!calls.includes('/api/shutdown POST'));assert.equal(await q.evaluate(()=>GREPortable.getState().dirty),true);fail=false;await q.evaluate(()=>GREPortable.saveAndExit());assert.equal(calls.at(-1),'/api/shutdown POST');assert.equal(calls.at(-2),'/api/progress POST');assert.equal(await q.evaluate(()=>GREPortable.getState().state),'stopped');
+  await check('stopping optional folder backup preserves the file and returns to browser-only saving after reopening',async()=>{
+   const isolated=await context(),q=await page(isolated,{words:['keep-folder-backup']});await q.locator('[data-portable-action="choose-folder"]').click();await q.waitForFunction(()=>GREPortable.getState().storage==='folder'&&!GREPortable.getState().dirty);const before=await read(q);await q.evaluate(()=>GREPortable.disconnectDirectory());assert.equal(await q.evaluate(()=>GREPortable.getState().storage),'browser');await mutate(q,'browser-only');await q.waitForFunction(()=>!GREPortable.getState().dirty);assert.deepEqual(await read(q),before);const reopened=await page(isolated);assert.equal(await reopened.evaluate(()=>GREPortable.getState().storage),'browser');
   });
   await check('no uncaught browser errors',async()=>{assert.deepEqual(errors,[]);});
  }finally{for(const context of contexts)await context.close();await browser.close();}

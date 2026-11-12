@@ -5,13 +5,14 @@ Answers are copied exclusively from the book's explicit answer tables.
 """
 from pathlib import Path
 import sys, re, json, shutil, collections
+from library_paths import resolve_material, source_url, copy_source, normalize_material_links
 
 ROOT = Path(__file__).resolve().parents[2]
 PROJECT = ROOT / 'gre-reading-studio'
 sys.path.insert(0, str(ROOT / 'gre800-cards/scripts/vendor'))
 from pypdf import PdfReader
 
-SOURCE = ROOT / 'GWC阅读机经290篇 .pdf'
+SOURCE = resolve_material(source_id='gwc290')
 OUT = PROJECT / 'data'
 reader = PdfReader(SOURCE)
 raw_path = OUT / 'gwc290-raw-pages.json'
@@ -265,9 +266,8 @@ for p in passages:
 questions=[q for p in passages for q in p['questions']]
 issues.append({'issue':'source-count-discrepancy','detail':'原书标题为290篇，但实际正文为139篇分级阅读、39篇模考、71篇逻辑和40篇金皮书，共289篇。原书逻辑解释题答案表列出第10题，正文PDF222–224只包含第1–9题；没有补造缺失题。','pages':[222,223,224,239]})
 coverage={'pdfPages':len(pages),'passages':len(passages),'questions':len(questions),'answerVerified':sum(q['answerStatus']=='source-key' for q in questions),'answerUnverified':sum(q['answerStatus']!='source-key' for q in questions),'sections':dict(collections.Counter(p['section'] for p in passages)),'questionKinds':dict(collections.Counter(q['kind'] for q in questions)),'sourceTextCharacters':sum(map(len,pages)),'issues':issues}
-result={'source':{'id':'gwc290','title':'GWC 阅读机经 290 篇','fileName':SOURCE.name,'pages':len(pages),'notes':['全部原文与答案来自本地 PDF；原始文本保留于 data/gwc290-raw-pages.json。','原书未提供逐题解析；未生成或推测解析。','编号、空白与排版标题仅在展示层整理，原文未被覆盖。'],'pdfUrl':'sources/gwc290.pdf'},'passages':passages,'coverage':coverage}
-(OUT/'gwc290.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf8')
+result={'source':{'id':'gwc290','title':'GWC 阅读机经 290 篇','fileName':SOURCE.name,'pages':len(pages),'notes':['全部原文与答案来自本地 PDF；原始文本保留于 data/gwc290-raw-pages.json。','原书未提供逐题解析；未生成或推测解析。','编号、空白与排版标题仅在展示层整理，原文未被覆盖。'],'pdfUrl':source_url(source_id='gwc290')},'passages':passages,'coverage':coverage}
+(OUT/'gwc290.json').write_text(json.dumps(normalize_material_links(result),ensure_ascii=False,indent=2),encoding='utf8')
 (OUT/'gwc290-validation.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2),encoding='utf8')
-(PROJECT/'dist/sources').mkdir(exist_ok=True,parents=True)
-shutil.copy2(SOURCE,PROJECT/'dist/sources/gwc290.pdf')
+copy_source(SOURCE, 'gwc290.pdf')
 print(json.dumps(coverage,ensure_ascii=False,indent=2))

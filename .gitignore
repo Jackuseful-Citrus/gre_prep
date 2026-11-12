@@ -35,6 +35,13 @@ __pycache__/
 /gre-reading-studio/reports/gre_delivery_report.json
 /gre-reading-studio/data/platform/library-inventory-baseline.json
 /gre-reading-studio/tests/*-qa-report.json
+/gre-reading-studio/tests/*-report.json
+/gre-reading-studio/tests/qa-*.png
+/gre-reading-studio/tests/qa-export.json
+/gre800-cards/tests/*-report.json
+/gre800-cards/tests/qa-*.png
+/portability-tests/*-report.json
+/portability-tests/*.png
 
 # OS metadata
 .DS_Store

@@ -4,7 +4,7 @@
     "title": "金皮书 · GWC 阅读 R1–R40",
     "fileName": "金皮书-GWC阅读R1-R40.pdf",
     "pages": 45,
-    "path": "sources/gold40.pdf",
+    "path": "../../materials/sources/gold40.pdf",
     "notes": [
       "保留原始 PDF 及逐页文字。展示文字仅合并换行；原材料拼写、语法及词内空格未静默改写。",
       "答案按原资料答案表录入，未对原答案正确性作额外保证。"
@@ -19,7 +19,7 @@
           "40篇阅读分册的配套中文翻译与答案解析，按R编号与题号关联，不另造英文文章。"
         ],
         "reader": {
-          "url": "sources/mixed-gold-reading.pdf",
+          "url": "../../materials/sources/mixed-gold-reading.pdf",
           "originalPages": [
             194,
             195,

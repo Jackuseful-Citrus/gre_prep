@@ -20,7 +20,7 @@
       "id": "verbal-gwc1500",
       "title": "GWC填空机经1500题【难度分级版】.pdf",
       "source_file": "GWC填空机经1500题【难度分级版】.pdf",
-      "url": "sources/verbal-gwc1500.pdf",
+      "url": "../../materials/sources/verbal-gwc1500.pdf",
       "pages": 316,
       "notes": [
         "PDF使用保留版面顺序提取选项表格；同名DOCX原文另存于提取记录。原书重复★是复现标记，不是难度。"
@@ -41,7 +41,7 @@
       "id": "verbal-basic24",
       "title": "gre基础填空24套精练与精析.pdf",
       "source_file": "gre基础填空24套精练与精析.pdf",
-      "url": "sources/verbal-basic24.pdf",
+      "url": "../../materials/sources/verbal-basic24.pdf",
       "pages": 733,
       "notes": [
         "书中使用说明：SAT旧题改编的GRE基础练习，并非声称未经改编的GRE真题。"
@@ -60,7 +60,7 @@
       "id": "verbal-basic24answers",
       "title": "《GRE基础填空24套精练与精析（答案）》.pdf",
       "source_file": "《GRE基础填空24套精练与精析（答案）》.pdf",
-      "url": "sources/verbal-basic24answers.pdf",
+      "url": "../../materials/sources/verbal-basic24answers.pdf",
       "pages": 12,
       "notes": [],
       "question_count": 0,
@@ -74,7 +74,7 @@
       "id": "verbal-gold200",
       "title": "金皮书-GWC填空T1-T200.pdf",
       "source_file": "金皮书-GWC填空T1-T200.pdf",
-      "url": "sources/verbal-gold200.pdf",
+      "url": "../../materials/sources/verbal-gold200.pdf",
       "pages": 48,
       "notes": [],
       "question_count": 201,
@@ -93,7 +93,7 @@
       "id": "verbal-gold200answers",
       "title": "金皮书-GWC填空T1-T200 答案.pdf",
       "source_file": "金皮书-GWC填空T1-T200 答案.pdf",
-      "url": "sources/verbal-gold200answers.pdf",
+      "url": "../../materials/sources/verbal-gold200answers.pdf",
       "pages": 2,
       "notes": [],
       "question_count": 0,
@@ -107,7 +107,7 @@
       "id": "verbal-goldmixed",
       "title": "GRE语文高频题目精练与精析-金皮书.pdf",
       "source_file": "GRE语文高频题目精练与精析-金皮书.pdf",
-      "url": "sources/verbal-goldmixed.pdf",
+      "url": "../../materials/sources/verbal-goldmixed.pdf",
       "pages": 290,
       "notes": [
         "填空解析GWC-T001—T200与阅读解析共存。"
@@ -123,7 +123,7 @@
       "id": "verbal-gold200marked",
       "title": "金皮书-GWC填空T1-T200（有标记）.pdf",
       "source_file": "金皮书-GWC填空T1-T200（有标记）.pdf",
-      "url": "sources/verbal-gold200marked.pdf",
+      "url": "../../materials/sources/verbal-gold200marked.pdf",
       "pages": 55,
       "notes": [
         "带标记的同题版本，作为原始参考保存，不重复计题。"
@@ -139,7 +139,7 @@
       "id": "verbal-crown1300",
       "title": "皇冠GRE填空1300题（套题版）.pdf",
       "source_file": "GRE/GRE/皇冠GRE填空1300题（套题版）.pdf",
-      "url": "sources/verbal-crown1300.pdf",
+      "url": "../../materials/sources/verbal-crown1300.pdf",
       "pages": 333,
       "notes": [
         "本地PDF未附标准答案；书中提示外部获取，未访问外部服务。"
@@ -160,7 +160,7 @@
       "id": "verbal-crown4",
       "title": "皇冠GRE填空篇4.0版.pdf",
       "source_file": "Archive.zip!/皇冠GRE填空篇4.0版.pdf",
-      "url": "sources/verbal-crown4.pdf",
+      "url": "../../materials/sources/verbal-crown4.pdf",
       "pages": 134,
       "notes": [
         "本地PDF未附标准答案；书中提示外部获取，未访问外部服务。"
@@ -181,7 +181,7 @@
       "id": "verbal-zhang1300",
       "title": "GRE填空机经1300题【微信公众号：张巍老师GRE】(1).pdf",
       "source_file": "GRE/GRE备考资料.rar!/GRE备考资料/填空/GRE填空机经1300题【微信公众号：张巍老师GRE】(1).pdf",
-      "url": "sources/verbal-zhang1300.pdf",
+      "url": "../../materials/sources/verbal-zhang1300.pdf",
       "pages": 269,
       "notes": [
         "本地PDF未附标准答案，未访问外部服务。多栏表格使用版面顺序提取。"
@@ -202,7 +202,7 @@
       "id": "verbal-advanced36",
       "title": "gre强化填空36套精练与精析.pdf",
       "source_file": "gre强化填空36套精练与精析.pdf",
-      "url": "sources/verbal-advanced36.pdf",
+      "url": "../../materials/sources/verbal-advanced36.pdf",
       "pages": 474,
       "notes": [
         "756个原答案与详细解析；本PDF未包含完整英文题干和选项，不从中文解析重构题目。"
@@ -218,7 +218,7 @@
       "id": "verbal-sixpairs",
       "title": "GRE填空6选2对应词表.pdf",
       "source_file": "GRE/GRE填空6选2对应词表.pdf",
-      "url": "sources/verbal-sixpairs.pdf",
+      "url": "../../materials/sources/verbal-sixpairs.pdf",
       "pages": 5,
       "notes": [
         "对应词表，不是完整六选二练习题。"
@@ -234,7 +234,7 @@
       "id": "verbal-mcgraw",
       "title": "McGraw-Hill's GRE, 2010 Edition.pdf",
       "source_file": "GRE/McGraw-Hill's GRE, 2010 Edition.pdf",
-      "url": "sources/verbal-mcgraw.pdf",
+      "url": "../../materials/sources/awa-22.pdf",
       "pages": 477,
       "notes": [
         "2010年版出版社模拟题；旧式成对词组选项保留为TC_LEGACY，不伪装成现代独立多空题。"
@@ -255,7 +255,7 @@
       "id": "verbal-guide",
       "title": "gre备考胜经.pdf",
       "source_file": "gre备考胜经.pdf",
-      "url": "sources/verbal-guide.pdf",
+      "url": "../../materials/sources/awa-23.pdf",
       "pages": 356,
       "notes": [
         "备考讲解与图片例题混排；图片题干不由中文解析逆向生成，保留原页练习材料。"
